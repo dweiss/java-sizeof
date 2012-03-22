@@ -9,7 +9,7 @@ import sun.misc.Unsafe;
 import com.carrotsearch.sizeof.RamUsageEstimator;
 
 @SuppressWarnings("restriction")
-public class TestMemoryDumper {
+public class ExpMemoryDumper {
 
   public static class Super {
     public int superMarker = 0x11223344;
@@ -37,7 +37,7 @@ public class TestMemoryDumper {
 
   @SuppressWarnings("deprecation")
   public static String dumpObjectMem(Object o) {
-    Unsafe unsafe = TestSubclassAlignment.getUnsafe();
+    Unsafe unsafe = ExpSubclassAlignment.getUnsafe();
 
     StringBuilder b = new StringBuilder();
     final int obSize = (int) RamUsageEstimator.shallowSizeOf(o); 

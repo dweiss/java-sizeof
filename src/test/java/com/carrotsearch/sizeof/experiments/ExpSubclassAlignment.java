@@ -10,7 +10,7 @@ import com.carrotsearch.sizeof.RamUsageEstimator;
 import sun.misc.Unsafe;
 
 @SuppressWarnings("restriction")
-public class TestSubclassAlignment {
+public class ExpSubclassAlignment {
   
   public static class Super {
     public long subLong;

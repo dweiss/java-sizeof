@@ -1,4 +1,4 @@
-package com.carrotsearch.sizeof;
+package com.carrotsearch.sizeof.experiments;
 
 import java.lang.reflect.Field;
 import java.util.Map;
@@ -8,10 +8,10 @@ import org.junit.Test;
 
 import sun.misc.Unsafe;
 
-import com.carrotsearch.sizeof.experiments.TestSubclassAlignment;
+import com.carrotsearch.sizeof.RamUsageEstimator;
 
 @SuppressWarnings("restriction")
-public class TestFieldAlignment {
+public class ExpFieldAlignment {
 
   @SuppressWarnings({"deprecation"})
   @Test
@@ -43,7 +43,7 @@ public class TestFieldAlignment {
 
       if (reordered > 0) {
         System.out.println("# packed fields: " + reordered);
-        System.out.println(TestSubclassAlignment.dumpFields(clz));
+        System.out.println(ExpSubclassAlignment.dumpFields(clz));
       }
     }
   }
