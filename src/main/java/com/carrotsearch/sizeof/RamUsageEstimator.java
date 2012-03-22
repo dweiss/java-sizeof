@@ -33,7 +33,6 @@ import java.util.*;
  * @see #sizeOf(Object)
  */
 public final class RamUsageEstimator {
- 
   /**
    * JVM diagnostic features.
    */
@@ -232,6 +231,19 @@ public final class RamUsageEstimator {
         Constants.JAVA_VENDOR + ", " + Constants.JAVA_VERSION + "]";
   }
 
+  /**
+   * Cached information about a given class.   
+   */
+  private static final class ClassCache {
+    public final long shallowInstanceSize;
+    public final Field[] referenceFields;
+    
+    public ClassCache(long shallowInstanceSize, Field[] referenceFields) {
+      this.shallowInstanceSize = shallowInstanceSize;
+      this.referenceFields = referenceFields;
+    }    
+  }
+
   // Object with just one field to determine the object header size by getting the offset of the dummy field:
   @SuppressWarnings("unused")
   private static final class DummyOneFieldObject {
@@ -315,8 +327,9 @@ public final class RamUsageEstimator {
    */
   public static long sizeOf(Object obj) {
     final Set<Object> seen = Collections.newSetFromMap(new IdentityHashMap<Object,Boolean>(64));
+    final Map<Class<?>, ClassCache> classCache = new HashMap<Class<?>, ClassCache>();
     try {
-      return measureObjectSize(obj, seen);
+      return measureObjectSize(obj, seen, classCache);
     } finally {
       // Help the GC.
       seen.clear();
@@ -334,7 +347,7 @@ public final class RamUsageEstimator {
     if (obj == null) return 0;
     final Class<?> clz = obj.getClass();
     if (clz.isArray()) {
-      return measureArraySize(obj, null);
+      return measureArraySize(obj, null, null);
     } else {
       return shallowSizeOfInstance(clz);
     }
@@ -371,48 +384,66 @@ public final class RamUsageEstimator {
   /**
    * Recursive descend into an object.
    */
-  private static long measureObjectSize(Object obj, Set<Object> seen) {
-    if (obj == null) {
+  private static long measureObjectSize(Object obj, Set<Object> seen, Map<Class<?>, ClassCache> classCache) {
+    if (obj == null || seen.contains(obj)) {
       return 0;
     }
 
-    // skip if we have seen before
-    if (seen.contains(obj)) {
-      return 0;
-    }
-
-    // add to seen
+    // Mark as seen.
     seen.add(obj);
 
-    Class<?> clazz = obj.getClass();
+    final Class<?> clazz = obj.getClass();
     if (clazz.isArray()) {
-      return measureArraySize(obj, seen);
+      return measureArraySize(obj, seen, classCache);
     }
 
-    long objShallowSize = NUM_BYTES_OBJECT_HEADER;
-    long referencedSize = 0L;
+    // Check the cache first, otherwise walk and populate.
+    try {
+      ClassCache cachedInfo = classCache.get(clazz);
+      if (cachedInfo == null) {
+        classCache.put(clazz, cachedInfo = createCacheEntry(clazz));
+      }
 
-    // walk type hierarchy
-    for (;clazz != null; clazz = clazz.getSuperclass()) {
-      final Field[] fields = clazz.getDeclaredFields();
+      long referencedSize = 0L;
+      for (Field f : cachedInfo.referenceFields) {
+        final Object o = f.get(obj);
+        if (o != null) {
+          referencedSize += measureObjectSize(o, seen, classCache);
+        }
+      }
+      return alignObjectSize(cachedInfo.shallowInstanceSize) + referencedSize;
+    } catch (IllegalAccessException e) {
+      // this should never happen as we enabled setAccessible().
+      throw new RuntimeException("Reflective field access failed?", e);
+    }
+  }
+
+  /**
+   * Create a cached information about shallow size and reference fields for 
+   * a given class.
+   */
+  private static ClassCache createCacheEntry(final Class<?> clazz) {
+    ClassCache cachedInfo;
+    long shallowInstanceSize = NUM_BYTES_OBJECT_HEADER;
+    final ArrayList<Field> referenceFields = new ArrayList<Field>(32);
+    for (Class<?> c = clazz; c != null; c = c.getSuperclass()) {
+      final Field[] fields = c.getDeclaredFields();
       for (final Field f : fields) {
         if (!Modifier.isStatic(f.getModifiers())) {
-          objShallowSize = adjustForField(objShallowSize, f);
+          shallowInstanceSize = adjustForField(shallowInstanceSize, f);
 
           if (!f.getType().isPrimitive()) {
-            try {
-              f.setAccessible(true);
-              referencedSize += measureObjectSize(f.get(obj), seen);
-            } catch (IllegalAccessException ex) {
-              // this should never happen as we enabled setAccessible().
-              throw new RuntimeException("Cannot reflect instance field: " +
-                f.getDeclaringClass().getName() + "#" + f.getName(), ex);
-            }
+            f.setAccessible(true);
+            referenceFields.add(f);
           }
         }
       }
     }
-    return alignObjectSize(objShallowSize) + referencedSize;
+
+    cachedInfo = new ClassCache(
+        shallowInstanceSize, 
+        referenceFields.toArray(new Field[referenceFields.size()]));
+    return cachedInfo;
   }
 
   /**
@@ -445,7 +476,7 @@ public final class RamUsageEstimator {
           f.getDeclaringClass().getName() + "#" + f.getName(), cause);
       }
     } else {
-      // TODO: No alignments/ subclass field alignments whatsoever? 
+      // TODO: No alignments based on field type/ subclass fields alignments?
       return sizeSoFar + fsize;
     }
   }
@@ -456,7 +487,7 @@ public final class RamUsageEstimator {
    * @param seen A set of already seen objects. If <code>null</code> no references
    *             are followed and this method returns the equivalent of "shallow" array size.
    */
-  private static long measureArraySize(Object array, Set<Object> seen) {
+  private static long measureArraySize(Object array, Set<Object> seen, Map<Class<?>, ClassCache> classCache) {
     long size = NUM_BYTES_ARRAY_HEADER;
     final int len = Array.getLength(array);
     if (len > 0) {
@@ -467,7 +498,7 @@ public final class RamUsageEstimator {
         size += (long) NUM_BYTES_OBJECT_REF * len;
         if (seen != null) {
           for (int i = 0; i < len; i++) {
-            size += measureObjectSize(Array.get(array, i), seen);
+            size += measureObjectSize(Array.get(array, i), seen, classCache);
           }
         }
       }

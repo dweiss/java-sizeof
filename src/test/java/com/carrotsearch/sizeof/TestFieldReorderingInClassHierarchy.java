@@ -1,4 +1,4 @@
-package com.carrotsearch.sizeof.experiments;
+package com.carrotsearch.sizeof;
 
 import java.lang.reflect.Field;
 import java.util.Map;
@@ -8,16 +8,17 @@ import org.junit.Test;
 
 import sun.misc.Unsafe;
 
+import com.carrotsearch.sizeof.BlackMagic;
 import com.carrotsearch.sizeof.RamUsageEstimator;
+import com.carrotsearch.sizeof.experiments.WildClasses;
 
 @SuppressWarnings("restriction")
-public class ExpFieldAlignment {
+public class TestFieldReorderingInClassHierarchy {
 
   @SuppressWarnings({"deprecation"})
   @Test
   public void testFieldsOrdered() throws Exception {
-    System.out.println(RamUsageEstimator.JVM_INFO_STRING);
-    Unsafe unsafe = getUnsafe();
+    Unsafe unsafe = BlackMagic.getUnsafe();
     for (Class<?> clz : WildClasses.ALL) {
       TreeMap<Integer, Field> fields = new TreeMap<Integer, Field>(); 
       for (Class<?> c = clz; c != null; c = c.getSuperclass()) {
@@ -42,20 +43,12 @@ public class ExpFieldAlignment {
       }
 
       if (reordered > 0) {
-        System.out.println("# packed fields: " + reordered);
-        System.out.println(ExpSubclassAlignment.dumpFields(clz));
+        System.out.println("This JVM has reordered fields!");
+        System.out.println(RamUsageEstimator.JVM_INFO_STRING);
+        System.out.println("Example class with reordered fields:");
+        System.out.println(BlackMagic.fieldsLayoutAsString(clz));
+        return;
       }
-    }
-  }
-
-  public static sun.misc.Unsafe getUnsafe() {
-    try {
-      final Class<?> unsafeClass = Class.forName("sun.misc.Unsafe");
-      final Field unsafeField = unsafeClass.getDeclaredField("theUnsafe");
-      unsafeField.setAccessible(true);
-      return (sun.misc.Unsafe) unsafeField.get(null);
-    } catch (Throwable t) {
-      throw new RuntimeException("Unsafe not available.", t);
     }
   }
 }

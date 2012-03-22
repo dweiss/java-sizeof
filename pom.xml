@@ -50,6 +50,13 @@
     	<type>jar</type>
     	<scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>com.carrotsearch</groupId>
+      <artifactId>junit-benchmarks</artifactId>
+      <version>0.3.0</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
 
