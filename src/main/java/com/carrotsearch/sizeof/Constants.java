@@ -30,9 +30,12 @@ final class Constants {
 
   /** The value of <tt>System.getProperty("java.version")<tt>. **/
   public static final String JAVA_VERSION = System.getProperty("java.version");
+  public static final String JAVA_VENDOR = System.getProperty("java.vendor");
+  public static final String JVM_VENDOR = System.getProperty("java.vm.vendor");
+  public static final String JVM_VERSION = System.getProperty("java.vm.version");
+  public static final String JVM_NAME = System.getProperty("java.vm.name");
   public static final String OS_ARCH = System.getProperty("os.arch");
   public static final String OS_VERSION = System.getProperty("os.version");
-  public static final String JAVA_VENDOR = System.getProperty("java.vendor");
 
   static {
     final String OS_ARCH = System.getProperty("os.arch");

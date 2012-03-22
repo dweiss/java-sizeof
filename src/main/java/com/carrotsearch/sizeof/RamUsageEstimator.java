@@ -25,11 +25,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
-import java.util.Collections;
-import java.util.IdentityHashMap;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Estimates the size (memory representation) of Java objects.
@@ -210,7 +206,10 @@ public final class RamUsageEstimator {
     }
     NUM_BYTES_OBJECT_ALIGNMENT = objectAlignment;
 
-    JVM_INFO_STRING = "[JVM: " + Constants.JAVA_VENDOR + ", " + Constants.JAVA_VERSION + "]";
+    JVM_INFO_STRING = "[JVM: " +
+        Constants.JVM_NAME + ", " + Constants.JVM_VERSION + ", " + Constants.JVM_VENDOR + ", " + 
+        Constants.JAVA_VENDOR + ", " + Constants.JAVA_VERSION + "]";
+
     isSupportedJVM = supportedJvm;
   }
 

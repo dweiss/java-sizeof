@@ -30,7 +30,7 @@ public class TestSubclassAlignment {
   @SuppressWarnings({"deprecation", "unchecked"})
   @Test
   public void testLongInSubclass() throws Exception {
-    System.out.println("JVM: " + RamUsageEstimator.JVM_INFO_STRING);
+    System.out.println(RamUsageEstimator.JVM_INFO_STRING);
     Unsafe unsafe = getUnsafe();
     TreeMap<Integer, String> fields = new TreeMap<Integer, String>(); 
     for (Class<?> c = SubSub.class; c != null; c = c.getSuperclass()) {
