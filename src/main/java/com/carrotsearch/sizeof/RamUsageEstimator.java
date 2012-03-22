@@ -37,7 +37,10 @@ import java.util.Set;
  * @see #sizeOf(Object)
  */
 public final class RamUsageEstimator {
-  
+ 
+  /** JVM info string for debugging and reports. */
+  public final static String JVM_INFO_STRING;
+
   /** No instantiation. */
   private RamUsageEstimator() {}
 
@@ -207,6 +210,7 @@ public final class RamUsageEstimator {
     }
     NUM_BYTES_OBJECT_ALIGNMENT = objectAlignment;
 
+    JVM_INFO_STRING = "[JVM: " + Constants.JAVA_VENDOR + ", " + Constants.JAVA_VERSION + "]";
     isSupportedJVM = supportedJvm;
   }
 
@@ -343,7 +347,7 @@ public final class RamUsageEstimator {
           continue;
         }
 
-        size = reflectFieldSize(size, f);
+        size = adjustForField(size, f);
         fieldFound = true;
       }
       if (useUnsafe && fieldFound) {
@@ -388,14 +392,14 @@ public final class RamUsageEstimator {
           continue;
         }
 
-        size = reflectFieldSize(size, f);
+        size = adjustForField(size, f);
         
         if (!f.getType().isPrimitive()) {
           try {
             f.setAccessible(true);
             innerSize += measureObjectSize(f.get(obj), seen);
           } catch (IllegalAccessException ex) {
-            // this should never happen as we enable setAccessible()!
+            // this should never happen as we enabled setAccessible().
             throw new RuntimeException("Cannot reflect instance field: " +
               f.getDeclaringClass().getName() + "#" + f.getName(), ex);
           }
@@ -405,15 +409,22 @@ public final class RamUsageEstimator {
     }
     return alignObjectSize(size) + innerSize;
   }
-  
-  private static long reflectFieldSize(long size, final Field f) {
+
+  /**
+   * This method returns the maximum representation size of an object. <code>sizeSoFar</code>
+   * is the object's size measured so far. <code>f</code> is the field being probed.
+   * 
+   * <p>The returned offset will be the maximum of whatever was measured so far and 
+   * <code>f</code> field's offset and representation size (unaligned).
+   */
+  private static long adjustForField(long sizeSoFar, final Field f) {
     final Class<?> type = f.getType();
     final int fsize = type.isPrimitive() ? primitiveSizes.get(type) : NUM_BYTES_OBJECT_REF;
     if (useUnsafe) {
       try {
         final long offsetPlusSize =
           ((Number) objectFieldOffsetMethod.invoke(theUnsafe, f)).longValue() + fsize;
-        return Math.max(size, offsetPlusSize);
+        return Math.max(sizeSoFar, offsetPlusSize);
       } catch (IllegalAccessException ex) {
         throw new RuntimeException("Access problem with sun.misc.Unsafe", ex);
       } catch (InvocationTargetException ite) {
@@ -429,7 +440,7 @@ public final class RamUsageEstimator {
           f.getDeclaringClass().getName() + "#" + f.getName(), cause);
       }
     } else {
-      return size + fsize;
+      return sizeSoFar + fsize;
     }
   }
 
