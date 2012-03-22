@@ -1056,7 +1056,7 @@ public final class WildClasses {
     protected  short fld_3_0_92;
                byte fld_4_0_92;
     public     short fld_5_0_92;
-    private    short fld_6_0_92;
+    public short fld_6_0_92;
   }
 
   public static class Wild_0_93 {
@@ -2261,7 +2261,7 @@ public final class WildClasses {
   }
 
   public static class Wild_2_5 extends Wild_1_85 {
-    private    float fld_0_2_5;
+    public float fld_0_2_5;
   }
 
   public static class Wild_2_6 extends Wild_1_45 {

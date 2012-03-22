@@ -1,5 +1,6 @@
 package com.carrotsearch.sizeof.experiments;
 
+import java.nio.ByteOrder;
 import java.util.Locale;
 
 import org.junit.Test;
@@ -35,21 +36,32 @@ public class ExpMemoryDumper {
     System.out.println(dumpObjectMem(o2));
   }
 
-  @SuppressWarnings("deprecation")
+  public static class ByteOrderCheck {
+    public short check = 0x1122;
+  }
+  
   public static String dumpObjectMem(Object o) {
-    Unsafe unsafe = ExpSubclassAlignment.getUnsafe();
-
+    final Unsafe unsafe = ExpSubclassAlignment.getUnsafe();
+    final ByteOrder byteOrder = ByteOrder.nativeOrder();
+    
     StringBuilder b = new StringBuilder();
     final int obSize = (int) RamUsageEstimator.shallowSizeOf(o); 
-    for (int i = 0; i < obSize; i++) {
+    for (int i = 0; i < obSize; i += 2) {
       if ((i & 0xf) == 0) {
         if (i > 0) b.append("\n");
         b.append(String.format(Locale.ENGLISH, "%#06x", i));
       }
-      
-      b.append(" ");
-      int byteValue = unsafe.getByte(o, i) & 0xff;
-      b.append(String.format(Locale.ENGLISH, "%02x", byteValue)); // lazy :)
+
+      // we go short by short because J9 fails on odd addresses.
+      int shortValue = unsafe.getShort(o, (long) i);
+
+      if (byteOrder == ByteOrder.BIG_ENDIAN) {
+        b.append(String.format(Locale.ENGLISH, " %02x", (shortValue >>> 8) & 0xff));
+        b.append(String.format(Locale.ENGLISH, " %02x", (shortValue & 0xff)));
+      } else {
+        b.append(String.format(Locale.ENGLISH, " %02x", (shortValue & 0xff)));
+        b.append(String.format(Locale.ENGLISH, " %02x", (shortValue >>> 8) & 0xff));
+      }
     }
     return b.toString();
   }
