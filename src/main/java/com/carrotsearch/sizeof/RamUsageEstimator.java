@@ -34,6 +34,27 @@ import java.util.*;
  */
 public final class RamUsageEstimator {
  
+  /**
+   * JVM diagnostic features.
+   */
+  public static enum JvmFeature {
+    OBJECT_REFERENCE_SIZE("Object reference size estimated using array index scale."),
+    ARRAY_HEADER_SIZE("Array header size estimated using array based offset."),
+    FIELD_OFFSETS("Shallow instance size based on field offsets."),
+    OBJECT_ALIGNMENT("Object alignment retrieved from HotSpotDiagnostic MX bean.");
+
+    public final String description;
+
+    private JvmFeature(String description) {
+      this.description = description;
+    }
+    
+    @Override
+    public String toString() {
+      return super.name() + " (" + description + ")";
+    }
+  }
+
   /** JVM info string for debugging and reports. */
   public final static String JVM_INFO_STRING;
 
@@ -86,11 +107,20 @@ public final class RamUsageEstimator {
     primitiveSizes.put(long.class, NUM_BYTES_LONG);
   }
 
+  /**
+   * A handle to <code>sun.misc.Unsafe</code>.
+   */
   private final static Object theUnsafe;
+  
+  /**
+   * A handle to <code>sun.misc.Unsafe#fieldOffset(Field)</code>.
+   */
   private final static Method objectFieldOffsetMethod;
 
-  private final static boolean useUnsafe;
-  private final static boolean isSupportedJVM;
+  /**
+   * All the supported "internal" JVM features detected at clinit. 
+   */
+  private final static EnumSet<JvmFeature> supportedFeatures;
 
   /**
    * Initialize constants and try to collect information about the JVM internals. 
@@ -104,80 +134,70 @@ public final class RamUsageEstimator {
     // so on 64 bit JVMs it'll be align(16 + 4, @8) = 24.
     int arrayHeader = Constants.JRE_IS_64BIT ? 24 : 12;
 
-    Object unsafe = null;
-    Method objectFieldOffsetM = null;
-    boolean supportedJvm = true;
+    supportedFeatures = EnumSet.noneOf(JvmFeature.class);
+
+    Class<?> unsafeClass = null;
+    Object tempTheUnsafe = null;
     try {
-      final Class<?> unsafeClass = Class.forName("sun.misc.Unsafe");
+      unsafeClass = Class.forName("sun.misc.Unsafe");
       final Field unsafeField = unsafeClass.getDeclaredField("theUnsafe");
       unsafeField.setAccessible(true);
-      unsafe = unsafeField.get(null);
-      
-      // get object reference size by getting scale factor of Object[] arrays:
-      try {
-        final Method arrayIndexScaleM = unsafeClass.getMethod("arrayIndexScale", Class.class);
-        referenceSize = ((Number) arrayIndexScaleM.invoke(unsafe, Object[].class)).intValue();
-      } catch (Exception e) {
-        // ignore
-        supportedJvm = false;
-      }
-      
-      // updated best guess based on reference size:
-      objectHeader = Constants.JRE_IS_64BIT ? (8 + referenceSize) : 8;
-      arrayHeader = Constants.JRE_IS_64BIT ? (8 + 2 * referenceSize) : 12;
-      
-      // get the object header size:
-      // - first try out if the field offsets are not scaled (see warning in Unsafe docs)
-      // - get the object header size by getting the field offset of the first field of a dummy object
-      // If the scaling is byte-wise and unsafe is available, enable dynamic size measurement for
-      // estimateRamUsage().
-      try {
-        objectFieldOffsetM = unsafeClass.getMethod("objectFieldOffset", Field.class);
-        final Field dummy1Field = DummyTwoLongObject.class.getDeclaredField("dummy1");
-        final int ofs1 = ((Number) objectFieldOffsetM.invoke(unsafe, dummy1Field)).intValue();
-        final Field dummy2Field = DummyTwoLongObject.class.getDeclaredField("dummy2");
-        final int ofs2 = ((Number) objectFieldOffsetM.invoke(unsafe, dummy2Field)).intValue();
-        if (Math.abs(ofs2 - ofs1) == NUM_BYTES_LONG) {
-          final Field baseField = DummyOneFieldObject.class.getDeclaredField("base");
-          objectHeader = ((Number) objectFieldOffsetM.invoke(unsafe, baseField)).intValue();
-        } else {
-          // it is not safe to use Unsafe.objectFieldOffset(),
-          // as it may be scaled (see "cookie" comment in Unsafe), better use defaults
-          // and conventional size estimation:
-          objectFieldOffsetM = null;
-          supportedJvm = false;
-        }
-      } catch (Exception e) {
-        // on exception ensure useUnsafe will be set to false later:
-        objectFieldOffsetM = null;
-        supportedJvm = false;
-      }
+      tempTheUnsafe = unsafeField.get(null);
+    } catch (Exception e) {
+      // Ignore.
+    }
+    theUnsafe = tempTheUnsafe;
 
-      // Get the array header size by retrieving the array base offset
-      // (offset of the first element of an array).
-      try {
-        final Method arrayBaseOffsetM = unsafeClass.getMethod("arrayBaseOffset", Class.class);
-        // we calculate that only for byte[] arrays, it's actually the same for all types:
-        arrayHeader = ((Number) arrayBaseOffsetM.invoke(unsafe, byte[].class)).intValue();
-      } catch (Exception e) {
-        // ignore
-        supportedJvm = false;
+    // get object reference size by getting scale factor of Object[] arrays:
+    try {
+      final Method arrayIndexScaleM = unsafeClass.getMethod("arrayIndexScale", Class.class);
+      referenceSize = ((Number) arrayIndexScaleM.invoke(theUnsafe, Object[].class)).intValue();
+      supportedFeatures.add(JvmFeature.OBJECT_REFERENCE_SIZE);
+    } catch (Exception e) {
+      // ignore.
+    }
+
+    // Updated best guess based on reference size:
+    objectHeader = Constants.JRE_IS_64BIT ? (8 + referenceSize) : 8;
+    arrayHeader = Constants.JRE_IS_64BIT ? (8 + 2 * referenceSize) : 12;
+
+    // get the object header size:
+    // - first try out if the field offsets are not scaled (see warning in Unsafe docs)
+    // - get the object header size by getting the field offset of the first field of a dummy object
+    // If the scaling is byte-wise and unsafe is available, enable dynamic size measurement for
+    // estimateRamUsage().
+    Method tempObjectFieldOffsetMethod = null;
+    try {
+      Method objectFieldOffsetM = unsafeClass.getMethod("objectFieldOffset", Field.class);
+      final Field dummy1Field = DummyTwoLongObject.class.getDeclaredField("dummy1");
+      final int ofs1 = ((Number) objectFieldOffsetM.invoke(theUnsafe, dummy1Field)).intValue();
+      final Field dummy2Field = DummyTwoLongObject.class.getDeclaredField("dummy2");
+      final int ofs2 = ((Number) objectFieldOffsetM.invoke(theUnsafe, dummy2Field)).intValue();
+      if (Math.abs(ofs2 - ofs1) == NUM_BYTES_LONG) {
+        final Field baseField = DummyOneFieldObject.class.getDeclaredField("base");
+        objectHeader = ((Number) objectFieldOffsetM.invoke(theUnsafe, baseField)).intValue();
+        supportedFeatures.add(JvmFeature.FIELD_OFFSETS);
+        tempObjectFieldOffsetMethod = objectFieldOffsetM;
       }
     } catch (Exception e) {
-      // ignore
-      supportedJvm = false;
+      // Ignore.
+    }
+    objectFieldOffsetMethod = tempObjectFieldOffsetMethod;
+
+    // Get the array header size by retrieving the array base offset
+    // (offset of the first element of an array).
+    try {
+      final Method arrayBaseOffsetM = unsafeClass.getMethod("arrayBaseOffset", Class.class);
+      // we calculate that only for byte[] arrays, it's actually the same for all types:
+      arrayHeader = ((Number) arrayBaseOffsetM.invoke(theUnsafe, byte[].class)).intValue();
+      supportedFeatures.add(JvmFeature.ARRAY_HEADER_SIZE);
+    } catch (Exception e) {
+      // Ignore.
     }
 
     NUM_BYTES_OBJECT_REF = referenceSize;
     NUM_BYTES_OBJECT_HEADER = objectHeader;
     NUM_BYTES_ARRAY_HEADER = arrayHeader;
-    useUnsafe = (unsafe != null && objectFieldOffsetM != null);
-    if (useUnsafe) {
-      theUnsafe = unsafe;
-      objectFieldOffsetMethod = objectFieldOffsetM;
-    } else {
-      theUnsafe = objectFieldOffsetMethod = null;
-    }
     
     // Try to get the object alignment (the default seems to be 8 on Hotspot, 
     // regardless of the architecture).
@@ -195,22 +215,21 @@ public final class RamUsageEstimator {
         objectAlignment = Integer.parseInt(
             vmOption.getClass().getMethod("getValue").invoke(vmOption).toString()
         );
+        supportedFeatures.add(JvmFeature.OBJECT_ALIGNMENT);        
       } catch (InvocationTargetException ite) {
         if (!(ite.getCause() instanceof IllegalArgumentException))
           throw ite;
         // ignore the error completely and use default of 8 (32 bit JVMs).
       }
     } catch (Exception e) {
-      // ignore
-      supportedJvm = false;
+      // Ignore.
     }
+
     NUM_BYTES_OBJECT_ALIGNMENT = objectAlignment;
 
     JVM_INFO_STRING = "[JVM: " +
         Constants.JVM_NAME + ", " + Constants.JVM_VERSION + ", " + Constants.JVM_VENDOR + ", " + 
         Constants.JAVA_VENDOR + ", " + Constants.JAVA_VERSION + "]";
-
-    isSupportedJVM = supportedJvm;
   }
 
   // Object with just one field to determine the object header size by getting the offset of the dummy field:
@@ -227,14 +246,14 @@ public final class RamUsageEstimator {
   }
   
   /** 
-   * Returns true, if the current JVM is supported by {@code RamUsageEstimator}.
+   * Returns true, if the current JVM is fully supported by {@code RamUsageEstimator}.
    * If this method returns {@code false} you are maybe using a 3rd party Java VM
    * that is not supporting Oracle/Sun private APIs. The memory estimates can be 
    * imprecise then (no way of detecting compressed references, alignments, etc.). 
    * Lucene still tries to use sensible defaults.
    */
   public static boolean isSupportedJVM() {
-    return isSupportedJVM;
+    return supportedFeatures.size() == JvmFeature.values().length;
   }
 
   /** 
@@ -338,23 +357,13 @@ public final class RamUsageEstimator {
     long size = NUM_BYTES_OBJECT_HEADER;
     
     // Walk type hierarchy
-    while (clazz != null) {
+    for (;clazz != null; clazz = clazz.getSuperclass()) {
       final Field[] fields = clazz.getDeclaredFields();
-      boolean fieldFound = false;
-      for (final Field f : fields) {
-        if (Modifier.isStatic(f.getModifiers())) {
-          continue;
+      for (Field f : fields) {
+        if (!Modifier.isStatic(f.getModifiers())) {
+          size = adjustForField(size, f);
         }
-
-        size = adjustForField(size, f);
-        fieldFound = true;
       }
-      if (useUnsafe && fieldFound) {
-        // no need to recurse to superclasses, as all fields are
-        // added at the end, so we won't find any larger offset
-        break;
-      }
-      clazz = clazz.getSuperclass();
     }
     return alignObjectSize(size);    
   }
@@ -380,33 +389,30 @@ public final class RamUsageEstimator {
       return measureArraySize(obj, seen);
     }
 
-    long size = NUM_BYTES_OBJECT_HEADER;
-    long innerSize = 0L;
+    long objShallowSize = NUM_BYTES_OBJECT_HEADER;
+    long referencedSize = 0L;
 
     // walk type hierarchy
-    while (clazz != null) {
+    for (;clazz != null; clazz = clazz.getSuperclass()) {
       final Field[] fields = clazz.getDeclaredFields();
       for (final Field f : fields) {
-        if (Modifier.isStatic(f.getModifiers())) {
-          continue;
-        }
+        if (!Modifier.isStatic(f.getModifiers())) {
+          objShallowSize = adjustForField(objShallowSize, f);
 
-        size = adjustForField(size, f);
-        
-        if (!f.getType().isPrimitive()) {
-          try {
-            f.setAccessible(true);
-            innerSize += measureObjectSize(f.get(obj), seen);
-          } catch (IllegalAccessException ex) {
-            // this should never happen as we enabled setAccessible().
-            throw new RuntimeException("Cannot reflect instance field: " +
-              f.getDeclaringClass().getName() + "#" + f.getName(), ex);
+          if (!f.getType().isPrimitive()) {
+            try {
+              f.setAccessible(true);
+              referencedSize += measureObjectSize(f.get(obj), seen);
+            } catch (IllegalAccessException ex) {
+              // this should never happen as we enabled setAccessible().
+              throw new RuntimeException("Cannot reflect instance field: " +
+                f.getDeclaringClass().getName() + "#" + f.getName(), ex);
+            }
           }
         }
       }
-      clazz = clazz.getSuperclass();
     }
-    return alignObjectSize(size) + innerSize;
+    return alignObjectSize(objShallowSize) + referencedSize;
   }
 
   /**
@@ -419,7 +425,7 @@ public final class RamUsageEstimator {
   private static long adjustForField(long sizeSoFar, final Field f) {
     final Class<?> type = f.getType();
     final int fsize = type.isPrimitive() ? primitiveSizes.get(type) : NUM_BYTES_OBJECT_REF;
-    if (useUnsafe) {
+    if (objectFieldOffsetMethod != null) {
       try {
         final long offsetPlusSize =
           ((Number) objectFieldOffsetMethod.invoke(theUnsafe, f)).longValue() + fsize;
@@ -439,16 +445,16 @@ public final class RamUsageEstimator {
           f.getDeclaringClass().getName() + "#" + f.getName(), cause);
       }
     } else {
+      // TODO: No alignments/ subclass field alignments whatsoever? 
       return sizeSoFar + fsize;
     }
   }
 
   /**
-   * Return the deep size of an <code>array</code>, including
-   * sub-objects if there are any.
+   * Return deep or shallow size of an <code>array</code>.
    * 
    * @param seen A set of already seen objects. If <code>null</code> no references
-   *      are followed and this method returns shallow size.
+   *             are followed and this method returns the equivalent of "shallow" array size.
    */
   private static long measureArraySize(Object array, Set<Object> seen) {
     long size = NUM_BYTES_ARRAY_HEADER;
@@ -468,6 +474,18 @@ public final class RamUsageEstimator {
     }
 
     return alignObjectSize(size);
+  }
+
+  /** Return the set of unsupported JVM features that improve the estimation. */
+  public static EnumSet<JvmFeature> getUnsupportedFeatures() {
+    EnumSet<JvmFeature> unsupported = EnumSet.allOf(JvmFeature.class);
+    unsupported.removeAll(supportedFeatures);
+    return unsupported;
+  }
+
+  /** Return the set of supported JVM features that improve the estimation. */
+  public static EnumSet<JvmFeature> getSupportedFeatures() {
+    return EnumSet.copyOf(supportedFeatures);
   }
 
   public static final long ONE_KB = 1024;

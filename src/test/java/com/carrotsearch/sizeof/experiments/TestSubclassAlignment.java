@@ -27,33 +27,40 @@ public class TestSubclassAlignment {
     public byte subSubByte;
   }
 
-  @SuppressWarnings({"deprecation", "unchecked"})
   @Test
   public void testLongInSubclass() throws Exception {
     System.out.println(RamUsageEstimator.JVM_INFO_STRING);
+    Class<?> clazz = SubSub.class;
+    System.out.println(dumpFields(clazz));
+  }
+
+  @SuppressWarnings({"deprecation", "unchecked"})
+  public static String dumpFields(Class<?> clazz) {
     Unsafe unsafe = getUnsafe();
     TreeMap<Integer, String> fields = new TreeMap<Integer, String>(); 
-    for (Class<?> c = SubSub.class; c != null; c = c.getSuperclass()) {
+    for (Class<?> c = clazz; c != null; c = c.getSuperclass()) {
       for (Field f : c.getDeclaredFields()) {
         fields.put(unsafe.fieldOffset(f),
             f.getDeclaringClass().getSimpleName() + "." + f.getName());
       }
     }
     fields.put(
-        (int) RamUsageEstimator.shallowSizeOfInstance(SubSub.class), "sizeOf(SubSub.class instance)");
+        (int) RamUsageEstimator.shallowSizeOfInstance(clazz), "sizeOf(" + clazz.getSimpleName() + " instance)");
 
+    StringBuilder b = new StringBuilder();
     Object [] entries = fields.entrySet().toArray();
     for (int i = 0; i < entries.length; i++) {
       Map.Entry<Integer, String> e    = (Map.Entry<Integer, String>) entries[i];
       Map.Entry<Integer, String> next = 
           (i + 1 < entries.length ? (Map.Entry<Integer, String>) entries[i + 1] : null);
 
-      System.out.println(String.format(Locale.ENGLISH,
-          "@%s %2s %s", 
+      b.append(String.format(Locale.ENGLISH,
+          "@%s %2s %s\n", 
           e.getKey(),
           next == null ? "" : next.getKey() - e.getKey(),
           e.getValue()));
     }
+    return b.toString();
   }
 
   public static sun.misc.Unsafe getUnsafe() {

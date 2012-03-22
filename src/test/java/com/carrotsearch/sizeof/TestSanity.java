@@ -104,10 +104,12 @@ public class TestSanity {
   @Test
   public void testReferenceSize() {
     if (!isSupportedJVM()) {
-      System.err.println("WARN: Your JVM does not support the Oracle/Sun extensions (Hotspot diagnostics, sun.misc.Unsafe).");
+      System.err.println("WARN: Your JVM does not support certain Oracle/Sun extensions.");
       System.err.println("      Memory estimates may be inaccurate.");
-      System.err.println("      Please report this to the Lucene mailing list, noting your JVM version: " + 
-          RamUsageEstimator.JVM_INFO_STRING);
+      System.err.println("      Please report this to the Lucene mailing list. JVM version: " + RamUsageEstimator.JVM_INFO_STRING);
+      for (JvmFeature f : RamUsageEstimator.getUnsupportedFeatures()) {
+        System.err.println("      - " + f.toString());
+      }
     }
 
     assertTrue(NUM_BYTES_OBJECT_REF == 4 || NUM_BYTES_OBJECT_REF == 8);
