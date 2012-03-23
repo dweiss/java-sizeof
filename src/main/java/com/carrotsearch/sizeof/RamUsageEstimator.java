@@ -266,7 +266,7 @@ public final class RamUsageEstimator {
   private static final class DummyTwoLongObject {
     public long dummy1, dummy2;
   }
-  
+
   /** 
    * Returns true, if the current JVM is fully supported by {@code RamUsageEstimator}.
    * If this method returns {@code false} you are maybe using a 3rd party Java VM
@@ -284,46 +284,6 @@ public final class RamUsageEstimator {
   public static long alignObjectSize(long size) {
     size += (long) NUM_BYTES_OBJECT_ALIGNMENT - 1L;
     return size - (size % NUM_BYTES_OBJECT_ALIGNMENT);
-  }
-  
-  /** Returns the size in bytes of the byte[] object. */
-  public static long sizeOf(byte[] arr) {
-    return alignObjectSize((long) NUM_BYTES_ARRAY_HEADER + arr.length);
-  }
-  
-  /** Returns the size in bytes of the boolean[] object. */
-  public static long sizeOf(boolean[] arr) {
-    return alignObjectSize((long) NUM_BYTES_ARRAY_HEADER + arr.length);
-  }
-  
-  /** Returns the size in bytes of the char[] object. */
-  public static long sizeOf(char[] arr) {
-    return alignObjectSize((long) NUM_BYTES_ARRAY_HEADER + (long) NUM_BYTES_CHAR * arr.length);
-  }
-
-  /** Returns the size in bytes of the short[] object. */
-  public static long sizeOf(short[] arr) {
-    return alignObjectSize((long) NUM_BYTES_ARRAY_HEADER + (long) NUM_BYTES_SHORT * arr.length);
-  }
-  
-  /** Returns the size in bytes of the int[] object. */
-  public static long sizeOf(int[] arr) {
-    return alignObjectSize((long) NUM_BYTES_ARRAY_HEADER + (long) NUM_BYTES_INT * arr.length);
-  }
-  
-  /** Returns the size in bytes of the float[] object. */
-  public static long sizeOf(float[] arr) {
-    return alignObjectSize((long) NUM_BYTES_ARRAY_HEADER + (long) NUM_BYTES_FLOAT * arr.length);
-  }
-  
-  /** Returns the size in bytes of the long[] object. */
-  public static long sizeOf(long[] arr) {
-    return alignObjectSize((long) NUM_BYTES_ARRAY_HEADER + (long) NUM_BYTES_LONG * arr.length);
-  }
-  
-  /** Returns the size in bytes of the double[] object. */
-  public static long sizeOf(double[] arr) {
-    return alignObjectSize((long) NUM_BYTES_ARRAY_HEADER + (long) NUM_BYTES_DOUBLE * arr.length);
   }
 
   /** 
@@ -382,6 +342,18 @@ public final class RamUsageEstimator {
       }
     }
     return alignObjectSize(size);    
+  }
+
+  /** Return the set of unsupported JVM features that improve the estimation. */
+  public static EnumSet<JvmFeature> getUnsupportedFeatures() {
+    EnumSet<JvmFeature> unsupported = EnumSet.allOf(JvmFeature.class);
+    unsupported.removeAll(supportedFeatures);
+    return unsupported;
+  }
+
+  /** Return the set of supported JVM features that improve the estimation. */
+  public static EnumSet<JvmFeature> getSupportedFeatures() {
+    return EnumSet.copyOf(supportedFeatures);
   }
 
   /**
@@ -545,18 +517,6 @@ public final class RamUsageEstimator {
     }
   }
 
-  /** Return the set of unsupported JVM features that improve the estimation. */
-  public static EnumSet<JvmFeature> getUnsupportedFeatures() {
-    EnumSet<JvmFeature> unsupported = EnumSet.allOf(JvmFeature.class);
-    unsupported.removeAll(supportedFeatures);
-    return unsupported;
-  }
-
-  /** Return the set of supported JVM features that improve the estimation. */
-  public static EnumSet<JvmFeature> getSupportedFeatures() {
-    return EnumSet.copyOf(supportedFeatures);
-  }
-
   /**
    * Returns <code>size</code> in human-readable units (GB, MB, KB or bytes).
    */
@@ -579,4 +539,13 @@ public final class RamUsageEstimator {
       return bytes + " bytes";
     }
   }
+  
+  /**
+   * Return a human-readable size of a given object.
+   * @see #sizeOf(Object)
+   * @see #humanReadableUnits(long)
+   */
+  public static String humanSizeOf(Object object) {
+    return humanReadableUnits(sizeOf(object));
+  }  
 }

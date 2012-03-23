@@ -43,7 +43,8 @@ public final class BlackMagic {
         b.append(String.format(Locale.ENGLISH, "%#06x", i));
       }
   
-      // we go short by short because J9 fails on odd addresses.
+      // we go short by short because J9 fails on odd addresses (everything is aligned,
+      // including byte fields.
       int shortValue = unsafe.getShort(o, (long) i);
   
       if (byteOrder == ByteOrder.BIG_ENDIAN) {
