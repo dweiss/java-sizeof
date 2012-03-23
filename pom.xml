@@ -3,6 +3,12 @@
 
   <modelVersion>4.0.0</modelVersion>
 
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>5</version>
+  </parent>
+
   <!-- Project info. -->
   <groupId>com.carrotsearch</groupId>
   <artifactId>java-sizeof</artifactId>
@@ -10,7 +16,7 @@
   <packaging>jar</packaging>
 
   <name>java-sizeof</name>
-  <description>Memory consumption estimator in Java.</description>
+  <description>Java Objects size estimation.</description>
 
   <!-- Extended project info. -->
   <licenses>
@@ -21,18 +27,10 @@
     </license>
   </licenses>
 
-  <developers>
-    <developer>
-      <id>dawid.weiss</id>
-      <name>Dawid Weiss</name>
-      <email>dawid.weiss@carrotsearch.com</email>
-    </developer>
-
-    <developer>
-      <id>uwe.schindler</id>
-      <name>Uwe Schindler</name>
-    </developer>
-  </developers>
+  <organization>
+    <name>Carrot Search s.c.</name>
+    <url>http://www.carrotsearch.com</url>
+  </organization>
 
   <!-- Global properties. -->
   <properties>
