@@ -57,6 +57,15 @@ public final class RamUsageEstimator {
   /** JVM info string for debugging and reports. */
   public final static String JVM_INFO_STRING;
 
+  /** One kilobyte bytes. */
+  public static final long ONE_KB = 1024;
+  
+  /** One megabyte bytes. */
+  public static final long ONE_MB = ONE_KB * ONE_KB;
+  
+  /** One gigabyte bytes.*/
+  public static final long ONE_GB = ONE_KB * ONE_MB;
+
   /** No instantiation. */
   private RamUsageEstimator() {}
 
@@ -156,9 +165,10 @@ public final class RamUsageEstimator {
       // ignore.
     }
 
-    // Updated best guess based on reference size:
+    // "best guess" based on reference size. We will attempt to modify
+    // these to exact values if there is supported infrastructure.
     objectHeader = Constants.JRE_IS_64BIT ? (8 + referenceSize) : 8;
-    arrayHeader = Constants.JRE_IS_64BIT ? (8 + 2 * referenceSize) : 12;
+    arrayHeader =  Constants.JRE_IS_64BIT ? (8 + 2 * referenceSize) : 12;
 
     // get the object header size:
     // - first try out if the field offsets are not scaled (see warning in Unsafe docs)
@@ -235,11 +245,11 @@ public final class RamUsageEstimator {
    * Cached information about a given class.   
    */
   private static final class ClassCache {
-    public final long shallowInstanceSize;
+    public final long alignedShallowInstanceSize;
     public final Field[] referenceFields;
-    
-    public ClassCache(long shallowInstanceSize, Field[] referenceFields) {
-      this.shallowInstanceSize = shallowInstanceSize;
+
+    public ClassCache(long alignedShallowInstanceSize, Field[] referenceFields) {
+      this.alignedShallowInstanceSize = alignedShallowInstanceSize;
       this.referenceFields = referenceFields;
     }    
   }
@@ -326,14 +336,7 @@ public final class RamUsageEstimator {
    * should be GCed.</p>
    */
   public static long sizeOf(Object obj) {
-    final Set<Object> seen = Collections.newSetFromMap(new IdentityHashMap<Object,Boolean>(64));
-    final Map<Class<?>, ClassCache> classCache = new HashMap<Class<?>, ClassCache>();
-    try {
-      return measureObjectSize(obj, seen, classCache);
-    } finally {
-      // Help the GC.
-      seen.clear();
-    }
+    return measureObjectSize(obj);
   }
 
   /** 
@@ -347,7 +350,7 @@ public final class RamUsageEstimator {
     if (obj == null) return 0;
     final Class<?> clz = obj.getClass();
     if (clz.isArray()) {
-      return measureArraySize(obj, null, null);
+      return shallowSizeOfArray(obj);
     } else {
       return shallowSizeOfInstance(clz);
     }
@@ -357,8 +360,8 @@ public final class RamUsageEstimator {
    * Returns the shallow instance size in bytes an instance of the given class would occupy.
    * This works with all conventional classes and primitive types, but not with arrays
    * (the size then depends on the number of elements and varies from object to object).
-   * Use the array-instance methods instead.
    * 
+   * @see #shallowSizeOf(Object)
    * @throws IllegalArgumentException if {@code clazz} is an array class. 
    */
   public static long shallowSizeOfInstance(Class<?> clazz) {
@@ -382,40 +385,101 @@ public final class RamUsageEstimator {
   }
 
   /**
-   * Recursive descend into an object.
+   * Return shallow size of any <code>array</code>.
    */
-  private static long measureObjectSize(Object obj, Set<Object> seen, Map<Class<?>, ClassCache> classCache) {
-    if (obj == null || seen.contains(obj)) {
-      return 0;
-    }
-
-    // Mark as seen.
-    seen.add(obj);
-
-    final Class<?> clazz = obj.getClass();
-    if (clazz.isArray()) {
-      return measureArraySize(obj, seen, classCache);
-    }
-
-    // Check the cache first, otherwise walk and populate.
-    try {
-      ClassCache cachedInfo = classCache.get(clazz);
-      if (cachedInfo == null) {
-        classCache.put(clazz, cachedInfo = createCacheEntry(clazz));
+  private static long shallowSizeOfArray(Object array) {
+    long size = NUM_BYTES_ARRAY_HEADER;
+    final int len = Array.getLength(array);
+    if (len > 0) {
+      Class<?> arrayElementClazz = array.getClass().getComponentType();
+      if (arrayElementClazz.isPrimitive()) {
+        size += (long) len * primitiveSizes.get(arrayElementClazz);
+      } else {
+        size += (long) NUM_BYTES_OBJECT_REF * len;
       }
+    }
+    return alignObjectSize(size);
+  }
 
-      long referencedSize = 0L;
-      for (Field f : cachedInfo.referenceFields) {
-        final Object o = f.get(obj);
-        if (o != null) {
-          referencedSize += measureObjectSize(o, seen, classCache);
+  /*
+   * Non-recursive version of object descend. This consumes more memory than recursive in-depth 
+   * traversal but prevents stack overflows on long chains of objects
+   * or complex graphs (a max. recursion depth on my machine was ~5000 objects linked in a chain
+   * so not too much).  
+   */
+  private static long measureObjectSize(Object root) {
+    final IdentityHashSet<Object> seen = new IdentityHashSet<Object>();
+    final IdentityHashMap<Class<?>, ClassCache> classCache = new IdentityHashMap<Class<?>, ClassCache>();
+    final ArrayList<Object> stack = new ArrayList<Object>();
+
+    stack.add(root);
+
+    long totalSize = 0;
+    while (!stack.isEmpty()) {
+      final Object ob = stack.remove(stack.size() - 1);
+
+      if (ob == null || seen.contains(ob)) {
+        continue;
+      }
+      seen.add(ob);
+
+      final Class<?> obClazz = ob.getClass();
+      if (obClazz.isArray()) {
+        /*
+         * Consider an array, possibly of primitive types. Push any of its references to
+         * the processing stack and accumulate this array's shallow size. 
+         */
+        long size = NUM_BYTES_ARRAY_HEADER;
+        final int len = Array.getLength(ob);
+        if (len > 0) {
+          Class<?> componentClazz = obClazz.getComponentType();
+          if (componentClazz.isPrimitive()) {
+            size += (long) len * primitiveSizes.get(componentClazz);
+          } else {
+            size += (long) NUM_BYTES_OBJECT_REF * len;
+
+            for (int i = len; --i >= 0 ;) {
+              final Object o = Array.get(ob, i);
+              if (o != null && !seen.contains(o)) {
+                stack.add(o);
+              }
+            }            
+          }
+        }
+        totalSize += alignObjectSize(size);
+      } else {
+        /*
+         * Consider an object. Push any references it has to the processing stack
+         * and accumulate this object's shallow size. 
+         */
+        try {
+          ClassCache cachedInfo = classCache.get(obClazz);
+          if (cachedInfo == null) {
+            classCache.put(obClazz, cachedInfo = createCacheEntry(obClazz));
+          }
+
+          for (Field f : cachedInfo.referenceFields) {
+            // Fast path to eliminate redundancies.
+            final Object o = f.get(ob);
+            if (o != null && !seen.contains(o)) {
+              stack.add(o);
+            }
+          }
+
+          totalSize += cachedInfo.alignedShallowInstanceSize;
+        } catch (IllegalAccessException e) {
+          // this should never happen as we enabled setAccessible().
+          throw new RuntimeException("Reflective field access failed?", e);
         }
       }
-      return alignObjectSize(cachedInfo.shallowInstanceSize) + referencedSize;
-    } catch (IllegalAccessException e) {
-      // this should never happen as we enabled setAccessible().
-      throw new RuntimeException("Reflective field access failed?", e);
     }
+
+    // Help the GC.
+    seen.clear();
+    stack.clear();
+    classCache.clear();
+
+    return totalSize;
   }
 
   /**
@@ -441,7 +505,7 @@ public final class RamUsageEstimator {
     }
 
     cachedInfo = new ClassCache(
-        shallowInstanceSize, 
+        alignObjectSize(shallowInstanceSize), 
         referenceFields.toArray(new Field[referenceFields.size()]));
     return cachedInfo;
   }
@@ -481,32 +545,6 @@ public final class RamUsageEstimator {
     }
   }
 
-  /**
-   * Return deep or shallow size of an <code>array</code>.
-   * 
-   * @param seen A set of already seen objects. If <code>null</code> no references
-   *             are followed and this method returns the equivalent of "shallow" array size.
-   */
-  private static long measureArraySize(Object array, Set<Object> seen, Map<Class<?>, ClassCache> classCache) {
-    long size = NUM_BYTES_ARRAY_HEADER;
-    final int len = Array.getLength(array);
-    if (len > 0) {
-      Class<?> arrayElementClazz = array.getClass().getComponentType();
-      if (arrayElementClazz.isPrimitive()) {
-        size += (long) len * primitiveSizes.get(arrayElementClazz);
-      } else {
-        size += (long) NUM_BYTES_OBJECT_REF * len;
-        if (seen != null) {
-          for (int i = 0; i < len; i++) {
-            size += measureObjectSize(Array.get(array, i), seen, classCache);
-          }
-        }
-      }
-    }
-
-    return alignObjectSize(size);
-  }
-
   /** Return the set of unsupported JVM features that improve the estimation. */
   public static EnumSet<JvmFeature> getUnsupportedFeatures() {
     EnumSet<JvmFeature> unsupported = EnumSet.allOf(JvmFeature.class);
@@ -518,10 +556,6 @@ public final class RamUsageEstimator {
   public static EnumSet<JvmFeature> getSupportedFeatures() {
     return EnumSet.copyOf(supportedFeatures);
   }
-
-  public static final long ONE_KB = 1024;
-  public static final long ONE_MB = ONE_KB * ONE_KB;
-  public static final long ONE_GB = ONE_KB * ONE_MB;
 
   /**
    * Returns <code>size</code> in human-readable units (GB, MB, KB or bytes).
