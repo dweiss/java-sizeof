@@ -6,13 +6,13 @@
   <parent>
     <groupId>org.sonatype.oss</groupId>
     <artifactId>oss-parent</artifactId>
-    <version>5</version>
+    <version>7</version>
   </parent>
 
   <!-- Project info. -->
   <groupId>com.carrotsearch</groupId>
   <artifactId>java-sizeof</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1</version>
   <packaging>jar</packaging>
 
   <name>java-sizeof</name>
