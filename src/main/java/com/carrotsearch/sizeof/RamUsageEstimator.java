@@ -219,17 +219,11 @@ public final class RamUsageEstimator {
         beanClazz
       );
       final Method getVMOptionMethod = beanClazz.getMethod("getVMOption", String.class);
-      try {
-        final Object vmOption = getVMOptionMethod.invoke(hotSpotBean, "ObjectAlignmentInBytes");
-        objectAlignment = Integer.parseInt(
-            vmOption.getClass().getMethod("getValue").invoke(vmOption).toString()
-        );
-        supportedFeatures.add(JvmFeature.OBJECT_ALIGNMENT);        
-      } catch (InvocationTargetException ite) {
-        if (!(ite.getCause() instanceof IllegalArgumentException))
-          throw ite;
-        // ignore the error completely and use default of 8 (32 bit JVMs).
-      }
+      final Object vmOption = getVMOptionMethod.invoke(hotSpotBean, "ObjectAlignmentInBytes");
+      objectAlignment = Integer.parseInt(
+          vmOption.getClass().getMethod("getValue").invoke(vmOption).toString()
+      );
+      supportedFeatures.add(JvmFeature.OBJECT_ALIGNMENT);        
     } catch (Exception e) {
       // Ignore.
     }
@@ -297,6 +291,17 @@ public final class RamUsageEstimator {
    */
   public static long sizeOf(Object obj) {
     return measureObjectSize(obj);
+  }
+
+  /**
+   * Same as {@link #sizeOf(Object)} but sums up all the arguments.
+   */
+  public static long sizeOf(Object... obj) {
+    long sum = 0;
+    for (Object o : obj) {
+      sum += measureObjectSize(o);
+    }
+    return sum;
   }
 
   /** 
