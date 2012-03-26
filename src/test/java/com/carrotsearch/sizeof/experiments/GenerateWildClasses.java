@@ -10,7 +10,7 @@ public class GenerateWildClasses {
   private static int numClasses = 100;
   private static int numInheritanceLevels = 8;
   private static int maxFields = 50;
-  private static int maxPreallocSize = 1000;
+  private static int maxPreallocSize = 64;
 
   public static void main(String[] args) throws Exception {
     Random rnd = new Random(0xdeadbeef);

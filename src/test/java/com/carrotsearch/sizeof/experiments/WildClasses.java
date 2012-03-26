@@ -1,3 +1,4 @@
+
 package com.carrotsearch.sizeof.experiments;
 
 /**
@@ -6,17 +7,17 @@ package com.carrotsearch.sizeof.experiments;
 @SuppressWarnings("unused")
 public final class WildClasses {
   public static class Wild_0_0 {
-               short[] fld_0_0_0 = new short [513];
+               short[] fld_0_0_0 = new short [18];
     public     short fld_1_0_0;
                double fld_2_0_0;
     protected  byte fld_3_0_0;
-    private    int[] fld_4_0_0 = new int [590];
+    private    int[] fld_4_0_0 = new int [29];
     protected  long fld_5_0_0;
     protected  long fld_6_0_0;
   }
 
   public static class Wild_0_1 {
-    public     double[] fld_0_0_1 = new double [228];
+    public     double[] fld_0_0_1 = new double [11];
                int fld_1_0_1;
     private    char fld_2_0_1;
     private    Object fld_3_0_1;
@@ -70,7 +71,7 @@ public final class WildClasses {
     protected  char fld_7_0_6;
     public     double fld_8_0_6;
     protected  double fld_9_0_6;
-    public     boolean[] fld_10_0_6 = new boolean [153];
+    public     boolean[] fld_10_0_6 = new boolean [4];
     public     int fld_11_0_6;
     protected  char fld_12_0_6;
                byte fld_13_0_6;
@@ -84,7 +85,7 @@ public final class WildClasses {
     protected  char fld_3_0_7;
                double fld_4_0_7;
                float fld_5_0_7;
-    private    double[] fld_6_0_7 = new double [905];
+    private    double[] fld_6_0_7 = new double [49];
     private    short fld_7_0_7;
     private    long fld_8_0_7;
     protected  short fld_9_0_7;
@@ -123,7 +124,7 @@ public final class WildClasses {
 
   public static class Wild_0_11 {
     public     char fld_0_0_11;
-    private    byte[] fld_1_0_11 = new byte [555];
+    private    byte[] fld_1_0_11 = new byte [44];
     private    boolean fld_2_0_11;
     protected  double fld_3_0_11;
                int fld_4_0_11;
@@ -134,7 +135,7 @@ public final class WildClasses {
   }
 
   public static class Wild_0_12 {
-               byte[] fld_0_0_12 = new byte [254];
+               byte[] fld_0_0_12 = new byte [45];
     public     char fld_1_0_12;
     private    long fld_2_0_12;
                char fld_3_0_12;
@@ -162,8 +163,8 @@ public final class WildClasses {
     private    boolean fld_0_0_14;
     public     short fld_1_0_14;
     public     Object fld_2_0_14;
-    private    byte[] fld_3_0_14 = new byte [763];
-    protected  byte[] fld_4_0_14 = new byte [316];
+    private    byte[] fld_3_0_14 = new byte [25];
+    protected  byte[] fld_4_0_14 = new byte [20];
                char fld_5_0_14;
     private    byte fld_6_0_14;
     private    double fld_7_0_14;
@@ -171,7 +172,7 @@ public final class WildClasses {
     private    double fld_9_0_14;
     public     float fld_10_0_14;
     public     byte fld_11_0_14;
-    public     short[] fld_12_0_14 = new short [802];
+    public     short[] fld_12_0_14 = new short [43];
     protected  Object fld_13_0_14;
     private    Object fld_14_0_14;
     private    double fld_15_0_14;
@@ -179,7 +180,7 @@ public final class WildClasses {
     private    int fld_17_0_14;
                char fld_18_0_14;
                boolean fld_19_0_14;
-    private    long[] fld_20_0_14 = new long [935];
+    private    long[] fld_20_0_14 = new long [26];
                double fld_21_0_14;
     protected  int fld_22_0_14;
   }
@@ -187,8 +188,8 @@ public final class WildClasses {
   public static class Wild_0_15 {
                int fld_0_0_15;
                short fld_1_0_15;
-    protected  double[] fld_2_0_15 = new double [449];
-               double[] fld_3_0_15 = new double [889];
+    protected  double[] fld_2_0_15 = new double [25];
+               double[] fld_3_0_15 = new double [42];
   }
 
   public static class Wild_0_16 {
@@ -197,7 +198,7 @@ public final class WildClasses {
     private    char fld_2_0_16;
     protected  char fld_3_0_16;
                short fld_4_0_16;
-    public     double[] fld_5_0_16 = new double [277];
+    public     double[] fld_5_0_16 = new double [16];
                double fld_6_0_16;
     private    Object fld_7_0_16;
                long fld_8_0_16;
@@ -217,7 +218,7 @@ public final class WildClasses {
     private    Object fld_10_0_17;
     protected  int fld_11_0_17;
     protected  float fld_12_0_17;
-    private    char[] fld_13_0_17 = new char [426];
+    private    char[] fld_13_0_17 = new char [34];
     private    short fld_14_0_17;
   }
 
@@ -225,7 +226,7 @@ public final class WildClasses {
     public     short fld_0_0_18;
     protected  long fld_1_0_18;
                long fld_2_0_18;
-    protected  short[] fld_3_0_18 = new short [885];
+    protected  short[] fld_3_0_18 = new short [40];
   }
 
   public static class Wild_0_19 {
@@ -241,7 +242,7 @@ public final class WildClasses {
     private    boolean fld_0_0_20;
     public     int fld_1_0_20;
     protected  char fld_2_0_20;
-    protected  Object[] fld_3_0_20 = new Object [491];
+    protected  Object[] fld_3_0_20 = new Object [36];
                double fld_4_0_20;
                byte fld_5_0_20;
     private    Object fld_6_0_20;
@@ -252,7 +253,7 @@ public final class WildClasses {
   public static class Wild_0_21 {
     private    float fld_0_0_21;
     private    Object fld_1_0_21;
-    public     boolean[] fld_2_0_21 = new boolean [78];
+    public     boolean[] fld_2_0_21 = new boolean [16];
     private    short fld_3_0_21;
     protected  long fld_4_0_21;
     public     float fld_5_0_21;
@@ -271,14 +272,14 @@ public final class WildClasses {
   public static class Wild_0_23 {
                char fld_0_0_23;
     protected  int fld_1_0_23;
-    public     short[] fld_2_0_23 = new short [517];
+    public     short[] fld_2_0_23 = new short [19];
   }
 
   public static class Wild_0_24 {
     protected  int fld_0_0_24;
                short fld_1_0_24;
                boolean fld_2_0_24;
-               char[] fld_3_0_24 = new char [878];
+               char[] fld_3_0_24 = new char [57];
     protected  short fld_4_0_24;
     private    short fld_5_0_24;
     protected  byte fld_6_0_24;
@@ -294,7 +295,7 @@ public final class WildClasses {
 
   public static class Wild_0_25 {
     private    char fld_0_0_25;
-    protected  short[] fld_1_0_25 = new short [336];
+    protected  short[] fld_1_0_25 = new short [16];
   }
 
   public static class Wild_0_26 {
@@ -308,7 +309,7 @@ public final class WildClasses {
                byte fld_2_0_27;
     public     Object fld_3_0_27;
     protected  char fld_4_0_27;
-    protected  byte[] fld_5_0_27 = new byte [201];
+    protected  byte[] fld_5_0_27 = new byte [51];
     protected  float fld_6_0_27;
   }
 
@@ -318,7 +319,7 @@ public final class WildClasses {
     protected  double fld_2_0_28;
     protected  boolean fld_3_0_28;
     private    Object fld_4_0_28;
-    private    byte[] fld_5_0_28 = new byte [443];
+    private    byte[] fld_5_0_28 = new byte [35];
     protected  boolean fld_6_0_28;
     public     Object fld_7_0_28;
                double fld_8_0_28;
@@ -334,27 +335,27 @@ public final class WildClasses {
 
   public static class Wild_0_30 {
     public     boolean fld_0_0_30;
-    private    long[] fld_1_0_30 = new long [143];
+    private    long[] fld_1_0_30 = new long [54];
     public     byte fld_2_0_30;
                Object fld_3_0_30;
   }
 
   public static class Wild_0_31 {
                boolean fld_0_0_31;
-    protected  float[] fld_1_0_31 = new float [216];
+    protected  float[] fld_1_0_31 = new float [14];
     public     int fld_2_0_31;
                float fld_3_0_31;
     protected  float fld_4_0_31;
     private    char fld_5_0_31;
     public     short fld_6_0_31;
     public     float fld_7_0_31;
-    private    char[] fld_8_0_31 = new char [207];
+    private    char[] fld_8_0_31 = new char [38];
     private    byte fld_9_0_31;
     public     boolean fld_10_0_31;
                short fld_11_0_31;
                long fld_12_0_31;
     protected  long fld_13_0_31;
-    public     byte[] fld_14_0_31 = new byte [433];
+    public     byte[] fld_14_0_31 = new byte [14];
   }
 
   public static class Wild_0_32 {
@@ -365,7 +366,7 @@ public final class WildClasses {
     protected  short fld_4_0_32;
     private    short fld_5_0_32;
     public     long fld_6_0_32;
-    private    long[] fld_7_0_32 = new long [323];
+    private    long[] fld_7_0_32 = new long [13];
   }
 
   public static class Wild_0_33 {
@@ -381,7 +382,7 @@ public final class WildClasses {
   public static class Wild_0_34 {
     public     boolean fld_0_0_34;
     protected  char fld_1_0_34;
-               byte[] fld_2_0_34 = new byte [552];
+               byte[] fld_2_0_34 = new byte [8];
     protected  Object fld_3_0_34;
                double fld_4_0_34;
     protected  long fld_5_0_34;
@@ -408,7 +409,7 @@ public final class WildClasses {
     protected  short fld_3_0_36;
     public     double fld_4_0_36;
     public     Object fld_5_0_36;
-    private    double[] fld_6_0_36 = new double [65];
+    private    double[] fld_6_0_36 = new double [33];
     private    long fld_7_0_36;
     public     char fld_8_0_36;
     private    long fld_9_0_36;
@@ -444,9 +445,9 @@ public final class WildClasses {
   public static class Wild_0_39 {
     public     double fld_0_0_39;
     private    char fld_1_0_39;
-               Object[] fld_2_0_39 = new Object [986];
+               Object[] fld_2_0_39 = new Object [31];
     protected  char fld_3_0_39;
-               short[] fld_4_0_39 = new short [170];
+               short[] fld_4_0_39 = new short [13];
     private    short fld_5_0_39;
     private    byte fld_6_0_39;
     public     int fld_7_0_39;
@@ -454,7 +455,7 @@ public final class WildClasses {
     protected  short fld_9_0_39;
                short fld_10_0_39;
     protected  long fld_11_0_39;
-    private    short[] fld_12_0_39 = new short [640];
+    private    short[] fld_12_0_39 = new short [19];
     protected  long fld_13_0_39;
   }
 
@@ -489,7 +490,7 @@ public final class WildClasses {
                float fld_1_0_42;
     private    char fld_2_0_42;
     protected  char fld_3_0_42;
-    protected  byte[] fld_4_0_42 = new byte [732];
+    protected  byte[] fld_4_0_42 = new byte [59];
                double fld_5_0_42;
                short fld_6_0_42;
                Object fld_7_0_42;
@@ -504,7 +505,7 @@ public final class WildClasses {
   public static class Wild_0_44 {
     private    int fld_0_0_44;
     public     double fld_1_0_44;
-    private    short[] fld_2_0_44 = new short [233];
+    private    short[] fld_2_0_44 = new short [38];
     private    double fld_3_0_44;
     protected  int fld_4_0_44;
                short fld_5_0_44;
@@ -528,8 +529,8 @@ public final class WildClasses {
     private    int fld_3_0_46;
     protected  int fld_4_0_46;
     protected  Object fld_5_0_46;
-    public     long[] fld_6_0_46 = new long [641];
-    protected  Object[] fld_7_0_46 = new Object [907];
+    public     long[] fld_6_0_46 = new long [12];
+    protected  Object[] fld_7_0_46 = new Object [27];
     private    short fld_8_0_46;
     protected  boolean fld_9_0_46;
   }
@@ -539,7 +540,7 @@ public final class WildClasses {
     protected  long fld_1_0_47;
     protected  Object fld_2_0_47;
                byte fld_3_0_47;
-    private    char[] fld_4_0_47 = new char [525];
+    private    char[] fld_4_0_47 = new char [62];
                Object fld_5_0_47;
     protected  int fld_6_0_47;
                long fld_7_0_47;
@@ -563,9 +564,9 @@ public final class WildClasses {
   public static class Wild_0_49 {
     private    short fld_0_0_49;
     public     short fld_1_0_49;
-               char[] fld_2_0_49 = new char [244];
+               char[] fld_2_0_49 = new char [41];
     protected  short fld_3_0_49;
-    private    byte[] fld_4_0_49 = new byte [501];
+    private    byte[] fld_4_0_49 = new byte [1];
     protected  Object fld_5_0_49;
     public     short fld_6_0_49;
   }
@@ -596,7 +597,7 @@ public final class WildClasses {
     protected  short fld_11_0_51;
     public     short fld_12_0_51;
     private    int fld_13_0_51;
-    public     long[] fld_14_0_51 = new long [928];
+    public     long[] fld_14_0_51 = new long [15];
     private    float fld_15_0_51;
     protected  long fld_16_0_51;
   }
@@ -607,7 +608,7 @@ public final class WildClasses {
                long fld_2_0_52;
                char fld_3_0_52;
     protected  float fld_4_0_52;
-    public     int[] fld_5_0_52 = new int [676];
+    public     int[] fld_5_0_52 = new int [60];
     private    boolean fld_6_0_52;
   }
 
@@ -630,15 +631,15 @@ public final class WildClasses {
                long fld_4_0_54;
     protected  float fld_5_0_54;
     private    boolean fld_6_0_54;
-               double[] fld_7_0_54 = new double [218];
+               double[] fld_7_0_54 = new double [60];
                int fld_8_0_54;
-               boolean[] fld_9_0_54 = new boolean [651];
+               boolean[] fld_9_0_54 = new boolean [36];
   }
 
   public static class Wild_0_55 {
     private    int fld_0_0_55;
     private    short fld_1_0_55;
-               double[] fld_2_0_55 = new double [490];
+               double[] fld_2_0_55 = new double [9];
     public     float fld_3_0_55;
     private    double fld_4_0_55;
     private    char fld_5_0_55;
@@ -658,7 +659,7 @@ public final class WildClasses {
     public     boolean fld_5_0_57;
     private    Object fld_6_0_57;
     private    double fld_7_0_57;
-    protected  Object[] fld_8_0_57 = new Object [621];
+    protected  Object[] fld_8_0_57 = new Object [55];
                char fld_9_0_57;
     public     int fld_10_0_57;
     private    float fld_11_0_57;
@@ -677,8 +678,8 @@ public final class WildClasses {
     protected  long fld_3_0_59;
     protected  Object fld_4_0_59;
     protected  short fld_5_0_59;
-    protected  double[] fld_6_0_59 = new double [338];
-    protected  long[] fld_7_0_59 = new long [165];
+    protected  double[] fld_6_0_59 = new double [63];
+    protected  long[] fld_7_0_59 = new long [29];
     public     char fld_8_0_59;
     protected  int fld_9_0_59;
     protected  int fld_10_0_59;
@@ -696,8 +697,8 @@ public final class WildClasses {
   }
 
   public static class Wild_0_61 {
-    public     byte[] fld_0_0_61 = new byte [245];
-               boolean[] fld_1_0_61 = new boolean [347];
+    public     byte[] fld_0_0_61 = new byte [42];
+               boolean[] fld_1_0_61 = new boolean [45];
     private    Object fld_2_0_61;
     protected  boolean fld_3_0_61;
     protected  byte fld_4_0_61;
@@ -708,7 +709,7 @@ public final class WildClasses {
   }
 
   public static class Wild_0_62 {
-    protected  Object[] fld_0_0_62 = new Object [726];
+    protected  Object[] fld_0_0_62 = new Object [42];
     private    Object fld_1_0_62;
     protected  int fld_2_0_62;
     public     int fld_3_0_62;
@@ -719,7 +720,7 @@ public final class WildClasses {
 
   public static class Wild_0_63 {
                Object fld_0_0_63;
-    protected  int[] fld_1_0_63 = new int [725];
+    protected  int[] fld_1_0_63 = new int [39];
     protected  short fld_2_0_63;
     protected  boolean fld_3_0_63;
                long fld_4_0_63;
@@ -730,7 +731,7 @@ public final class WildClasses {
                int fld_9_0_63;
     protected  boolean fld_10_0_63;
                long fld_11_0_63;
-               short[] fld_12_0_63 = new short [85];
+               short[] fld_12_0_63 = new short [27];
                short fld_13_0_63;
                Object fld_14_0_63;
     protected  char fld_15_0_63;
@@ -763,12 +764,12 @@ public final class WildClasses {
     private    double fld_3_0_65;
     private    boolean fld_4_0_65;
     protected  char fld_5_0_65;
-    public     long[] fld_6_0_65 = new long [734];
+    public     long[] fld_6_0_65 = new long [2];
     private    byte fld_7_0_65;
     public     long fld_8_0_65;
-    protected  Object[] fld_9_0_65 = new Object [694];
+    protected  Object[] fld_9_0_65 = new Object [5];
     private    long fld_10_0_65;
-    public     long[] fld_11_0_65 = new long [655];
+    public     long[] fld_11_0_65 = new long [54];
     protected  float fld_12_0_65;
     private    double fld_13_0_65;
                double fld_14_0_65;
@@ -793,7 +794,7 @@ public final class WildClasses {
     public     long fld_1_0_67;
                boolean fld_2_0_67;
                float fld_3_0_67;
-               int[] fld_4_0_67 = new int [383];
+               int[] fld_4_0_67 = new int [19];
   }
 
   public static class Wild_0_68 {
@@ -802,12 +803,12 @@ public final class WildClasses {
     public     boolean fld_2_0_68;
     private    Object fld_3_0_68;
                int fld_4_0_68;
-               short[] fld_5_0_68 = new short [436];
+               short[] fld_5_0_68 = new short [37];
                long fld_6_0_68;
     public     Object fld_7_0_68;
                char fld_8_0_68;
     protected  float fld_9_0_68;
-               char[] fld_10_0_68 = new char [904];
+               char[] fld_10_0_68 = new char [63];
     public     boolean fld_11_0_68;
     private    int fld_12_0_68;
   }
@@ -825,15 +826,15 @@ public final class WildClasses {
     protected  char fld_4_0_70;
     public     char fld_5_0_70;
     private    int fld_6_0_70;
-    private    char[] fld_7_0_70 = new char [158];
+    private    char[] fld_7_0_70 = new char [35];
   }
 
   public static class Wild_0_71 {
     public     Object fld_0_0_71;
     private    Object fld_1_0_71;
-               short[] fld_2_0_71 = new short [517];
-    public     int[] fld_3_0_71 = new int [460];
-               double[] fld_4_0_71 = new double [901];
+               short[] fld_2_0_71 = new short [31];
+    public     int[] fld_3_0_71 = new int [4];
+               double[] fld_4_0_71 = new double [17];
     protected  byte fld_5_0_71;
                int fld_6_0_71;
                short fld_7_0_71;
@@ -860,7 +861,7 @@ public final class WildClasses {
     protected  char fld_0_0_73;
     public     char fld_1_0_73;
     public     int fld_2_0_73;
-               double[] fld_3_0_73 = new double [369];
+               double[] fld_3_0_73 = new double [62];
     public     char fld_4_0_73;
     public     double fld_5_0_73;
     protected  Object fld_6_0_73;
@@ -936,14 +937,14 @@ public final class WildClasses {
     private    double fld_7_0_79;
     public     int fld_8_0_79;
                boolean fld_9_0_79;
-    protected  boolean[] fld_10_0_79 = new boolean [948];
+    protected  boolean[] fld_10_0_79 = new boolean [61];
   }
 
   public static class Wild_0_80 {
                double fld_0_0_80;
     protected  char fld_1_0_80;
     private    byte fld_2_0_80;
-               int[] fld_3_0_80 = new int [985];
+               int[] fld_3_0_80 = new int [29];
                double fld_4_0_80;
   }
 
@@ -963,7 +964,7 @@ public final class WildClasses {
     public     float fld_2_0_82;
     protected  byte fld_3_0_82;
     protected  double fld_4_0_82;
-               boolean[] fld_5_0_82 = new boolean [600];
+               boolean[] fld_5_0_82 = new boolean [56];
   }
 
   public static class Wild_0_83 {
@@ -1008,12 +1009,12 @@ public final class WildClasses {
                int fld_2_0_87;
     public     Object fld_3_0_87;
     protected  byte fld_4_0_87;
-    protected  float[] fld_5_0_87 = new float [471];
+    protected  float[] fld_5_0_87 = new float [51];
                long fld_6_0_87;
                char fld_7_0_87;
     private    short fld_8_0_87;
     public     double fld_9_0_87;
-               int[] fld_10_0_87 = new int [356];
+               int[] fld_10_0_87 = new int [44];
   }
 
   public static class Wild_0_88 {
@@ -1021,7 +1022,7 @@ public final class WildClasses {
     public     long fld_1_0_88;
     private    char fld_2_0_88;
                byte fld_3_0_88;
-    protected  long[] fld_4_0_88 = new long [376];
+    protected  long[] fld_4_0_88 = new long [17];
                byte fld_5_0_88;
                float fld_6_0_88;
   }
@@ -1037,13 +1038,13 @@ public final class WildClasses {
 
   public static class Wild_0_90 {
     private    byte fld_0_0_90;
-    private    short[] fld_1_0_90 = new short [271];
+    private    short[] fld_1_0_90 = new short [23];
                char fld_2_0_90;
     private    float fld_3_0_90;
   }
 
   public static class Wild_0_91 {
-               short[] fld_0_0_91 = new short [456];
+               short[] fld_0_0_91 = new short [57];
     public     short fld_1_0_91;
     private    boolean fld_2_0_91;
                double fld_3_0_91;
@@ -1056,11 +1057,11 @@ public final class WildClasses {
     protected  short fld_3_0_92;
                byte fld_4_0_92;
     public     short fld_5_0_92;
-    public short fld_6_0_92;
+    private    short fld_6_0_92;
   }
 
   public static class Wild_0_93 {
-    private    char[] fld_0_0_93 = new char [191];
+    private    char[] fld_0_0_93 = new char [51];
     public     double fld_1_0_93;
     private    float fld_2_0_93;
     protected  long fld_3_0_93;
@@ -1097,18 +1098,18 @@ public final class WildClasses {
 
   public static class Wild_0_98 {
     public     byte fld_0_0_98;
-    private    Object[] fld_1_0_98 = new Object [94];
+    private    Object[] fld_1_0_98 = new Object [42];
                double fld_2_0_98;
                float fld_3_0_98;
     protected  long fld_4_0_98;
                byte fld_5_0_98;
-    private    int[] fld_6_0_98 = new int [93];
+    private    int[] fld_6_0_98 = new int [62];
     private    short fld_7_0_98;
     protected  byte fld_8_0_98;
     protected  short fld_9_0_98;
                int fld_10_0_98;
                boolean fld_11_0_98;
-    private    char[] fld_12_0_98 = new char [245];
+    private    char[] fld_12_0_98 = new char [24];
                double fld_13_0_98;
     public     short fld_14_0_98;
                char fld_15_0_98;
@@ -1118,7 +1119,7 @@ public final class WildClasses {
   public static class Wild_0_99 {
                long fld_0_0_99;
                short fld_1_0_99;
-               float[] fld_2_0_99 = new float [518];
+               float[] fld_2_0_99 = new float [32];
     private    int fld_3_0_99;
     private    double fld_4_0_99;
                char fld_5_0_99;
@@ -1128,11 +1129,11 @@ public final class WildClasses {
                double fld_9_0_99;
     protected  int fld_10_0_99;
     private    double fld_11_0_99;
-    public     boolean[] fld_12_0_99 = new boolean [516];
+    public     boolean[] fld_12_0_99 = new boolean [26];
   }
 
   public static class Wild_1_0 extends Wild_0_22 {
-               long[] fld_0_1_0 = new long [221];
+               long[] fld_0_1_0 = new long [41];
                double fld_1_1_0;
     protected  long fld_2_1_0;
     private    char fld_3_1_0;
@@ -1190,10 +1191,10 @@ public final class WildClasses {
     public     int fld_4_1_5;
     public     long fld_5_1_5;
     public     Object fld_6_1_5;
-    private    long[] fld_7_1_5 = new long [237];
+    private    long[] fld_7_1_5 = new long [59];
     protected  double fld_8_1_5;
     protected  byte fld_9_1_5;
-    private    long[] fld_10_1_5 = new long [296];
+    private    long[] fld_10_1_5 = new long [0];
     private    float fld_11_1_5;
   }
 
@@ -1205,7 +1206,7 @@ public final class WildClasses {
     private    char fld_4_1_6;
     public     Object fld_5_1_6;
                char fld_6_1_6;
-    protected  Object[] fld_7_1_6 = new Object [200];
+    protected  Object[] fld_7_1_6 = new Object [36];
                double fld_8_1_6;
     private    int fld_9_1_6;
     private    float fld_10_1_6;
@@ -1231,7 +1232,7 @@ public final class WildClasses {
   }
 
   public static class Wild_1_9 extends Wild_0_49 {
-    protected  short[] fld_0_1_9 = new short [411];
+    protected  short[] fld_0_1_9 = new short [24];
     protected  boolean fld_1_1_9;
     private    boolean fld_2_1_9;
     public     boolean fld_3_1_9;
@@ -1256,29 +1257,29 @@ public final class WildClasses {
     protected  boolean fld_0_1_11;
                double fld_1_1_11;
     protected  short fld_2_1_11;
-    public     long[] fld_3_1_11 = new long [880];
+    public     long[] fld_3_1_11 = new long [44];
     public     int fld_4_1_11;
     protected  long fld_5_1_11;
     protected  Object fld_6_1_11;
     protected  char fld_7_1_11;
-    protected  float[] fld_8_1_11 = new float [605];
+    protected  float[] fld_8_1_11 = new float [2];
     public     short fld_9_1_11;
     public     double fld_10_1_11;
     public     long fld_11_1_11;
     private    long fld_12_1_11;
-    protected  long[] fld_13_1_11 = new long [622];
+    protected  long[] fld_13_1_11 = new long [17];
     protected  int fld_14_1_11;
     public     Object fld_15_1_11;
-    private    long[] fld_16_1_11 = new long [479];
+    private    long[] fld_16_1_11 = new long [32];
                char fld_17_1_11;
   }
 
   public static class Wild_1_12 extends Wild_0_96 {
     protected  long fld_0_1_12;
-               float[] fld_1_1_12 = new float [506];
+               float[] fld_1_1_12 = new float [44];
     public     Object fld_2_1_12;
     protected  Object fld_3_1_12;
-    private    long[] fld_4_1_12 = new long [333];
+    private    long[] fld_4_1_12 = new long [35];
     protected  double fld_5_1_12;
     private    short fld_6_1_12;
   }
@@ -1288,7 +1289,7 @@ public final class WildClasses {
   }
 
   public static class Wild_1_14 extends Wild_0_20 {
-    private    long[] fld_0_1_14 = new long [673];
+    private    long[] fld_0_1_14 = new long [46];
     public     double fld_1_1_14;
     public     int fld_2_1_14;
   }
@@ -1301,22 +1302,22 @@ public final class WildClasses {
     protected  float fld_4_1_15;
                short fld_5_1_15;
                byte fld_6_1_15;
-    public     int[] fld_7_1_15 = new int [158];
+    public     int[] fld_7_1_15 = new int [0];
                short fld_8_1_15;
   }
 
   public static class Wild_1_16 extends Wild_0_37 {
-               float[] fld_0_1_16 = new float [870];
+               float[] fld_0_1_16 = new float [19];
     private    char fld_1_1_16;
                short fld_2_1_16;
                short fld_3_1_16;
-    protected  short[] fld_4_1_16 = new short [223];
+    protected  short[] fld_4_1_16 = new short [19];
   }
 
   public static class Wild_1_17 extends Wild_0_28 {
     protected  long fld_0_1_17;
     private    double fld_1_1_17;
-    protected  int[] fld_2_1_17 = new int [816];
+    protected  int[] fld_2_1_17 = new int [60];
                Object fld_3_1_17;
                short fld_4_1_17;
                short fld_5_1_17;
@@ -1395,12 +1396,12 @@ public final class WildClasses {
     protected  char fld_0_1_26;
     private    float fld_1_1_26;
     public     float fld_2_1_26;
-    protected  long[] fld_3_1_26 = new long [993];
+    protected  long[] fld_3_1_26 = new long [60];
     protected  byte fld_4_1_26;
     private    long fld_5_1_26;
                long fld_6_1_26;
     public     byte fld_7_1_26;
-    protected  char[] fld_8_1_26 = new char [254];
+    protected  char[] fld_8_1_26 = new char [5];
     public     double fld_9_1_26;
     public     char fld_10_1_26;
     public     short fld_11_1_26;
@@ -1421,7 +1422,7 @@ public final class WildClasses {
     protected  boolean fld_10_1_27;
     public     Object fld_11_1_27;
     public     char fld_12_1_27;
-    private    boolean[] fld_13_1_27 = new boolean [781];
+    private    boolean[] fld_13_1_27 = new boolean [58];
     protected  boolean fld_14_1_27;
     public     double fld_15_1_27;
                Object fld_16_1_27;
@@ -1503,8 +1504,8 @@ public final class WildClasses {
     protected  double fld_0_1_35;
     public     boolean fld_1_1_35;
     public     Object fld_2_1_35;
-    protected  char[] fld_3_1_35 = new char [447];
-    protected  Object[] fld_4_1_35 = new Object [474];
+    protected  char[] fld_3_1_35 = new char [1];
+    protected  Object[] fld_4_1_35 = new Object [1];
     public     Object fld_5_1_35;
                short fld_6_1_35;
                long fld_7_1_35;
@@ -1514,7 +1515,7 @@ public final class WildClasses {
     protected  double fld_11_1_35;
     private    long fld_12_1_35;
                short fld_13_1_35;
-    public     boolean[] fld_14_1_35 = new boolean [340];
+    public     boolean[] fld_14_1_35 = new boolean [18];
     private    boolean fld_15_1_35;
     private    float fld_16_1_35;
   }
@@ -1528,7 +1529,7 @@ public final class WildClasses {
     public     char fld_0_1_37;
     protected  int fld_1_1_37;
     protected  byte fld_2_1_37;
-    protected  double[] fld_3_1_37 = new double [503];
+    protected  double[] fld_3_1_37 = new double [61];
     protected  float fld_4_1_37;
     protected  int fld_5_1_37;
     public     double fld_6_1_37;
@@ -1566,12 +1567,12 @@ public final class WildClasses {
                double fld_1_1_42;
     public     float fld_2_1_42;
                byte fld_3_1_42;
-    protected  byte[] fld_4_1_42 = new byte [471];
+    protected  byte[] fld_4_1_42 = new byte [36];
     private    boolean fld_5_1_42;
     protected  byte fld_6_1_42;
     protected  char fld_7_1_42;
                int fld_8_1_42;
-    public     long[] fld_9_1_42 = new long [446];
+    public     long[] fld_9_1_42 = new long [29];
     protected  float fld_10_1_42;
                byte fld_11_1_42;
     public     int fld_12_1_42;
@@ -1603,7 +1604,7 @@ public final class WildClasses {
                boolean fld_6_1_44;
                boolean fld_7_1_44;
     private    char fld_8_1_44;
-               boolean[] fld_9_1_44 = new boolean [487];
+               boolean[] fld_9_1_44 = new boolean [40];
     protected  boolean fld_10_1_44;
     protected  byte fld_11_1_44;
     public     boolean fld_12_1_44;
@@ -1621,7 +1622,7 @@ public final class WildClasses {
     protected  Object fld_5_1_45;
     public     byte fld_6_1_45;
     private    Object fld_7_1_45;
-    protected  byte[] fld_8_1_45 = new byte [619];
+    protected  byte[] fld_8_1_45 = new byte [47];
     private    short fld_9_1_45;
   }
 
@@ -1630,7 +1631,7 @@ public final class WildClasses {
     public     int fld_1_1_46;
     public     boolean fld_2_1_46;
                short fld_3_1_46;
-               double[] fld_4_1_46 = new double [101];
+               double[] fld_4_1_46 = new double [6];
                double fld_5_1_46;
   }
 
@@ -1689,7 +1690,7 @@ public final class WildClasses {
 
   public static class Wild_1_52 extends Wild_0_33 {
     public     int fld_0_1_52;
-    private    double[] fld_1_1_52 = new double [629];
+    private    double[] fld_1_1_52 = new double [43];
     public     short fld_2_1_52;
     protected  long fld_3_1_52;
     private    int fld_4_1_52;
@@ -1699,7 +1700,7 @@ public final class WildClasses {
   }
 
   public static class Wild_1_53 extends Wild_0_63 {
-               long[] fld_0_1_53 = new long [264];
+               long[] fld_0_1_53 = new long [12];
     protected  long fld_1_1_53;
   }
 
@@ -1708,12 +1709,12 @@ public final class WildClasses {
     public     float fld_1_1_54;
     protected  long fld_2_1_54;
     private    int fld_3_1_54;
-    protected  long[] fld_4_1_54 = new long [495];
+    protected  long[] fld_4_1_54 = new long [53];
     public     double fld_5_1_54;
-    public     boolean[] fld_6_1_54 = new boolean [829];
+    public     boolean[] fld_6_1_54 = new boolean [27];
     protected  Object fld_7_1_54;
                long fld_8_1_54;
-    public     float[] fld_9_1_54 = new float [798];
+    public     float[] fld_9_1_54 = new float [24];
                Object fld_10_1_54;
     private    boolean fld_11_1_54;
   }
@@ -1737,7 +1738,7 @@ public final class WildClasses {
                short fld_4_1_57;
                long fld_5_1_57;
     protected  boolean fld_6_1_57;
-    private    byte[] fld_7_1_57 = new byte [394];
+    private    byte[] fld_7_1_57 = new byte [3];
     private    int fld_8_1_57;
     protected  long fld_9_1_57;
     protected  short fld_10_1_57;
@@ -1747,7 +1748,7 @@ public final class WildClasses {
 
   public static class Wild_1_58 extends Wild_0_21 {
     private    byte fld_0_1_58;
-    public     double[] fld_1_1_58 = new double [852];
+    public     double[] fld_1_1_58 = new double [26];
                Object fld_2_1_58;
     private    float fld_3_1_58;
     protected  short fld_4_1_58;
@@ -1782,13 +1783,13 @@ public final class WildClasses {
   public static class Wild_1_61 extends Wild_0_59 {
                int fld_0_1_61;
                float fld_1_1_61;
-    protected  float[] fld_2_1_61 = new float [525];
+    protected  float[] fld_2_1_61 = new float [39];
     protected  int fld_3_1_61;
-    protected  Object[] fld_4_1_61 = new Object [693];
+    protected  Object[] fld_4_1_61 = new Object [25];
     public     double fld_5_1_61;
                byte fld_6_1_61;
     public     short fld_7_1_61;
-    public     boolean[] fld_8_1_61 = new boolean [434];
+    public     boolean[] fld_8_1_61 = new boolean [53];
     protected  float fld_9_1_61;
     public     char fld_10_1_61;
     public     int fld_11_1_61;
@@ -1802,7 +1803,7 @@ public final class WildClasses {
     private    byte fld_2_1_62;
     private    char fld_3_1_62;
     public     long fld_4_1_62;
-    private    float[] fld_5_1_62 = new float [440];
+    private    float[] fld_5_1_62 = new float [16];
   }
 
   public static class Wild_1_63 extends Wild_0_1 {
@@ -1821,18 +1822,18 @@ public final class WildClasses {
 
   public static class Wild_1_65 extends Wild_0_93 {
     protected  long fld_0_1_65;
-    private    long[] fld_1_1_65 = new long [64];
+    private    long[] fld_1_1_65 = new long [43];
     private    Object fld_2_1_65;
     protected  long fld_3_1_65;
                byte fld_4_1_65;
                long fld_5_1_65;
                Object fld_6_1_65;
     protected  double fld_7_1_65;
-               Object[] fld_8_1_65 = new Object [843];
-               short[] fld_9_1_65 = new short [848];
+               Object[] fld_8_1_65 = new Object [9];
+               short[] fld_9_1_65 = new short [50];
                long fld_10_1_65;
                long fld_11_1_65;
-    protected  float[] fld_12_1_65 = new float [295];
+    protected  float[] fld_12_1_65 = new float [24];
     protected  long fld_13_1_65;
   }
 
@@ -1859,7 +1860,7 @@ public final class WildClasses {
     public     byte fld_0_1_68;
     private    Object fld_1_1_68;
                double fld_2_1_68;
-    private    char[] fld_3_1_68 = new char [214];
+    private    char[] fld_3_1_68 = new char [53];
                byte fld_4_1_68;
     protected  long fld_5_1_68;
                Object fld_6_1_68;
@@ -1875,11 +1876,11 @@ public final class WildClasses {
                Object fld_1_1_69;
                int fld_2_1_69;
     public     short fld_3_1_69;
-               short[] fld_4_1_69 = new short [870];
+               short[] fld_4_1_69 = new short [16];
     private    long fld_5_1_69;
     private    int fld_6_1_69;
-    public     Object[] fld_7_1_69 = new Object [229];
-    private    double[] fld_8_1_69 = new double [281];
+    public     Object[] fld_7_1_69 = new Object [9];
+    private    double[] fld_8_1_69 = new double [28];
     protected  Object fld_9_1_69;
     public     double fld_10_1_69;
     public     float fld_11_1_69;
@@ -1889,7 +1890,7 @@ public final class WildClasses {
   public static class Wild_1_70 extends Wild_0_11 {
     public     double fld_0_1_70;
     public     short fld_1_1_70;
-    protected  char[] fld_2_1_70 = new char [558];
+    protected  char[] fld_2_1_70 = new char [33];
                float fld_3_1_70;
     protected  byte fld_4_1_70;
     protected  long fld_5_1_70;
@@ -1947,13 +1948,13 @@ public final class WildClasses {
 
   public static class Wild_1_76 extends Wild_0_27 {
                Object fld_0_1_76;
-    private    boolean[] fld_1_1_76 = new boolean [467];
+    private    boolean[] fld_1_1_76 = new boolean [45];
     private    short fld_2_1_76;
                double fld_3_1_76;
     public     boolean fld_4_1_76;
     public     long fld_5_1_76;
     public     byte fld_6_1_76;
-    protected  float[] fld_7_1_76 = new float [469];
+    protected  float[] fld_7_1_76 = new float [33];
                Object fld_8_1_76;
     public     short fld_9_1_76;
   }
@@ -1968,7 +1969,7 @@ public final class WildClasses {
     public     boolean fld_6_1_77;
     private    float fld_7_1_77;
     private    float fld_8_1_77;
-    private    byte[] fld_9_1_77 = new byte [897];
+    private    byte[] fld_9_1_77 = new byte [62];
     private    int fld_10_1_77;
     public     Object fld_11_1_77;
                boolean fld_12_1_77;
@@ -1998,7 +1999,7 @@ public final class WildClasses {
     protected  short fld_5_1_79;
     protected  int fld_6_1_79;
                int fld_7_1_79;
-    protected  char[] fld_8_1_79 = new char [741];
+    protected  char[] fld_8_1_79 = new char [25];
     protected  byte fld_9_1_79;
     protected  Object fld_10_1_79;
                int fld_11_1_79;
@@ -2060,12 +2061,12 @@ public final class WildClasses {
 
   public static class Wild_1_86 extends Wild_0_0 {
     public     double fld_0_1_86;
-               char[] fld_1_1_86 = new char [656];
+               char[] fld_1_1_86 = new char [50];
     protected  int fld_2_1_86;
     public     Object fld_3_1_86;
     private    Object fld_4_1_86;
                double fld_5_1_86;
-               Object[] fld_6_1_86 = new Object [939];
+               Object[] fld_6_1_86 = new Object [17];
     public     int fld_7_1_86;
     protected  short fld_8_1_86;
   }
@@ -2076,10 +2077,10 @@ public final class WildClasses {
   }
 
   public static class Wild_1_88 extends Wild_0_83 {
-               short[] fld_0_1_88 = new short [60];
+               short[] fld_0_1_88 = new short [52];
                long fld_1_1_88;
     private    boolean fld_2_1_88;
-    private    char[] fld_3_1_88 = new char [265];
+    private    char[] fld_3_1_88 = new char [45];
     protected  float fld_4_1_88;
     private    Object fld_5_1_88;
     public     char fld_6_1_88;
@@ -2116,14 +2117,14 @@ public final class WildClasses {
                float fld_0_1_91;
     private    double fld_1_1_91;
     private    int fld_2_1_91;
-               short[] fld_3_1_91 = new short [883];
+               short[] fld_3_1_91 = new short [51];
     private    double fld_4_1_91;
   }
 
   public static class Wild_1_92 extends Wild_0_70 {
                Object fld_0_1_92;
     private    int fld_1_1_92;
-    private    double[] fld_2_1_92 = new double [887];
+    private    double[] fld_2_1_92 = new double [29];
     public     float fld_3_1_92;
     private    long fld_4_1_92;
   }
@@ -2158,7 +2159,7 @@ public final class WildClasses {
   public static class Wild_1_96 extends Wild_0_98 {
     protected  short fld_0_1_96;
                double fld_1_1_96;
-    private    boolean[] fld_2_1_96 = new boolean [789];
+    private    boolean[] fld_2_1_96 = new boolean [42];
     private    Object fld_3_1_96;
     protected  char fld_4_1_96;
     protected  boolean fld_5_1_96;
@@ -2227,11 +2228,11 @@ public final class WildClasses {
   public static class Wild_2_2 extends Wild_1_66 {
     protected  int fld_0_2_2;
     protected  short fld_1_2_2;
-    protected  long[] fld_2_2_2 = new long [893];
+    protected  long[] fld_2_2_2 = new long [11];
     public     boolean fld_3_2_2;
     public     double fld_4_2_2;
     private    byte fld_5_2_2;
-               int[] fld_6_2_2 = new int [597];
+               int[] fld_6_2_2 = new int [9];
     protected  byte fld_7_2_2;
   }
 
@@ -2261,15 +2262,15 @@ public final class WildClasses {
   }
 
   public static class Wild_2_5 extends Wild_1_85 {
-    public float fld_0_2_5;
+    private    float fld_0_2_5;
   }
 
   public static class Wild_2_6 extends Wild_1_45 {
     protected  short fld_0_2_6;
     public     short fld_1_2_6;
-    public     short[] fld_2_2_6 = new short [177];
+    public     short[] fld_2_2_6 = new short [40];
                short fld_3_2_6;
-    protected  Object[] fld_4_2_6 = new Object [934];
+    protected  Object[] fld_4_2_6 = new Object [3];
     public     float fld_5_2_6;
     protected  int fld_6_2_6;
     public     byte fld_7_2_6;
@@ -2300,7 +2301,7 @@ public final class WildClasses {
     protected  byte fld_2_2_8;
     public     int fld_3_2_8;
     private    short fld_4_2_8;
-               char[] fld_5_2_8 = new char [189];
+               char[] fld_5_2_8 = new char [33];
     protected  long fld_6_2_8;
   }
 
@@ -2314,7 +2315,7 @@ public final class WildClasses {
   }
 
   public static class Wild_2_10 extends Wild_1_79 {
-    public     short[] fld_0_2_10 = new short [245];
+    public     short[] fld_0_2_10 = new short [15];
                Object fld_1_2_10;
     public     double fld_2_2_10;
     protected  boolean fld_3_2_10;
@@ -2339,8 +2340,8 @@ public final class WildClasses {
     public     long fld_0_2_12;
     public     boolean fld_1_2_12;
                short fld_2_2_12;
-    private    long[] fld_3_2_12 = new long [796];
-    public     float[] fld_4_2_12 = new float [787];
+    private    long[] fld_3_2_12 = new long [44];
+    public     float[] fld_4_2_12 = new float [53];
     private    char fld_5_2_12;
     protected  float fld_6_2_12;
     protected  byte fld_7_2_12;
@@ -2363,7 +2364,7 @@ public final class WildClasses {
     protected  int fld_12_2_13;
     private    int fld_13_2_13;
                int fld_14_2_13;
-    public     int[] fld_15_2_13 = new int [491];
+    public     int[] fld_15_2_13 = new int [43];
   }
 
   public static class Wild_2_14 extends Wild_1_80 {
@@ -2403,13 +2404,13 @@ public final class WildClasses {
     protected  byte fld_0_2_18;
                short fld_1_2_18;
                double fld_2_2_18;
-    protected  int[] fld_3_2_18 = new int [170];
+    protected  int[] fld_3_2_18 = new int [7];
     private    int fld_4_2_18;
   }
 
   public static class Wild_2_19 extends Wild_1_81 {
                double fld_0_2_19;
-               double[] fld_1_2_19 = new double [466];
+               double[] fld_1_2_19 = new double [1];
                short fld_2_2_19;
     public     float fld_3_2_19;
     protected  double fld_4_2_19;
@@ -2428,7 +2429,7 @@ public final class WildClasses {
   }
 
   public static class Wild_2_21 extends Wild_1_81 {
-    private    long[] fld_0_2_21 = new long [757];
+    private    long[] fld_0_2_21 = new long [23];
     protected  float fld_1_2_21;
                int fld_2_2_21;
     protected  Object fld_3_2_21;
@@ -2439,7 +2440,7 @@ public final class WildClasses {
     private    boolean fld_0_2_22;
     private    char fld_1_2_22;
     public     Object fld_2_2_22;
-               short[] fld_3_2_22 = new short [179];
+               short[] fld_3_2_22 = new short [4];
     private    Object fld_4_2_22;
                double fld_5_2_22;
     protected  char fld_6_2_22;
@@ -2447,11 +2448,11 @@ public final class WildClasses {
                Object fld_8_2_22;
     protected  int fld_9_2_22;
     public     float fld_10_2_22;
-    private    Object[] fld_11_2_22 = new Object [228];
+    private    Object[] fld_11_2_22 = new Object [49];
   }
 
   public static class Wild_2_23 extends Wild_1_46 {
-    protected  Object[] fld_0_2_23 = new Object [713];
+    protected  Object[] fld_0_2_23 = new Object [11];
     private    float fld_1_2_23;
     public     long fld_2_2_23;
   }
@@ -2480,18 +2481,18 @@ public final class WildClasses {
 
   public static class Wild_2_27 extends Wild_1_58 {
     private    boolean fld_0_2_27;
-    private    long[] fld_1_2_27 = new long [913];
+    private    long[] fld_1_2_27 = new long [11];
   }
 
   public static class Wild_2_28 extends Wild_1_8 {
     private    double fld_0_2_28;
     public     byte fld_1_2_28;
                float fld_2_2_28;
-    protected  byte[] fld_3_2_28 = new byte [767];
+    protected  byte[] fld_3_2_28 = new byte [59];
     public     byte fld_4_2_28;
     public     Object fld_5_2_28;
     public     double fld_6_2_28;
-    private    float[] fld_7_2_28 = new float [276];
+    private    float[] fld_7_2_28 = new float [28];
     public     boolean fld_8_2_28;
     public     boolean fld_9_2_28;
                byte fld_10_2_28;
@@ -2499,7 +2500,7 @@ public final class WildClasses {
 
   public static class Wild_2_29 extends Wild_1_60 {
     private    long fld_0_2_29;
-               float[] fld_1_2_29 = new float [27];
+               float[] fld_1_2_29 = new float [14];
     private    boolean fld_2_2_29;
                char fld_3_2_29;
     private    long fld_4_2_29;
@@ -2518,7 +2519,7 @@ public final class WildClasses {
                byte fld_5_2_30;
     private    short fld_6_2_30;
     public     char fld_7_2_30;
-    private    double[] fld_8_2_30 = new double [811];
+    private    double[] fld_8_2_30 = new double [10];
     public     long fld_9_2_30;
     private    float fld_10_2_30;
   }
@@ -2558,7 +2559,7 @@ public final class WildClasses {
                boolean fld_5_2_32;
     protected  char fld_6_2_32;
     private    boolean fld_7_2_32;
-               byte[] fld_8_2_32 = new byte [43];
+               byte[] fld_8_2_32 = new byte [16];
                Object fld_9_2_32;
     protected  float fld_10_2_32;
     public     Object fld_11_2_32;
@@ -2591,14 +2592,14 @@ public final class WildClasses {
                char fld_3_2_35;
     private    float fld_4_2_35;
                float fld_5_2_35;
-    protected  Object[] fld_6_2_35 = new Object [225];
+    protected  Object[] fld_6_2_35 = new Object [51];
     protected  byte fld_7_2_35;
   }
 
   public static class Wild_2_36 extends Wild_1_29 {
                short fld_0_2_36;
     protected  long fld_1_2_36;
-    private    double[] fld_2_2_36 = new double [917];
+    private    double[] fld_2_2_36 = new double [61];
                Object fld_3_2_36;
     protected  byte fld_4_2_36;
     public     long fld_5_2_36;
@@ -2614,10 +2615,10 @@ public final class WildClasses {
     private    long fld_4_2_37;
     protected  boolean fld_5_2_37;
     private    short fld_6_2_37;
-    protected  int[] fld_7_2_37 = new int [345];
+    protected  int[] fld_7_2_37 = new int [32];
     protected  boolean fld_8_2_37;
                short fld_9_2_37;
-    public     char[] fld_10_2_37 = new char [559];
+    public     char[] fld_10_2_37 = new char [3];
     public     char fld_11_2_37;
     private    float fld_12_2_37;
     protected  int fld_13_2_37;
@@ -2627,8 +2628,8 @@ public final class WildClasses {
 
   public static class Wild_2_38 extends Wild_1_71 {
                long fld_0_2_38;
-    public     byte[] fld_1_2_38 = new byte [636];
-    protected  Object[] fld_2_2_38 = new Object [901];
+    public     byte[] fld_1_2_38 = new byte [1];
+    protected  Object[] fld_2_2_38 = new Object [26];
     public     short fld_3_2_38;
     public     long fld_4_2_38;
     public     double fld_5_2_38;
@@ -2636,7 +2637,7 @@ public final class WildClasses {
   }
 
   public static class Wild_2_39 extends Wild_1_88 {
-               short[] fld_0_2_39 = new short [695];
+               short[] fld_0_2_39 = new short [43];
                Object fld_1_2_39;
     public     double fld_2_2_39;
     protected  float fld_3_2_39;
@@ -2653,15 +2654,15 @@ public final class WildClasses {
     private    float fld_5_2_40;
     protected  boolean fld_6_2_40;
     protected  double fld_7_2_40;
-    public     short[] fld_8_2_40 = new short [375];
-    protected  float[] fld_9_2_40 = new float [353];
+    public     short[] fld_8_2_40 = new short [21];
+    protected  float[] fld_9_2_40 = new float [59];
                int fld_10_2_40;
     private    byte fld_11_2_40;
     public     Object fld_12_2_40;
   }
 
   public static class Wild_2_41 extends Wild_1_99 {
-               Object[] fld_0_2_41 = new Object [938];
+               Object[] fld_0_2_41 = new Object [44];
     protected  double fld_1_2_41;
     protected  short fld_2_2_41;
                double fld_3_2_41;
@@ -2696,12 +2697,12 @@ public final class WildClasses {
     public     char fld_0_2_43;
                boolean fld_1_2_43;
     public     float fld_2_2_43;
-    protected  double[] fld_3_2_43 = new double [825];
+    protected  double[] fld_3_2_43 = new double [57];
     public     long fld_4_2_43;
     protected  long fld_5_2_43;
                int fld_6_2_43;
     public     int fld_7_2_43;
-    private    byte[] fld_8_2_43 = new byte [190];
+    private    byte[] fld_8_2_43 = new byte [53];
     public     int fld_9_2_43;
   }
 
@@ -2711,13 +2712,13 @@ public final class WildClasses {
     protected  Object fld_2_2_44;
                int fld_3_2_44;
                int fld_4_2_44;
-    protected  short[] fld_5_2_44 = new short [280];
+    protected  short[] fld_5_2_44 = new short [14];
     private    double fld_6_2_44;
     protected  int fld_7_2_44;
     private    Object fld_8_2_44;
     public     byte fld_9_2_44;
                long fld_10_2_44;
-    private    char[] fld_11_2_44 = new char [690];
+    private    char[] fld_11_2_44 = new char [56];
     public     boolean fld_12_2_44;
     private    byte fld_13_2_44;
     public     byte fld_14_2_44;
@@ -2774,25 +2775,25 @@ public final class WildClasses {
                long fld_7_2_48;
     public     short fld_8_2_48;
     private    long fld_9_2_48;
-    private    float[] fld_10_2_48 = new float [175];
+    private    float[] fld_10_2_48 = new float [48];
     private    float fld_11_2_48;
     public     Object fld_12_2_48;
     public     char fld_13_2_48;
                byte fld_14_2_48;
                char fld_15_2_48;
     protected  Object fld_16_2_48;
-    protected  long[] fld_17_2_48 = new long [504];
+    protected  long[] fld_17_2_48 = new long [24];
   }
 
   public static class Wild_2_49 extends Wild_1_86 {
     protected  short fld_0_2_49;
-    private    double[] fld_1_2_49 = new double [424];
+    private    double[] fld_1_2_49 = new double [8];
     protected  char fld_2_2_49;
                boolean fld_3_2_49;
                char fld_4_2_49;
                Object fld_5_2_49;
     protected  double fld_6_2_49;
-    private    byte[] fld_7_2_49 = new byte [907];
+    private    byte[] fld_7_2_49 = new byte [60];
     protected  char fld_8_2_49;
     protected  int fld_9_2_49;
     public     short fld_10_2_49;
@@ -2814,11 +2815,11 @@ public final class WildClasses {
     protected  int fld_1_2_51;
     protected  long fld_2_2_51;
     protected  boolean fld_3_2_51;
-    protected  Object[] fld_4_2_51 = new Object [529];
+    protected  Object[] fld_4_2_51 = new Object [42];
     private    double fld_5_2_51;
     public     boolean fld_6_2_51;
                long fld_7_2_51;
-    private    char[] fld_8_2_51 = new char [270];
+    private    char[] fld_8_2_51 = new char [37];
                Object fld_9_2_51;
                boolean fld_10_2_51;
     private    Object fld_11_2_51;
@@ -2829,7 +2830,7 @@ public final class WildClasses {
   public static class Wild_2_52 extends Wild_1_23 {
     protected  byte fld_0_2_52;
     public     Object fld_1_2_52;
-    protected  double[] fld_2_2_52 = new double [8];
+    protected  double[] fld_2_2_52 = new double [45];
     protected  long fld_3_2_52;
     private    int fld_4_2_52;
     public     char fld_5_2_52;
@@ -2838,7 +2839,7 @@ public final class WildClasses {
 
   public static class Wild_2_53 extends Wild_1_47 {
     protected  Object fld_0_2_53;
-               char[] fld_1_2_53 = new char [178];
+               char[] fld_1_2_53 = new char [10];
     public     Object fld_2_2_53;
                short fld_3_2_53;
   }
@@ -2847,7 +2848,7 @@ public final class WildClasses {
     private    double fld_0_2_54;
     protected  float fld_1_2_54;
     public     boolean fld_2_2_54;
-    private    double[] fld_3_2_54 = new double [708];
+    private    double[] fld_3_2_54 = new double [23];
   }
 
   public static class Wild_2_55 extends Wild_1_78 {
@@ -2858,8 +2859,8 @@ public final class WildClasses {
     private    short fld_4_2_55;
                byte fld_5_2_55;
     public     char fld_6_2_55;
-    private    double[] fld_7_2_55 = new double [427];
-               double[] fld_8_2_55 = new double [291];
+    private    double[] fld_7_2_55 = new double [4];
+               double[] fld_8_2_55 = new double [61];
                double fld_9_2_55;
     public     int fld_10_2_55;
     private    byte fld_11_2_55;
@@ -2867,7 +2868,7 @@ public final class WildClasses {
 
   public static class Wild_2_56 extends Wild_1_17 {
     private    short fld_0_2_56;
-    private    char[] fld_1_2_56 = new char [387];
+    private    char[] fld_1_2_56 = new char [56];
                char fld_2_2_56;
     protected  char fld_3_2_56;
   }
@@ -2886,7 +2887,7 @@ public final class WildClasses {
     public     Object fld_10_2_57;
     protected  short fld_11_2_57;
     public     short fld_12_2_57;
-    protected  long[] fld_13_2_57 = new long [250];
+    protected  long[] fld_13_2_57 = new long [9];
     protected  double fld_14_2_57;
     private    boolean fld_15_2_57;
     protected  short fld_16_2_57;
@@ -2909,14 +2910,14 @@ public final class WildClasses {
 
   public static class Wild_2_60 extends Wild_1_12 {
     private    Object fld_0_2_60;
-    protected  int[] fld_1_2_60 = new int [459];
+    protected  int[] fld_1_2_60 = new int [23];
     public     double fld_2_2_60;
     protected  byte fld_3_2_60;
   }
 
   public static class Wild_2_61 extends Wild_1_87 {
     private    byte fld_0_2_61;
-               boolean[] fld_1_2_61 = new boolean [4];
+               boolean[] fld_1_2_61 = new boolean [21];
     private    long fld_2_2_61;
     private    Object fld_3_2_61;
     protected  Object fld_4_2_61;
@@ -2955,7 +2956,7 @@ public final class WildClasses {
                boolean fld_7_2_63;
     private    byte fld_8_2_63;
                long fld_9_2_63;
-    private    byte[] fld_10_2_63 = new byte [565];
+    private    byte[] fld_10_2_63 = new byte [56];
                Object fld_11_2_63;
     protected  char fld_12_2_63;
                Object fld_13_2_63;
@@ -2981,7 +2982,7 @@ public final class WildClasses {
     public     Object fld_3_2_66;
     public     boolean fld_4_2_66;
     private    float fld_5_2_66;
-    private    Object[] fld_6_2_66 = new Object [494];
+    private    Object[] fld_6_2_66 = new Object [63];
   }
 
   public static class Wild_2_67 extends Wild_1_33 {
@@ -2990,10 +2991,10 @@ public final class WildClasses {
 
   public static class Wild_2_68 extends Wild_1_98 {
     public     float fld_0_2_68;
-    public     int[] fld_1_2_68 = new int [696];
-    protected  float[] fld_2_2_68 = new float [113];
+    public     int[] fld_1_2_68 = new int [55];
+    protected  float[] fld_2_2_68 = new float [17];
     protected  short fld_3_2_68;
-    protected  int[] fld_4_2_68 = new int [653];
+    protected  int[] fld_4_2_68 = new int [0];
     protected  float fld_5_2_68;
                byte fld_6_2_68;
     public     boolean fld_7_2_68;
@@ -3008,7 +3009,7 @@ public final class WildClasses {
                boolean fld_0_2_70;
     public     double fld_1_2_70;
     private    Object fld_2_2_70;
-    private    float[] fld_3_2_70 = new float [765];
+    private    float[] fld_3_2_70 = new float [47];
     public     int fld_4_2_70;
     protected  Object fld_5_2_70;
     protected  byte fld_6_2_70;
@@ -3024,7 +3025,7 @@ public final class WildClasses {
     public     boolean fld_3_2_71;
     private    byte fld_4_2_71;
     private    long fld_5_2_71;
-    public     Object[] fld_6_2_71 = new Object [273];
+    public     Object[] fld_6_2_71 = new Object [18];
   }
 
   public static class Wild_2_72 extends Wild_1_78 {
@@ -3034,7 +3035,7 @@ public final class WildClasses {
     protected  boolean fld_3_2_72;
     protected  short fld_4_2_72;
     private    short fld_5_2_72;
-    protected  double[] fld_6_2_72 = new double [492];
+    protected  double[] fld_6_2_72 = new double [41];
     public     float fld_7_2_72;
                boolean fld_8_2_72;
   }
@@ -3058,7 +3059,7 @@ public final class WildClasses {
     private    Object fld_8_2_74;
     protected  float fld_9_2_74;
     protected  float fld_10_2_74;
-    protected  Object[] fld_11_2_74 = new Object [893];
+    protected  Object[] fld_11_2_74 = new Object [40];
                byte fld_12_2_74;
   }
 
@@ -3084,25 +3085,25 @@ public final class WildClasses {
     protected  short fld_3_2_76;
     public     float fld_4_2_76;
                boolean fld_5_2_76;
-               long[] fld_6_2_76 = new long [995];
+               long[] fld_6_2_76 = new long [36];
                int fld_7_2_76;
                long fld_8_2_76;
   }
 
   public static class Wild_2_77 extends Wild_1_8 {
-    private    byte[] fld_0_2_77 = new byte [35];
+    private    byte[] fld_0_2_77 = new byte [52];
   }
 
   public static class Wild_2_78 extends Wild_1_0 {
-    private    int[] fld_0_2_78 = new int [455];
+    private    int[] fld_0_2_78 = new int [48];
                long fld_1_2_78;
   }
 
   public static class Wild_2_79 extends Wild_1_53 {
                long fld_0_2_79;
     private    Object fld_1_2_79;
-    public     float[] fld_2_2_79 = new float [974];
-    protected  char[] fld_3_2_79 = new char [93];
+    public     float[] fld_2_2_79 = new float [26];
+    protected  char[] fld_3_2_79 = new char [14];
     public     double fld_4_2_79;
     public     Object fld_5_2_79;
   }
@@ -3117,7 +3118,7 @@ public final class WildClasses {
   }
 
   public static class Wild_2_81 extends Wild_1_78 {
-               Object[] fld_0_2_81 = new Object [906];
+               Object[] fld_0_2_81 = new Object [36];
     private    long fld_1_2_81;
                long fld_2_2_81;
   }
@@ -3133,9 +3134,9 @@ public final class WildClasses {
     protected  int fld_3_2_83;
     private    int fld_4_2_83;
     private    Object fld_5_2_83;
-    private    short[] fld_6_2_83 = new short [431];
+    private    short[] fld_6_2_83 = new short [44];
     private    float fld_7_2_83;
-    public     int[] fld_8_2_83 = new int [222];
+    public     int[] fld_8_2_83 = new int [60];
                byte fld_9_2_83;
     public     Object fld_10_2_83;
   }
@@ -3160,7 +3161,7 @@ public final class WildClasses {
 
   public static class Wild_2_85 extends Wild_1_80 {
     protected  byte fld_0_2_85;
-    protected  char[] fld_1_2_85 = new char [244];
+    protected  char[] fld_1_2_85 = new char [31];
     private    double fld_2_2_85;
                double fld_3_2_85;
     private    short fld_4_2_85;
@@ -3170,7 +3171,7 @@ public final class WildClasses {
     public     char fld_8_2_85;
     private    double fld_9_2_85;
     public     int fld_10_2_85;
-               Object[] fld_11_2_85 = new Object [671];
+               Object[] fld_11_2_85 = new Object [56];
   }
 
   public static class Wild_2_86 extends Wild_1_68 {
@@ -3179,13 +3180,13 @@ public final class WildClasses {
     public     byte fld_2_2_86;
     public     char fld_3_2_86;
     private    byte fld_4_2_86;
-    protected  double[] fld_5_2_86 = new double [0];
+    protected  double[] fld_5_2_86 = new double [12];
   }
 
   public static class Wild_2_87 extends Wild_1_10 {
     private    float fld_0_2_87;
                boolean fld_1_2_87;
-    private    double[] fld_2_2_87 = new double [138];
+    private    double[] fld_2_2_87 = new double [57];
   }
 
   public static class Wild_2_88 extends Wild_1_94 {
@@ -3197,7 +3198,7 @@ public final class WildClasses {
     private    float fld_5_2_88;
     public     int fld_6_2_88;
     private    char fld_7_2_88;
-    private    Object[] fld_8_2_88 = new Object [512];
+    private    Object[] fld_8_2_88 = new Object [47];
     protected  Object fld_9_2_88;
     public     int fld_10_2_88;
     private    float fld_11_2_88;
@@ -3208,9 +3209,9 @@ public final class WildClasses {
 
   public static class Wild_2_89 extends Wild_1_3 {
     protected  char fld_0_2_89;
-    protected  char[] fld_1_2_89 = new char [643];
+    protected  char[] fld_1_2_89 = new char [42];
     protected  short fld_2_2_89;
-    protected  boolean[] fld_3_2_89 = new boolean [658];
+    protected  boolean[] fld_3_2_89 = new boolean [30];
     public     double fld_4_2_89;
     private    short fld_5_2_89;
   }
@@ -3264,9 +3265,9 @@ public final class WildClasses {
     public     char fld_6_2_95;
     public     Object fld_7_2_95;
     protected  long fld_8_2_95;
-    protected  float[] fld_9_2_95 = new float [869];
-    protected  double[] fld_10_2_95 = new double [648];
-    public     double[] fld_11_2_95 = new double [982];
+    protected  float[] fld_9_2_95 = new float [5];
+    protected  double[] fld_10_2_95 = new double [47];
+    public     double[] fld_11_2_95 = new double [0];
   }
 
   public static class Wild_2_96 extends Wild_1_35 {
@@ -3314,7 +3315,7 @@ public final class WildClasses {
                byte fld_2_3_0;
     protected  int fld_3_3_0;
                short fld_4_3_0;
-    protected  double[] fld_5_3_0 = new double [397];
+    protected  double[] fld_5_3_0 = new double [4];
                double fld_6_3_0;
     private    short fld_7_3_0;
                float fld_8_3_0;
@@ -3328,7 +3329,7 @@ public final class WildClasses {
   }
 
   public static class Wild_3_2 extends Wild_2_97 {
-    private    long[] fld_0_3_2 = new long [472];
+    private    long[] fld_0_3_2 = new long [10];
     protected  byte fld_1_3_2;
     public     byte fld_2_3_2;
     public     boolean fld_3_3_2;
@@ -3343,7 +3344,7 @@ public final class WildClasses {
     protected  double fld_2_3_3;
     public     char fld_3_3_3;
     protected  long fld_4_3_3;
-    protected  double[] fld_5_3_3 = new double [171];
+    protected  double[] fld_5_3_3 = new double [23];
                long fld_6_3_3;
                short fld_7_3_3;
     private    char fld_8_3_3;
@@ -3351,7 +3352,7 @@ public final class WildClasses {
 
   public static class Wild_3_4 extends Wild_2_39 {
     public     long fld_0_3_4;
-    private    int[] fld_1_3_4 = new int [178];
+    private    int[] fld_1_3_4 = new int [26];
     public     short fld_2_3_4;
                float fld_3_3_4;
     private    byte fld_4_3_4;
@@ -3366,13 +3367,13 @@ public final class WildClasses {
   }
 
   public static class Wild_3_6 extends Wild_2_47 {
-               long[] fld_0_3_6 = new long [997];
+               long[] fld_0_3_6 = new long [32];
     protected  double fld_1_3_6;
     protected  float fld_2_3_6;
                float fld_3_3_6;
     private    Object fld_4_3_6;
     protected  float fld_5_3_6;
-               long[] fld_6_3_6 = new long [534];
+               long[] fld_6_3_6 = new long [49];
     public     byte fld_7_3_6;
     protected  Object fld_8_3_6;
     public     long fld_9_3_6;
@@ -3392,9 +3393,9 @@ public final class WildClasses {
     public     byte fld_1_3_8;
     public     double fld_2_3_8;
     private    char fld_3_3_8;
-    private    long[] fld_4_3_8 = new long [816];
+    private    long[] fld_4_3_8 = new long [52];
                int fld_5_3_8;
-    public     Object[] fld_6_3_8 = new Object [900];
+    public     Object[] fld_6_3_8 = new Object [29];
     protected  double fld_7_3_8;
     private    double fld_8_3_8;
                char fld_9_3_8;
@@ -3417,7 +3418,7 @@ public final class WildClasses {
                float fld_0_3_10;
     protected  Object fld_1_3_10;
                boolean fld_2_3_10;
-    private    long[] fld_3_3_10 = new long [852];
+    private    long[] fld_3_3_10 = new long [49];
     protected  int fld_4_3_10;
     protected  double fld_5_3_10;
                char fld_6_3_10;
@@ -3429,7 +3430,7 @@ public final class WildClasses {
     private    byte fld_0_3_11;
                Object fld_1_3_11;
                char fld_2_3_11;
-    public     long[] fld_3_3_11 = new long [684];
+    public     long[] fld_3_3_11 = new long [28];
   }
 
   public static class Wild_3_12 extends Wild_2_27 {
@@ -3474,7 +3475,7 @@ public final class WildClasses {
     public     boolean fld_2_3_16;
     public     byte fld_3_3_16;
                long fld_4_3_16;
-    private    boolean[] fld_5_3_16 = new boolean [733];
+    private    boolean[] fld_5_3_16 = new boolean [23];
                double fld_6_3_16;
     private    double fld_7_3_16;
     public     Object fld_8_3_16;
@@ -3484,13 +3485,13 @@ public final class WildClasses {
 
   public static class Wild_3_17 extends Wild_2_63 {
                byte fld_0_3_17;
-               boolean[] fld_1_3_17 = new boolean [981];
+               boolean[] fld_1_3_17 = new boolean [21];
     protected  float fld_2_3_17;
-    private    int[] fld_3_3_17 = new int [658];
-    private    long[] fld_4_3_17 = new long [681];
+    private    int[] fld_3_3_17 = new int [28];
+    private    long[] fld_4_3_17 = new long [16];
     private    byte fld_5_3_17;
                short fld_6_3_17;
-    protected  int[] fld_7_3_17 = new int [127];
+    protected  int[] fld_7_3_17 = new int [32];
   }
 
   public static class Wild_3_18 extends Wild_2_54 {
@@ -3499,7 +3500,7 @@ public final class WildClasses {
     protected  Object fld_2_3_18;
     protected  long fld_3_3_18;
     private    byte fld_4_3_18;
-    private    double[] fld_5_3_18 = new double [135];
+    private    double[] fld_5_3_18 = new double [32];
     public     char fld_6_3_18;
   }
 
@@ -3541,7 +3542,7 @@ public final class WildClasses {
     private    byte fld_2_3_24;
     protected  int fld_3_3_24;
     protected  long fld_4_3_24;
-    public     float[] fld_5_3_24 = new float [491];
+    public     float[] fld_5_3_24 = new float [13];
     protected  short fld_6_3_24;
   }
 
@@ -3549,9 +3550,9 @@ public final class WildClasses {
     public     Object fld_0_3_25;
     private    long fld_1_3_25;
                short fld_2_3_25;
-    protected  Object[] fld_3_3_25 = new Object [721];
+    protected  Object[] fld_3_3_25 = new Object [29];
     protected  byte fld_4_3_25;
-    public     long[] fld_5_3_25 = new long [530];
+    public     long[] fld_5_3_25 = new long [5];
     protected  byte fld_6_3_25;
     public     boolean fld_7_3_25;
     private    long fld_8_3_25;
@@ -3566,7 +3567,7 @@ public final class WildClasses {
                char fld_5_3_26;
     public     boolean fld_6_3_26;
     private    int fld_7_3_26;
-    public     byte[] fld_8_3_26 = new byte [740];
+    public     byte[] fld_8_3_26 = new byte [44];
                Object fld_9_3_26;
   }
 
@@ -3581,7 +3582,7 @@ public final class WildClasses {
     protected  long fld_1_3_28;
     protected  boolean fld_2_3_28;
     private    float fld_3_3_28;
-               int[] fld_4_3_28 = new int [602];
+               int[] fld_4_3_28 = new int [7];
     private    Object fld_5_3_28;
     protected  long fld_6_3_28;
     protected  byte fld_7_3_28;
@@ -3601,12 +3602,12 @@ public final class WildClasses {
   public static class Wild_3_30 extends Wild_2_22 {
     public     char fld_0_3_30;
     protected  int fld_1_3_30;
-               byte[] fld_2_3_30 = new byte [145];
+               byte[] fld_2_3_30 = new byte [42];
     private    int fld_3_3_30;
                long fld_4_3_30;
-    public     byte[] fld_5_3_30 = new byte [201];
+    public     byte[] fld_5_3_30 = new byte [31];
     private    char fld_6_3_30;
-    private    Object[] fld_7_3_30 = new Object [682];
+    private    Object[] fld_7_3_30 = new Object [40];
     protected  float fld_8_3_30;
     public     boolean fld_9_3_30;
     public     int fld_10_3_30;
@@ -3636,10 +3637,10 @@ public final class WildClasses {
 
   public static class Wild_3_33 extends Wild_2_75 {
                long fld_0_3_33;
-               short[] fld_1_3_33 = new short [303];
+               short[] fld_1_3_33 = new short [22];
     public     float fld_2_3_33;
     public     int fld_3_3_33;
-    protected  byte[] fld_4_3_33 = new byte [598];
+    protected  byte[] fld_4_3_33 = new byte [37];
   }
 
   public static class Wild_3_34 extends Wild_2_14 {
@@ -3690,7 +3691,7 @@ public final class WildClasses {
                long fld_6_3_39;
     private    char fld_7_3_39;
     private    Object fld_8_3_39;
-    private    int[] fld_9_3_39 = new int [762];
+    private    int[] fld_9_3_39 = new int [57];
     protected  float fld_10_3_39;
     public     double fld_11_3_39;
                short fld_12_3_39;
@@ -3720,7 +3721,7 @@ public final class WildClasses {
     protected  char fld_7_3_41;
     protected  double fld_8_3_41;
     public     char fld_9_3_41;
-               short[] fld_10_3_41 = new short [323];
+               short[] fld_10_3_41 = new short [53];
     private    char fld_11_3_41;
     private    byte fld_12_3_41;
     private    short fld_13_3_41;
@@ -3728,7 +3729,7 @@ public final class WildClasses {
 
   public static class Wild_3_42 extends Wild_2_59 {
     private    char fld_0_3_42;
-    public     short[] fld_1_3_42 = new short [398];
+    public     short[] fld_1_3_42 = new short [48];
     public     double fld_2_3_42;
                float fld_3_3_42;
     protected  boolean fld_4_3_42;
@@ -3739,11 +3740,11 @@ public final class WildClasses {
     protected  long fld_9_3_42;
     public     Object fld_10_3_42;
     protected  Object fld_11_3_42;
-    public     long[] fld_12_3_42 = new long [811];
+    public     long[] fld_12_3_42 = new long [48];
     protected  double fld_13_3_42;
     public     byte fld_14_3_42;
     public     int fld_15_3_42;
-    private    Object[] fld_16_3_42 = new Object [727];
+    private    Object[] fld_16_3_42 = new Object [52];
     private    byte fld_17_3_42;
   }
 
@@ -3766,12 +3767,12 @@ public final class WildClasses {
     private    float fld_3_3_44;
     public     float fld_4_3_44;
     private    boolean fld_5_3_44;
-    public     float[] fld_6_3_44 = new float [12];
+    public     float[] fld_6_3_44 = new float [40];
   }
 
   public static class Wild_3_45 extends Wild_2_28 {
                char fld_0_3_45;
-    private    float[] fld_1_3_45 = new float [151];
+    private    float[] fld_1_3_45 = new float [25];
     public     long fld_2_3_45;
     protected  char fld_3_3_45;
                Object fld_4_3_45;
@@ -3809,7 +3810,7 @@ public final class WildClasses {
   public static class Wild_3_49 extends Wild_2_94 {
     private    float fld_0_3_49;
     protected  char fld_1_3_49;
-    protected  short[] fld_2_3_49 = new short [881];
+    protected  short[] fld_2_3_49 = new short [21];
                short fld_3_3_49;
     public     byte fld_4_3_49;
                long fld_5_3_49;
@@ -3822,12 +3823,12 @@ public final class WildClasses {
     private    int fld_0_3_50;
                char fld_1_3_50;
     protected  double fld_2_3_50;
-    protected  boolean[] fld_3_3_50 = new boolean [5];
-    protected  Object[] fld_4_3_50 = new Object [494];
+    protected  boolean[] fld_3_3_50 = new boolean [40];
+    protected  Object[] fld_4_3_50 = new Object [17];
     public     int fld_5_3_50;
     private    float fld_6_3_50;
     public     short fld_7_3_50;
-               char[] fld_8_3_50 = new char [328];
+               char[] fld_8_3_50 = new char [12];
                int fld_9_3_50;
   }
 
@@ -3835,7 +3836,7 @@ public final class WildClasses {
     private    long fld_0_3_51;
     public     char fld_1_3_51;
                char fld_2_3_51;
-    private    byte[] fld_3_3_51 = new byte [906];
+    private    byte[] fld_3_3_51 = new byte [3];
   }
 
   public static class Wild_3_52 extends Wild_2_73 {
@@ -3846,7 +3847,7 @@ public final class WildClasses {
     public     long fld_4_3_52;
     private    char fld_5_3_52;
     public     Object fld_6_3_52;
-               float[] fld_7_3_52 = new float [395];
+               float[] fld_7_3_52 = new float [19];
     protected  long fld_8_3_52;
   }
 
@@ -3857,23 +3858,23 @@ public final class WildClasses {
     public     float fld_3_3_53;
     protected  float fld_4_3_53;
     private    char fld_5_3_53;
-    private    char[] fld_6_3_53 = new char [254];
+    private    char[] fld_6_3_53 = new char [2];
     protected  boolean fld_7_3_53;
     protected  char fld_8_3_53;
                Object fld_9_3_53;
-    private    short[] fld_10_3_53 = new short [126];
+    private    short[] fld_10_3_53 = new short [63];
     private    float fld_11_3_53;
-    private    float[] fld_12_3_53 = new float [758];
+    private    float[] fld_12_3_53 = new float [56];
   }
 
   public static class Wild_3_54 extends Wild_2_54 {
                long fld_0_3_54;
     protected  double fld_1_3_54;
     protected  boolean fld_2_3_54;
-    public     char[] fld_3_3_54 = new char [916];
+    public     char[] fld_3_3_54 = new char [37];
     protected  boolean fld_4_3_54;
     protected  float fld_5_3_54;
-    protected  short[] fld_6_3_54 = new short [58];
+    protected  short[] fld_6_3_54 = new short [52];
     private    byte fld_7_3_54;
                float fld_8_3_54;
   }
@@ -3900,10 +3901,10 @@ public final class WildClasses {
     protected  long fld_1_3_57;
     protected  char fld_2_3_57;
     public     double fld_3_3_57;
-               Object[] fld_4_3_57 = new Object [780];
+               Object[] fld_4_3_57 = new Object [17];
                boolean fld_5_3_57;
     private    long fld_6_3_57;
-               int[] fld_7_3_57 = new int [1];
+               int[] fld_7_3_57 = new int [28];
     protected  short fld_8_3_57;
   }
 
@@ -3913,16 +3914,16 @@ public final class WildClasses {
     public     int fld_2_3_58;
     private    int fld_3_3_58;
     public     int fld_4_3_58;
-    public     long[] fld_5_3_58 = new long [562];
+    public     long[] fld_5_3_58 = new long [0];
     private    short fld_6_3_58;
   }
 
   public static class Wild_3_59 extends Wild_2_16 {
-    protected  boolean[] fld_0_3_59 = new boolean [967];
-    protected  char[] fld_1_3_59 = new char [979];
+    protected  boolean[] fld_0_3_59 = new boolean [19];
+    protected  char[] fld_1_3_59 = new char [53];
                char fld_2_3_59;
     protected  int fld_3_3_59;
-    private    int[] fld_4_3_59 = new int [295];
+    private    int[] fld_4_3_59 = new int [13];
                float fld_5_3_59;
     private    Object fld_6_3_59;
     protected  short fld_7_3_59;
@@ -3942,14 +3943,14 @@ public final class WildClasses {
     public     double fld_5_3_60;
     public     short fld_6_3_60;
                char fld_7_3_60;
-    public     Object[] fld_8_3_60 = new Object [19];
+    public     Object[] fld_8_3_60 = new Object [56];
     private    double fld_9_3_60;
     protected  short fld_10_3_60;
     protected  int fld_11_3_60;
     public     Object fld_12_3_60;
                int fld_13_3_60;
     protected  long fld_14_3_60;
-    private    boolean[] fld_15_3_60 = new boolean [311];
+    private    boolean[] fld_15_3_60 = new boolean [42];
     private    Object fld_16_3_60;
     public     double fld_17_3_60;
     private    short fld_18_3_60;
@@ -3958,10 +3959,10 @@ public final class WildClasses {
   public static class Wild_3_61 extends Wild_2_32 {
     protected  int fld_0_3_61;
     protected  char fld_1_3_61;
-    protected  long[] fld_2_3_61 = new long [949];
+    protected  long[] fld_2_3_61 = new long [5];
     private    double fld_3_3_61;
     protected  long fld_4_3_61;
-    protected  int[] fld_5_3_61 = new int [262];
+    protected  int[] fld_5_3_61 = new int [24];
   }
 
   public static class Wild_3_62 extends Wild_2_28 {
@@ -3971,7 +3972,7 @@ public final class WildClasses {
   }
 
   public static class Wild_3_63 extends Wild_2_61 {
-    protected  int[] fld_0_3_63 = new int [523];
+    protected  int[] fld_0_3_63 = new int [54];
   }
 
   public static class Wild_3_64 extends Wild_2_40 {
@@ -3987,7 +3988,7 @@ public final class WildClasses {
     public     boolean fld_4_3_65;
     private    byte fld_5_3_65;
     private    byte fld_6_3_65;
-    protected  Object[] fld_7_3_65 = new Object [207];
+    protected  Object[] fld_7_3_65 = new Object [46];
     private    float fld_8_3_65;
     public     short fld_9_3_65;
                Object fld_10_3_65;
@@ -4003,7 +4004,7 @@ public final class WildClasses {
     private    int fld_1_3_66;
     protected  Object fld_2_3_66;
     private    Object fld_3_3_66;
-    private    int[] fld_4_3_66 = new int [900];
+    private    int[] fld_4_3_66 = new int [57];
                long fld_5_3_66;
   }
 
@@ -4032,9 +4033,9 @@ public final class WildClasses {
 
   public static class Wild_3_69 extends Wild_2_37 {
     private    byte fld_0_3_69;
-               long[] fld_1_3_69 = new long [642];
+               long[] fld_1_3_69 = new long [29];
                char fld_2_3_69;
-    private    double[] fld_3_3_69 = new double [559];
+    private    double[] fld_3_3_69 = new double [27];
   }
 
   public static class Wild_3_70 extends Wild_2_81 {
@@ -4056,7 +4057,7 @@ public final class WildClasses {
                char fld_5_3_71;
     public     long fld_6_3_71;
     protected  long fld_7_3_71;
-               float[] fld_8_3_71 = new float [910];
+               float[] fld_8_3_71 = new float [38];
     private    boolean fld_9_3_71;
     protected  int fld_10_3_71;
     private    boolean fld_11_3_71;
@@ -4075,7 +4076,7 @@ public final class WildClasses {
     protected  char fld_6_3_72;
     private    Object fld_7_3_72;
                Object fld_8_3_72;
-    protected  short[] fld_9_3_72 = new short [830];
+    protected  short[] fld_9_3_72 = new short [44];
     protected  boolean fld_10_3_72;
                boolean fld_11_3_72;
     protected  Object fld_12_3_72;
@@ -4106,8 +4107,8 @@ public final class WildClasses {
     protected  char fld_0_3_76;
     protected  char fld_1_3_76;
     public     Object fld_2_3_76;
-    protected  float[] fld_3_3_76 = new float [456];
-    protected  Object[] fld_4_3_76 = new Object [892];
+    protected  float[] fld_3_3_76 = new float [52];
+    protected  Object[] fld_4_3_76 = new Object [41];
     private    double fld_5_3_76;
                boolean fld_6_3_76;
                Object fld_7_3_76;
@@ -4120,11 +4121,11 @@ public final class WildClasses {
   public static class Wild_3_77 extends Wild_2_82 {
                float fld_0_3_77;
                short fld_1_3_77;
-    protected  float[] fld_2_3_77 = new float [207];
+    protected  float[] fld_2_3_77 = new float [45];
     public     float fld_3_3_77;
     private    double fld_4_3_77;
     private    char fld_5_3_77;
-    private    boolean[] fld_6_3_77 = new boolean [248];
+    private    boolean[] fld_6_3_77 = new boolean [59];
                boolean fld_7_3_77;
                long fld_8_3_77;
     public     double fld_9_3_77;
@@ -4146,9 +4147,9 @@ public final class WildClasses {
   }
 
   public static class Wild_3_79 extends Wild_2_95 {
-    public     int[] fld_0_3_79 = new int [14];
+    public     int[] fld_0_3_79 = new int [16];
                long fld_1_3_79;
-    public     Object[] fld_2_3_79 = new Object [487];
+    public     Object[] fld_2_3_79 = new Object [37];
     protected  double fld_3_3_79;
     private    Object fld_4_3_79;
     private    long fld_5_3_79;
@@ -4170,7 +4171,7 @@ public final class WildClasses {
   }
 
   public static class Wild_3_82 extends Wild_2_60 {
-    private    byte[] fld_0_3_82 = new byte [332];
+    private    byte[] fld_0_3_82 = new byte [19];
   }
 
   public static class Wild_3_83 extends Wild_2_39 {
@@ -4181,7 +4182,7 @@ public final class WildClasses {
   }
 
   public static class Wild_3_84 extends Wild_2_8 {
-               byte[] fld_0_3_84 = new byte [938];
+               byte[] fld_0_3_84 = new byte [62];
   }
 
   public static class Wild_3_85 extends Wild_2_48 {
@@ -4201,7 +4202,7 @@ public final class WildClasses {
 
   public static class Wild_3_86 extends Wild_2_33 {
     protected  byte fld_0_3_86;
-    protected  int[] fld_1_3_86 = new int [178];
+    protected  int[] fld_1_3_86 = new int [41];
     private    char fld_2_3_86;
     private    char fld_3_3_86;
     protected  Object fld_4_3_86;
@@ -4221,9 +4222,9 @@ public final class WildClasses {
     private    long fld_4_3_87;
     protected  short fld_5_3_87;
     protected  boolean fld_6_3_87;
-               long[] fld_7_3_87 = new long [428];
+               long[] fld_7_3_87 = new long [12];
     public     double fld_8_3_87;
-    public     int[] fld_9_3_87 = new int [654];
+    public     int[] fld_9_3_87 = new int [41];
     private    Object fld_10_3_87;
     private    byte fld_11_3_87;
     public     byte fld_12_3_87;
@@ -4241,9 +4242,9 @@ public final class WildClasses {
     public     float fld_8_3_88;
     public     boolean fld_9_3_88;
     public     int fld_10_3_88;
-    private    int[] fld_11_3_88 = new int [465];
+    private    int[] fld_11_3_88 = new int [36];
     private    long fld_12_3_88;
-    protected  int[] fld_13_3_88 = new int [157];
+    protected  int[] fld_13_3_88 = new int [7];
   }
 
   public static class Wild_3_89 extends Wild_2_88 {
@@ -4274,7 +4275,7 @@ public final class WildClasses {
                Object fld_7_3_91;
                boolean fld_8_3_91;
     private    char fld_9_3_91;
-               boolean[] fld_10_3_91 = new boolean [527];
+               boolean[] fld_10_3_91 = new boolean [3];
     public     int fld_11_3_91;
                boolean fld_12_3_91;
   }
@@ -4299,7 +4300,7 @@ public final class WildClasses {
     public     byte fld_3_3_94;
     protected  boolean fld_4_3_94;
     protected  char fld_5_3_94;
-    public     char[] fld_6_3_94 = new char [708];
+    public     char[] fld_6_3_94 = new char [5];
                short fld_7_3_94;
   }
 
@@ -4315,11 +4316,11 @@ public final class WildClasses {
     private    boolean fld_0_3_96;
     protected  int fld_1_3_96;
                double fld_2_3_96;
-    protected  byte[] fld_3_3_96 = new byte [666];
+    protected  byte[] fld_3_3_96 = new byte [5];
     public     long fld_4_3_96;
-               byte[] fld_5_3_96 = new byte [636];
+               byte[] fld_5_3_96 = new byte [29];
     public     short fld_6_3_96;
-    public     Object[] fld_7_3_96 = new Object [161];
+    public     Object[] fld_7_3_96 = new Object [34];
     public     boolean fld_8_3_96;
     private    boolean fld_9_3_96;
     public     char fld_10_3_96;
@@ -4343,11 +4344,11 @@ public final class WildClasses {
     public     short fld_1_3_98;
                long fld_2_3_98;
     public     boolean fld_3_3_98;
-               short[] fld_4_3_98 = new short [794];
+               short[] fld_4_3_98 = new short [47];
   }
 
   public static class Wild_3_99 extends Wild_2_8 {
-    public     char[] fld_0_3_99 = new char [924];
+    public     char[] fld_0_3_99 = new char [42];
   }
 
   public static class Wild_4_0 extends Wild_3_95 {
@@ -4361,19 +4362,19 @@ public final class WildClasses {
     protected  Object fld_7_4_0;
                float fld_8_4_0;
     private    float fld_9_4_0;
-               Object[] fld_10_4_0 = new Object [640];
+               Object[] fld_10_4_0 = new Object [12];
     private    short fld_11_4_0;
     private    short fld_12_4_0;
   }
 
   public static class Wild_4_1 extends Wild_3_55 {
-    protected  Object[] fld_0_4_1 = new Object [815];
+    protected  Object[] fld_0_4_1 = new Object [40];
     private    char fld_1_4_1;
-    private    float[] fld_2_4_1 = new float [577];
+    private    float[] fld_2_4_1 = new float [8];
     protected  short fld_3_4_1;
     protected  short fld_4_4_1;
     protected  byte fld_5_4_1;
-    private    double[] fld_6_4_1 = new double [33];
+    private    double[] fld_6_4_1 = new double [45];
     private    Object fld_7_4_1;
                short fld_8_4_1;
     private    int fld_9_4_1;
@@ -4391,12 +4392,12 @@ public final class WildClasses {
   public static class Wild_4_3 extends Wild_3_60 {
     private    long fld_0_4_3;
     protected  Object fld_1_4_3;
-    private    float[] fld_2_4_3 = new float [695];
+    private    float[] fld_2_4_3 = new float [6];
                float fld_3_4_3;
     public     float fld_4_4_3;
                byte fld_5_4_3;
     public     short fld_6_4_3;
-    public     Object[] fld_7_4_3 = new Object [855];
+    public     Object[] fld_7_4_3 = new Object [8];
                Object fld_8_4_3;
     private    short fld_9_4_3;
                double fld_10_4_3;
@@ -4411,9 +4412,9 @@ public final class WildClasses {
 
   public static class Wild_4_4 extends Wild_3_62 {
     protected  double fld_0_4_4;
-    public     char[] fld_1_4_4 = new char [75];
+    public     char[] fld_1_4_4 = new char [23];
     public     boolean fld_2_4_4;
-    public     boolean[] fld_3_4_4 = new boolean [538];
+    public     boolean[] fld_3_4_4 = new boolean [53];
                double fld_4_4_4;
                Object fld_5_4_4;
                long fld_6_4_4;
@@ -4431,7 +4432,7 @@ public final class WildClasses {
                short fld_0_4_6;
     private    Object fld_1_4_6;
     protected  long fld_2_4_6;
-    private    Object[] fld_3_4_6 = new Object [878];
+    private    Object[] fld_3_4_6 = new Object [10];
     private    double fld_4_4_6;
                short fld_5_4_6;
     protected  Object fld_6_4_6;
@@ -4443,7 +4444,7 @@ public final class WildClasses {
   }
 
   public static class Wild_4_8 extends Wild_3_92 {
-    public     Object[] fld_0_4_8 = new Object [169];
+    public     Object[] fld_0_4_8 = new Object [47];
   }
 
   public static class Wild_4_9 extends Wild_3_17 {
@@ -4455,18 +4456,18 @@ public final class WildClasses {
     private    Object fld_5_4_9;
     public     double fld_6_4_9;
     private    Object fld_7_4_9;
-    private    Object[] fld_8_4_9 = new Object [705];
+    private    Object[] fld_8_4_9 = new Object [58];
     private    long fld_9_4_9;
   }
 
   public static class Wild_4_10 extends Wild_3_70 {
     protected  float fld_0_4_10;
     public     long fld_1_4_10;
-    private    byte[] fld_2_4_10 = new byte [429];
+    private    byte[] fld_2_4_10 = new byte [45];
                float fld_3_4_10;
     private    long fld_4_4_10;
                Object fld_5_4_10;
-    protected  long[] fld_6_4_10 = new long [542];
+    protected  long[] fld_6_4_10 = new long [4];
     protected  int fld_7_4_10;
     protected  char fld_8_4_10;
   }
@@ -4501,7 +4502,7 @@ public final class WildClasses {
 
   public static class Wild_4_14 extends Wild_3_39 {
     private    byte fld_0_4_14;
-    protected  boolean[] fld_1_4_14 = new boolean [240];
+    protected  boolean[] fld_1_4_14 = new boolean [9];
                long fld_2_4_14;
     protected  float fld_3_4_14;
     protected  float fld_4_4_14;
@@ -4512,10 +4513,10 @@ public final class WildClasses {
     public     double fld_1_4_15;
     private    short fld_2_4_15;
     private    double fld_3_4_15;
-    protected  char[] fld_4_4_15 = new char [853];
+    protected  char[] fld_4_4_15 = new char [3];
     private    boolean fld_5_4_15;
     public     char fld_6_4_15;
-    private    int[] fld_7_4_15 = new int [400];
+    private    int[] fld_7_4_15 = new int [0];
     protected  float fld_8_4_15;
     private    Object fld_9_4_15;
     protected  double fld_10_4_15;
@@ -4536,7 +4537,7 @@ public final class WildClasses {
     private    short fld_3_4_18;
                short fld_4_4_18;
     private    short fld_5_4_18;
-               int[] fld_6_4_18 = new int [706];
+               int[] fld_6_4_18 = new int [49];
     private    Object fld_7_4_18;
   }
 
@@ -4546,7 +4547,7 @@ public final class WildClasses {
   }
 
   public static class Wild_4_20 extends Wild_3_23 {
-               byte[] fld_0_4_20 = new byte [84];
+               byte[] fld_0_4_20 = new byte [31];
     private    boolean fld_1_4_20;
   }
 
@@ -4575,9 +4576,9 @@ public final class WildClasses {
 
   public static class Wild_4_23 extends Wild_3_79 {
     private    float fld_0_4_23;
-               double[] fld_1_4_23 = new double [981];
+               double[] fld_1_4_23 = new double [53];
     protected  char fld_2_4_23;
-    public     byte[] fld_3_4_23 = new byte [79];
+    public     byte[] fld_3_4_23 = new byte [52];
   }
 
   public static class Wild_4_24 extends Wild_3_45 {
@@ -4591,8 +4592,8 @@ public final class WildClasses {
     private    float fld_2_4_25;
     private    int fld_3_4_25;
                long fld_4_4_25;
-    private    boolean[] fld_5_4_25 = new boolean [56];
-               short[] fld_6_4_25 = new short [768];
+    private    boolean[] fld_5_4_25 = new boolean [52];
+               short[] fld_6_4_25 = new short [36];
     public     int fld_7_4_25;
     protected  Object fld_8_4_25;
     protected  boolean fld_9_4_25;
@@ -4604,11 +4605,11 @@ public final class WildClasses {
     protected  byte fld_1_4_26;
     private    int fld_2_4_26;
     public     Object fld_3_4_26;
-               Object[] fld_4_4_26 = new Object [901];
+               Object[] fld_4_4_26 = new Object [36];
   }
 
   public static class Wild_4_27 extends Wild_3_46 {
-    private    float[] fld_0_4_27 = new float [358];
+    private    float[] fld_0_4_27 = new float [6];
     public     short fld_1_4_27;
     public     int fld_2_4_27;
     protected  byte fld_3_4_27;
@@ -4623,11 +4624,11 @@ public final class WildClasses {
   public static class Wild_4_28 extends Wild_3_5 {
                long fld_0_4_28;
     public     int fld_1_4_28;
-    private    boolean[] fld_2_4_28 = new boolean [34];
+    private    boolean[] fld_2_4_28 = new boolean [7];
     private    double fld_3_4_28;
     protected  double fld_4_4_28;
     private    short fld_5_4_28;
-               Object[] fld_6_4_28 = new Object [94];
+               Object[] fld_6_4_28 = new Object [2];
     protected  short fld_7_4_28;
     private    short fld_8_4_28;
     protected  Object fld_9_4_28;
@@ -4641,10 +4642,10 @@ public final class WildClasses {
     protected  char fld_2_4_29;
                int fld_3_4_29;
     private    short fld_4_4_29;
-    public     char[] fld_5_4_29 = new char [56];
+    public     char[] fld_5_4_29 = new char [54];
     public     byte fld_6_4_29;
     protected  int fld_7_4_29;
-    public     int[] fld_8_4_29 = new int [628];
+    public     int[] fld_8_4_29 = new int [18];
   }
 
   public static class Wild_4_30 extends Wild_3_87 {
@@ -4683,7 +4684,7 @@ public final class WildClasses {
   public static class Wild_4_34 extends Wild_3_74 {
     private    float fld_0_4_34;
     public     long fld_1_4_34;
-    private    byte[] fld_2_4_34 = new byte [722];
+    private    byte[] fld_2_4_34 = new byte [14];
     public     int fld_3_4_34;
     public     byte fld_4_4_34;
     protected  byte fld_5_4_34;
@@ -4698,14 +4699,14 @@ public final class WildClasses {
     protected  float fld_0_4_35;
                long fld_1_4_35;
     public     long fld_2_4_35;
-               short[] fld_3_4_35 = new short [958];
+               short[] fld_3_4_35 = new short [56];
                long fld_4_4_35;
-    protected  long[] fld_5_4_35 = new long [472];
+    protected  long[] fld_5_4_35 = new long [14];
                Object fld_6_4_35;
     private    Object fld_7_4_35;
                Object fld_8_4_35;
     public     float fld_9_4_35;
-    protected  double[] fld_10_4_35 = new double [396];
+    protected  double[] fld_10_4_35 = new double [63];
                Object fld_11_4_35;
                float fld_12_4_35;
   }
@@ -4714,14 +4715,14 @@ public final class WildClasses {
     private    char fld_0_4_36;
     public     double fld_1_4_36;
                short fld_2_4_36;
-    private    long[] fld_3_4_36 = new long [259];
+    private    long[] fld_3_4_36 = new long [45];
     protected  float fld_4_4_36;
     private    boolean fld_5_4_36;
   }
 
   public static class Wild_4_37 extends Wild_3_30 {
     protected  long fld_0_4_37;
-    private    char[] fld_1_4_37 = new char [968];
+    private    char[] fld_1_4_37 = new char [54];
                Object fld_2_4_37;
     private    long fld_3_4_37;
     public     int fld_4_4_37;
@@ -4736,19 +4737,19 @@ public final class WildClasses {
     private    byte fld_4_4_38;
                double fld_5_4_38;
                long fld_6_4_38;
-               long[] fld_7_4_38 = new long [580];
+               long[] fld_7_4_38 = new long [40];
   }
 
   public static class Wild_4_39 extends Wild_3_83 {
                boolean fld_0_4_39;
     protected  short fld_1_4_39;
-    protected  float[] fld_2_4_39 = new float [140];
+    protected  float[] fld_2_4_39 = new float [60];
   }
 
   public static class Wild_4_40 extends Wild_3_55 {
     public     long fld_0_4_40;
     protected  byte fld_1_4_40;
-               double[] fld_2_4_40 = new double [66];
+               double[] fld_2_4_40 = new double [47];
     private    long fld_3_4_40;
   }
 
@@ -4758,7 +4759,7 @@ public final class WildClasses {
                int fld_2_4_41;
     private    Object fld_3_4_41;
     private    boolean fld_4_4_41;
-               boolean[] fld_5_4_41 = new boolean [896];
+               boolean[] fld_5_4_41 = new boolean [47];
     private    double fld_6_4_41;
                byte fld_7_4_41;
                float fld_8_4_41;
@@ -4771,7 +4772,7 @@ public final class WildClasses {
   }
 
   public static class Wild_4_42 extends Wild_3_79 {
-               short[] fld_0_4_42 = new short [642];
+               short[] fld_0_4_42 = new short [61];
     private    double fld_1_4_42;
   }
 
@@ -4787,18 +4788,18 @@ public final class WildClasses {
   public static class Wild_4_44 extends Wild_3_28 {
     public     boolean fld_0_4_44;
     public     double fld_1_4_44;
-    private    boolean[] fld_2_4_44 = new boolean [965];
+    private    boolean[] fld_2_4_44 = new boolean [12];
     private    long fld_3_4_44;
                float fld_4_4_44;
     public     long fld_5_4_44;
                byte fld_6_4_44;
-    public     long[] fld_7_4_44 = new long [20];
+    public     long[] fld_7_4_44 = new long [48];
     protected  long fld_8_4_44;
                float fld_9_4_44;
   }
 
   public static class Wild_4_45 extends Wild_3_44 {
-               short[] fld_0_4_45 = new short [921];
+               short[] fld_0_4_45 = new short [27];
     protected  char fld_1_4_45;
     protected  byte fld_2_4_45;
     public     Object fld_3_4_45;
@@ -4818,7 +4819,7 @@ public final class WildClasses {
   public static class Wild_4_47 extends Wild_3_59 {
     private    boolean fld_0_4_47;
     public     double fld_1_4_47;
-    private    char[] fld_2_4_47 = new char [516];
+    private    char[] fld_2_4_47 = new char [13];
                int fld_3_4_47;
                byte fld_4_4_47;
     private    boolean fld_5_4_47;
@@ -4829,26 +4830,26 @@ public final class WildClasses {
   }
 
   public static class Wild_4_48 extends Wild_3_65 {
-    public     double[] fld_0_4_48 = new double [177];
+    public     double[] fld_0_4_48 = new double [0];
     private    Object fld_1_4_48;
                Object fld_2_4_48;
-    public     double[] fld_3_4_48 = new double [509];
-    protected  long[] fld_4_4_48 = new long [687];
+    public     double[] fld_3_4_48 = new double [38];
+    protected  long[] fld_4_4_48 = new long [20];
                long fld_5_4_48;
-               short[] fld_6_4_48 = new short [61];
+               short[] fld_6_4_48 = new short [63];
     protected  char fld_7_4_48;
                char fld_8_4_48;
                boolean fld_9_4_48;
     private    byte fld_10_4_48;
     public     short fld_11_4_48;
-    protected  int[] fld_12_4_48 = new int [702];
+    protected  int[] fld_12_4_48 = new int [9];
     public     double fld_13_4_48;
   }
 
   public static class Wild_4_49 extends Wild_3_68 {
     public     long fld_0_4_49;
     public     double fld_1_4_49;
-    protected  boolean[] fld_2_4_49 = new boolean [172];
+    protected  boolean[] fld_2_4_49 = new boolean [39];
     private    byte fld_3_4_49;
     private    float fld_4_4_49;
     public     boolean fld_5_4_49;
@@ -4869,7 +4870,7 @@ public final class WildClasses {
 
   public static class Wild_4_51 extends Wild_3_1 {
                boolean fld_0_4_51;
-    private    Object[] fld_1_4_51 = new Object [554];
+    private    Object[] fld_1_4_51 = new Object [49];
     public     int fld_2_4_51;
                double fld_3_4_51;
     protected  double fld_4_4_51;
@@ -4905,20 +4906,20 @@ public final class WildClasses {
     public     short fld_13_4_52;
     public     int fld_14_4_52;
     protected  char fld_15_4_52;
-    protected  float[] fld_16_4_52 = new float [222];
+    protected  float[] fld_16_4_52 = new float [24];
     private    Object fld_17_4_52;
     public     int fld_18_4_52;
     private    char fld_19_4_52;
   }
 
   public static class Wild_4_53 extends Wild_3_21 {
-    public     long[] fld_0_4_53 = new long [756];
+    public     long[] fld_0_4_53 = new long [17];
     protected  long fld_1_4_53;
     protected  byte fld_2_4_53;
     public     boolean fld_3_4_53;
                short fld_4_4_53;
     private    long fld_5_4_53;
-    public     boolean[] fld_6_4_53 = new boolean [878];
+    public     boolean[] fld_6_4_53 = new boolean [10];
                long fld_7_4_53;
                Object fld_8_4_53;
     private    int fld_9_4_53;
@@ -4927,7 +4928,7 @@ public final class WildClasses {
   public static class Wild_4_54 extends Wild_3_41 {
     private    boolean fld_0_4_54;
     protected  Object fld_1_4_54;
-    public     double[] fld_2_4_54 = new double [98];
+    public     double[] fld_2_4_54 = new double [31];
                byte fld_3_4_54;
                short fld_4_4_54;
   }
@@ -4936,7 +4937,7 @@ public final class WildClasses {
     protected  long fld_0_4_55;
                long fld_1_4_55;
     public     int fld_2_4_55;
-    public     boolean[] fld_3_4_55 = new boolean [3];
+    public     boolean[] fld_3_4_55 = new boolean [34];
     public     byte fld_4_4_55;
     private    int fld_5_4_55;
     protected  Object fld_6_4_55;
@@ -4944,11 +4945,11 @@ public final class WildClasses {
 
   public static class Wild_4_56 extends Wild_3_71 {
     public     double fld_0_4_56;
-    protected  byte[] fld_1_4_56 = new byte [659];
+    protected  byte[] fld_1_4_56 = new byte [3];
                short fld_2_4_56;
     public     float fld_3_4_56;
     private    float fld_4_4_56;
-               short[] fld_5_4_56 = new short [964];
+               short[] fld_5_4_56 = new short [27];
     private    boolean fld_6_4_56;
   }
 
@@ -4959,10 +4960,10 @@ public final class WildClasses {
     protected  short fld_3_4_57;
     public     char fld_4_4_57;
     protected  short fld_5_4_57;
-    protected  float[] fld_6_4_57 = new float [51];
+    protected  float[] fld_6_4_57 = new float [18];
     public     char fld_7_4_57;
     private    short fld_8_4_57;
-               boolean[] fld_9_4_57 = new boolean [354];
+               boolean[] fld_9_4_57 = new boolean [44];
     protected  int fld_10_4_57;
     private    Object fld_11_4_57;
                double fld_12_4_57;
@@ -5003,12 +5004,12 @@ public final class WildClasses {
 
   public static class Wild_4_61 extends Wild_3_19 {
     protected  Object fld_0_4_61;
-    public     byte[] fld_1_4_61 = new byte [871];
+    public     byte[] fld_1_4_61 = new byte [21];
                Object fld_2_4_61;
     protected  int fld_3_4_61;
     protected  double fld_4_4_61;
     public     long fld_5_4_61;
-               boolean[] fld_6_4_61 = new boolean [611];
+               boolean[] fld_6_4_61 = new boolean [32];
   }
 
   public static class Wild_4_62 extends Wild_3_91 {
@@ -5017,7 +5018,7 @@ public final class WildClasses {
 
   public static class Wild_4_63 extends Wild_3_13 {
     protected  int fld_0_4_63;
-    protected  long[] fld_1_4_63 = new long [614];
+    protected  long[] fld_1_4_63 = new long [34];
                double fld_2_4_63;
                short fld_3_4_63;
   }
@@ -5036,7 +5037,7 @@ public final class WildClasses {
     public     short fld_10_4_64;
                long fld_11_4_64;
                Object fld_12_4_64;
-               boolean[] fld_13_4_64 = new boolean [367];
+               boolean[] fld_13_4_64 = new boolean [12];
     private    float fld_14_4_64;
     public     float fld_15_4_64;
                Object fld_16_4_64;
@@ -5050,7 +5051,7 @@ public final class WildClasses {
                double fld_4_4_65;
     private    byte fld_5_4_65;
     protected  float fld_6_4_65;
-    private    boolean[] fld_7_4_65 = new boolean [449];
+    private    boolean[] fld_7_4_65 = new boolean [35];
     protected  double fld_8_4_65;
     protected  long fld_9_4_65;
     protected  char fld_10_4_65;
@@ -5066,7 +5067,7 @@ public final class WildClasses {
     protected  float fld_0_4_67;
     public     char fld_1_4_67;
     public     short fld_2_4_67;
-               byte[] fld_3_4_67 = new byte [645];
+               byte[] fld_3_4_67 = new byte [2];
     private    short fld_4_4_67;
                Object fld_5_4_67;
     protected  float fld_6_4_67;
@@ -5079,12 +5080,12 @@ public final class WildClasses {
   public static class Wild_4_68 extends Wild_3_7 {
                float fld_0_4_68;
     protected  short fld_1_4_68;
-               short[] fld_2_4_68 = new short [332];
+               short[] fld_2_4_68 = new short [3];
                int fld_3_4_68;
-    protected  boolean[] fld_4_4_68 = new boolean [748];
-    private    char[] fld_5_4_68 = new char [994];
+    protected  boolean[] fld_4_4_68 = new boolean [57];
+    private    char[] fld_5_4_68 = new char [55];
                float fld_6_4_68;
-    public     char[] fld_7_4_68 = new char [947];
+    public     char[] fld_7_4_68 = new char [48];
     private    long fld_8_4_68;
     private    float fld_9_4_68;
   }
@@ -5103,7 +5104,7 @@ public final class WildClasses {
     private    short fld_0_4_71;
     protected  Object fld_1_4_71;
     protected  char fld_2_4_71;
-    public     float[] fld_3_4_71 = new float [107];
+    public     float[] fld_3_4_71 = new float [6];
     protected  char fld_4_4_71;
                Object fld_5_4_71;
     protected  double fld_6_4_71;
@@ -5113,7 +5114,7 @@ public final class WildClasses {
   public static class Wild_4_72 extends Wild_3_90 {
                float fld_0_4_72;
     protected  Object fld_1_4_72;
-               float[] fld_2_4_72 = new float [104];
+               float[] fld_2_4_72 = new float [54];
     private    boolean fld_3_4_72;
     protected  long fld_4_4_72;
                char fld_5_4_72;
@@ -5137,9 +5138,9 @@ public final class WildClasses {
 
   public static class Wild_4_74 extends Wild_3_23 {
                long fld_0_4_74;
-    private    double[] fld_1_4_74 = new double [361];
+    private    double[] fld_1_4_74 = new double [31];
     public     double fld_2_4_74;
-    protected  int[] fld_3_4_74 = new int [241];
+    protected  int[] fld_3_4_74 = new int [5];
                long fld_4_4_74;
                Object fld_5_4_74;
     public     boolean fld_6_4_74;
@@ -5161,29 +5162,29 @@ public final class WildClasses {
 
   public static class Wild_4_76 extends Wild_3_64 {
     protected  Object fld_0_4_76;
-    public     short[] fld_1_4_76 = new short [950];
-               float[] fld_2_4_76 = new float [996];
+    public     short[] fld_1_4_76 = new short [24];
+               float[] fld_2_4_76 = new float [55];
                float fld_3_4_76;
     protected  short fld_4_4_76;
-    public     float[] fld_5_4_76 = new float [631];
+    public     float[] fld_5_4_76 = new float [60];
     private    Object fld_6_4_76;
                boolean fld_7_4_76;
   }
 
   public static class Wild_4_77 extends Wild_3_96 {
                Object fld_0_4_77;
-    private    byte[] fld_1_4_77 = new byte [434];
+    private    byte[] fld_1_4_77 = new byte [19];
     private    long fld_2_4_77;
     private    float fld_3_4_77;
     public     boolean fld_4_4_77;
-    protected  byte[] fld_5_4_77 = new byte [595];
+    protected  byte[] fld_5_4_77 = new byte [46];
     protected  double fld_6_4_77;
     public     short fld_7_4_77;
     public     char fld_8_4_77;
   }
 
   public static class Wild_4_78 extends Wild_3_6 {
-    public     long[] fld_0_4_78 = new long [704];
+    public     long[] fld_0_4_78 = new long [11];
     private    boolean fld_1_4_78;
     public     char fld_2_4_78;
     protected  short fld_3_4_78;
@@ -5224,7 +5225,7 @@ public final class WildClasses {
   }
 
   public static class Wild_4_83 extends Wild_3_0 {
-    protected  char[] fld_0_4_83 = new char [812];
+    protected  char[] fld_0_4_83 = new char [53];
     protected  short fld_1_4_83;
     public     boolean fld_2_4_83;
                byte fld_3_4_83;
@@ -5232,7 +5233,7 @@ public final class WildClasses {
     private    float fld_5_4_83;
     protected  float fld_6_4_83;
     protected  short fld_7_4_83;
-    protected  long[] fld_8_4_83 = new long [546];
+    protected  long[] fld_8_4_83 = new long [57];
     private    byte fld_9_4_83;
     private    float fld_10_4_83;
     public     long fld_11_4_83;
@@ -5254,9 +5255,9 @@ public final class WildClasses {
     private    long fld_1_4_85;
     protected  byte fld_2_4_85;
     public     short fld_3_4_85;
-               short[] fld_4_4_85 = new short [192];
+               short[] fld_4_4_85 = new short [50];
     public     double fld_5_4_85;
-    public     byte[] fld_6_4_85 = new byte [985];
+    public     byte[] fld_6_4_85 = new byte [18];
     public     int fld_7_4_85;
     public     short fld_8_4_85;
     protected  boolean fld_9_4_85;
@@ -5276,7 +5277,7 @@ public final class WildClasses {
     public     double fld_3_4_87;
     private    byte fld_4_4_87;
     protected  byte fld_5_4_87;
-    protected  short[] fld_6_4_87 = new short [378];
+    protected  short[] fld_6_4_87 = new short [40];
   }
 
   public static class Wild_4_88 extends Wild_3_38 {
@@ -5285,7 +5286,7 @@ public final class WildClasses {
     public     byte fld_2_4_88;
     public     int fld_3_4_88;
     protected  long fld_4_4_88;
-    public     double[] fld_5_4_88 = new double [238];
+    public     double[] fld_5_4_88 = new double [23];
   }
 
   public static class Wild_4_89 extends Wild_3_58 {
@@ -5297,7 +5298,7 @@ public final class WildClasses {
                int fld_5_4_89;
     private    int fld_6_4_89;
     private    long fld_7_4_89;
-               int[] fld_8_4_89 = new int [463];
+               int[] fld_8_4_89 = new int [45];
     public     int fld_9_4_89;
     private    float fld_10_4_89;
     private    long fld_11_4_89;
@@ -5317,7 +5318,7 @@ public final class WildClasses {
     public     float fld_0_4_91;
     private    long fld_1_4_91;
     private    byte fld_2_4_91;
-               char[] fld_3_4_91 = new char [152];
+               char[] fld_3_4_91 = new char [40];
     protected  Object fld_4_4_91;
     private    double fld_5_4_91;
     protected  double fld_6_4_91;
@@ -5340,7 +5341,7 @@ public final class WildClasses {
     public     byte fld_0_4_93;
     public     long fld_1_4_93;
     protected  short fld_2_4_93;
-    private    double[] fld_3_4_93 = new double [489];
+    private    double[] fld_3_4_93 = new double [63];
   }
 
   public static class Wild_4_94 extends Wild_3_94 {
@@ -5368,11 +5369,11 @@ public final class WildClasses {
     protected  short fld_2_4_96;
     private    double fld_3_4_96;
                Object fld_4_4_96;
-    private    int[] fld_5_4_96 = new int [112];
+    private    int[] fld_5_4_96 = new int [16];
     private    short fld_6_4_96;
     public     byte fld_7_4_96;
     private    float fld_8_4_96;
-    protected  float[] fld_9_4_96 = new float [27];
+    protected  float[] fld_9_4_96 = new float [2];
     private    short fld_10_4_96;
                char fld_11_4_96;
     public     Object fld_12_4_96;
@@ -5382,7 +5383,7 @@ public final class WildClasses {
     private    float fld_16_4_96;
     private    boolean fld_17_4_96;
     public     float fld_18_4_96;
-               float[] fld_19_4_96 = new float [721];
+               float[] fld_19_4_96 = new float [52];
   }
 
   public static class Wild_4_97 extends Wild_3_93 {
@@ -5394,7 +5395,7 @@ public final class WildClasses {
                float fld_5_4_97;
     public     float fld_6_4_97;
     protected  long fld_7_4_97;
-    private    boolean[] fld_8_4_97 = new boolean [520];
+    private    boolean[] fld_8_4_97 = new boolean [43];
                char fld_9_4_97;
   }
 
@@ -5403,17 +5404,17 @@ public final class WildClasses {
     private    byte fld_1_4_98;
                byte fld_2_4_98;
     protected  int fld_3_4_98;
-               byte[] fld_4_4_98 = new byte [383];
+               byte[] fld_4_4_98 = new byte [7];
     public     float fld_5_4_98;
     protected  long fld_6_4_98;
-    public     boolean[] fld_7_4_98 = new boolean [547];
+    public     boolean[] fld_7_4_98 = new boolean [41];
     public     float fld_8_4_98;
                short fld_9_4_98;
-    public     short[] fld_10_4_98 = new short [33];
+    public     short[] fld_10_4_98 = new short [24];
     public     double fld_11_4_98;
     protected  boolean fld_12_4_98;
     private    int fld_13_4_98;
-    public     char[] fld_14_4_98 = new char [391];
+    public     char[] fld_14_4_98 = new char [9];
     public     long fld_15_4_98;
                long fld_16_4_98;
     public     double fld_17_4_98;
@@ -5428,7 +5429,7 @@ public final class WildClasses {
     protected  char fld_0_5_0;
                long fld_1_5_0;
     private    boolean fld_2_5_0;
-    public     char[] fld_3_5_0 = new char [292];
+    public     char[] fld_3_5_0 = new char [4];
     protected  short fld_4_5_0;
     public     char fld_5_5_0;
     private    byte fld_6_5_0;
@@ -5442,10 +5443,10 @@ public final class WildClasses {
   public static class Wild_5_1 extends Wild_4_99 {
     private    boolean fld_0_5_1;
                Object fld_1_5_1;
-    public     long[] fld_2_5_1 = new long [510];
+    public     long[] fld_2_5_1 = new long [5];
     public     float fld_3_5_1;
                short fld_4_5_1;
-    protected  Object[] fld_5_5_1 = new Object [100];
+    protected  Object[] fld_5_5_1 = new Object [9];
   }
 
   public static class Wild_5_2 extends Wild_4_33 {
@@ -5493,17 +5494,17 @@ public final class WildClasses {
     private    byte fld_1_5_6;
     public     char fld_2_5_6;
     protected  char fld_3_5_6;
-    private    int[] fld_4_5_6 = new int [388];
+    private    int[] fld_4_5_6 = new int [43];
   }
 
   public static class Wild_5_7 extends Wild_4_11 {
-    public     boolean[] fld_0_5_7 = new boolean [999];
+    public     boolean[] fld_0_5_7 = new boolean [17];
     public     char fld_1_5_7;
     protected  float fld_2_5_7;
     private    double fld_3_5_7;
     private    short fld_4_5_7;
     private    Object fld_5_5_7;
-    public     long[] fld_6_5_7 = new long [805];
+    public     long[] fld_6_5_7 = new long [50];
   }
 
   public static class Wild_5_8 extends Wild_4_82 {
@@ -5549,10 +5550,10 @@ public final class WildClasses {
                Object fld_1_5_12;
     public     long fld_2_5_12;
     private    char fld_3_5_12;
-               char[] fld_4_5_12 = new char [575];
+               char[] fld_4_5_12 = new char [61];
     public     short fld_5_5_12;
-               char[] fld_6_5_12 = new char [251];
-    public     Object[] fld_7_5_12 = new Object [4];
+               char[] fld_6_5_12 = new char [25];
+    public     Object[] fld_7_5_12 = new Object [55];
     public     int fld_8_5_12;
   }
 
@@ -5566,11 +5567,11 @@ public final class WildClasses {
     private    int fld_6_5_13;
     protected  char fld_7_5_13;
     private    byte fld_8_5_13;
-    public     char[] fld_9_5_13 = new char [331];
+    public     char[] fld_9_5_13 = new char [8];
   }
 
   public static class Wild_5_14 extends Wild_4_70 {
-    protected  long[] fld_0_5_14 = new long [570];
+    protected  long[] fld_0_5_14 = new long [17];
   }
 
   public static class Wild_5_15 extends Wild_4_70 {
@@ -5586,7 +5587,7 @@ public final class WildClasses {
     public     long fld_9_5_15;
     protected  int fld_10_5_15;
     protected  float fld_11_5_15;
-               Object[] fld_12_5_15 = new Object [155];
+               Object[] fld_12_5_15 = new Object [54];
     protected  long fld_13_5_15;
   }
 
@@ -5607,7 +5608,7 @@ public final class WildClasses {
   public static class Wild_5_19 extends Wild_4_43 {
                short fld_0_5_19;
     private    int fld_1_5_19;
-    public     long[] fld_2_5_19 = new long [792];
+    public     long[] fld_2_5_19 = new long [3];
   }
 
   public static class Wild_5_20 extends Wild_4_13 {
@@ -5622,7 +5623,7 @@ public final class WildClasses {
   }
 
   public static class Wild_5_21 extends Wild_4_83 {
-    public     int[] fld_0_5_21 = new int [221];
+    public     int[] fld_0_5_21 = new int [26];
     public     short fld_1_5_21;
                int fld_2_5_21;
   }
@@ -5653,7 +5654,7 @@ public final class WildClasses {
     public     float fld_1_5_25;
                int fld_2_5_25;
     public     boolean fld_3_5_25;
-    public     byte[] fld_4_5_25 = new byte [521];
+    public     byte[] fld_4_5_25 = new byte [7];
                double fld_5_5_25;
   }
 
@@ -5676,7 +5677,7 @@ public final class WildClasses {
     public     boolean fld_2_5_27;
     private    int fld_3_5_27;
                Object fld_4_5_27;
-               Object[] fld_5_5_27 = new Object [554];
+               Object[] fld_5_5_27 = new Object [57];
                Object fld_6_5_27;
     protected  long fld_7_5_27;
   }
@@ -5704,7 +5705,7 @@ public final class WildClasses {
     public     Object fld_0_5_31;
                short fld_1_5_31;
     protected  float fld_2_5_31;
-               long[] fld_3_5_31 = new long [13];
+               long[] fld_3_5_31 = new long [54];
     private    long fld_4_5_31;
     private    short fld_5_5_31;
     private    char fld_6_5_31;
@@ -5713,10 +5714,10 @@ public final class WildClasses {
   }
 
   public static class Wild_5_32 extends Wild_4_16 {
-    protected  int[] fld_0_5_32 = new int [251];
+    protected  int[] fld_0_5_32 = new int [12];
     private    short fld_1_5_32;
     private    double fld_2_5_32;
-    private    double[] fld_3_5_32 = new double [698];
+    private    double[] fld_3_5_32 = new double [49];
     public     Object fld_4_5_32;
   }
 
@@ -5724,10 +5725,10 @@ public final class WildClasses {
     private    int fld_0_5_33;
     private    char fld_1_5_33;
     protected  char fld_2_5_33;
-    public     byte[] fld_3_5_33 = new byte [395];
+    public     byte[] fld_3_5_33 = new byte [54];
     public     byte fld_4_5_33;
     private    int fld_5_5_33;
-    protected  char[] fld_6_5_33 = new char [717];
+    protected  char[] fld_6_5_33 = new char [29];
     private    long fld_7_5_33;
     private    double fld_8_5_33;
   }
@@ -5737,13 +5738,13 @@ public final class WildClasses {
     protected  float fld_1_5_34;
     private    int fld_2_5_34;
                float fld_3_5_34;
-    protected  double[] fld_4_5_34 = new double [817];
+    protected  double[] fld_4_5_34 = new double [47];
     private    double fld_5_5_34;
     protected  byte fld_6_5_34;
     protected  char fld_7_5_34;
-    public     float[] fld_8_5_34 = new float [875];
+    public     float[] fld_8_5_34 = new float [33];
     protected  byte fld_9_5_34;
-    public     double[] fld_10_5_34 = new double [160];
+    public     double[] fld_10_5_34 = new double [39];
                boolean fld_11_5_34;
   }
 
@@ -5769,8 +5770,8 @@ public final class WildClasses {
   }
 
   public static class Wild_5_37 extends Wild_4_49 {
-    protected  byte[] fld_0_5_37 = new byte [217];
-               double[] fld_1_5_37 = new double [253];
+    protected  byte[] fld_0_5_37 = new byte [53];
+               double[] fld_1_5_37 = new double [1];
     public     short fld_2_5_37;
   }
 
@@ -5793,7 +5794,7 @@ public final class WildClasses {
   }
 
   public static class Wild_5_40 extends Wild_4_5 {
-    protected  int[] fld_0_5_40 = new int [670];
+    protected  int[] fld_0_5_40 = new int [21];
                short fld_1_5_40;
   }
 
@@ -5818,7 +5819,7 @@ public final class WildClasses {
     private    boolean fld_0_5_43;
     private    Object fld_1_5_43;
     public     byte fld_2_5_43;
-               Object[] fld_3_5_43 = new Object [612];
+               Object[] fld_3_5_43 = new Object [13];
     public     char fld_4_5_43;
                byte fld_5_5_43;
                int fld_6_5_43;
@@ -5833,7 +5834,7 @@ public final class WildClasses {
                char fld_5_5_44;
                double fld_6_5_44;
     protected  boolean fld_7_5_44;
-               boolean[] fld_8_5_44 = new boolean [259];
+               boolean[] fld_8_5_44 = new boolean [58];
     private    long fld_9_5_44;
     public     short fld_10_5_44;
                long fld_11_5_44;
@@ -5863,7 +5864,7 @@ public final class WildClasses {
   public static class Wild_5_47 extends Wild_4_9 {
     public     double fld_0_5_47;
     public     Object fld_1_5_47;
-    protected  char[] fld_2_5_47 = new char [543];
+    protected  char[] fld_2_5_47 = new char [20];
     private    short fld_3_5_47;
     public     double fld_4_5_47;
     private    long fld_5_5_47;
@@ -5873,7 +5874,7 @@ public final class WildClasses {
   public static class Wild_5_48 extends Wild_4_19 {
     public     long fld_0_5_48;
                boolean fld_1_5_48;
-    public     boolean[] fld_2_5_48 = new boolean [959];
+    public     boolean[] fld_2_5_48 = new boolean [19];
                short fld_3_5_48;
   }
 
@@ -5902,11 +5903,11 @@ public final class WildClasses {
     private    int fld_2_5_52;
     public     float fld_3_5_52;
     protected  long fld_4_5_52;
-    public     float[] fld_5_5_52 = new float [15];
+    public     float[] fld_5_5_52 = new float [32];
     public     double fld_6_5_52;
                char fld_7_5_52;
     private    float fld_8_5_52;
-               int[] fld_9_5_52 = new int [241];
+               int[] fld_9_5_52 = new int [38];
   }
 
   public static class Wild_5_53 extends Wild_4_15 {
@@ -5916,25 +5917,25 @@ public final class WildClasses {
                char fld_3_5_53;
                double fld_4_5_53;
                double fld_5_5_53;
-               boolean[] fld_6_5_53 = new boolean [461];
+               boolean[] fld_6_5_53 = new boolean [48];
   }
 
   public static class Wild_5_54 extends Wild_4_63 {
     public     float fld_0_5_54;
     protected  Object fld_1_5_54;
-    public     float[] fld_2_5_54 = new float [1];
+    public     float[] fld_2_5_54 = new float [39];
     public     double fld_3_5_54;
     protected  char fld_4_5_54;
     public     Object fld_5_5_54;
     public     char fld_6_5_54;
     public     long fld_7_5_54;
-               byte[] fld_8_5_54 = new byte [181];
+               byte[] fld_8_5_54 = new byte [7];
   }
 
   public static class Wild_5_55 extends Wild_4_56 {
     protected  byte fld_0_5_55;
     private    Object fld_1_5_55;
-               float[] fld_2_5_55 = new float [337];
+               float[] fld_2_5_55 = new float [36];
                float fld_3_5_55;
     private    double fld_4_5_55;
                double fld_5_5_55;
@@ -5963,30 +5964,30 @@ public final class WildClasses {
     private    short fld_5_5_57;
                short fld_6_5_57;
                int fld_7_5_57;
-    private    char[] fld_8_5_57 = new char [207];
+    private    char[] fld_8_5_57 = new char [48];
                int fld_9_5_57;
   }
 
   public static class Wild_5_58 extends Wild_4_72 {
-               double[] fld_0_5_58 = new double [538];
+               double[] fld_0_5_58 = new double [2];
                int fld_1_5_58;
                double fld_2_5_58;
     protected  double fld_3_5_58;
     protected  short fld_4_5_58;
-    public     char[] fld_5_5_58 = new char [498];
+    public     char[] fld_5_5_58 = new char [10];
                boolean fld_6_5_58;
-    public     byte[] fld_7_5_58 = new byte [575];
+    public     byte[] fld_7_5_58 = new byte [12];
     public     float fld_8_5_58;
     public     Object fld_9_5_58;
-    public     long[] fld_10_5_58 = new long [15];
-    private    boolean[] fld_11_5_58 = new boolean [844];
+    public     long[] fld_10_5_58 = new long [16];
+    private    boolean[] fld_11_5_58 = new boolean [26];
     private    float fld_12_5_58;
     protected  byte fld_13_5_58;
   }
 
   public static class Wild_5_59 extends Wild_4_38 {
                byte fld_0_5_59;
-    private    Object[] fld_1_5_59 = new Object [253];
+    private    Object[] fld_1_5_59 = new Object [58];
                byte fld_2_5_59;
     public     Object fld_3_5_59;
     public     float fld_4_5_59;
@@ -5998,7 +5999,7 @@ public final class WildClasses {
     private    byte fld_2_5_60;
                float fld_3_5_60;
     private    boolean fld_4_5_60;
-    private    double[] fld_5_5_60 = new double [961];
+    private    double[] fld_5_5_60 = new double [25];
     private    short fld_6_5_60;
                Object fld_7_5_60;
   }
@@ -6010,10 +6011,10 @@ public final class WildClasses {
     private    float fld_3_5_61;
     protected  Object fld_4_5_61;
                int fld_5_5_61;
-    private    Object[] fld_6_5_61 = new Object [388];
+    private    Object[] fld_6_5_61 = new Object [13];
     private    byte fld_7_5_61;
-    private    byte[] fld_8_5_61 = new byte [488];
-    protected  long[] fld_9_5_61 = new long [45];
+    private    byte[] fld_8_5_61 = new byte [1];
+    protected  long[] fld_9_5_61 = new long [46];
     public     double fld_10_5_61;
     protected  double fld_11_5_61;
     public     int fld_12_5_61;
@@ -6026,8 +6027,8 @@ public final class WildClasses {
     protected  double fld_2_5_62;
     public     long fld_3_5_62;
     protected  float fld_4_5_62;
-    protected  boolean[] fld_5_5_62 = new boolean [694];
-    public     Object[] fld_6_5_62 = new Object [683];
+    protected  boolean[] fld_5_5_62 = new boolean [46];
+    public     Object[] fld_6_5_62 = new Object [27];
     private    long fld_7_5_62;
     private    long fld_8_5_62;
     protected  byte fld_9_5_62;
@@ -6049,7 +6050,7 @@ public final class WildClasses {
   }
 
   public static class Wild_5_64 extends Wild_4_61 {
-               long[] fld_0_5_64 = new long [394];
+               long[] fld_0_5_64 = new long [11];
     private    short fld_1_5_64;
     private    char fld_2_5_64;
   }
@@ -6075,7 +6076,7 @@ public final class WildClasses {
 
   public static class Wild_5_68 extends Wild_4_70 {
     private    boolean fld_0_5_68;
-               boolean[] fld_1_5_68 = new boolean [742];
+               boolean[] fld_1_5_68 = new boolean [57];
   }
 
   public static class Wild_5_69 extends Wild_4_11 {
@@ -6083,18 +6084,18 @@ public final class WildClasses {
     protected  int fld_1_5_69;
                short fld_2_5_69;
     public     double fld_3_5_69;
-    public     float[] fld_4_5_69 = new float [77];
+    public     float[] fld_4_5_69 = new float [32];
   }
 
   public static class Wild_5_70 extends Wild_4_21 {
-    protected  long[] fld_0_5_70 = new long [276];
+    protected  long[] fld_0_5_70 = new long [38];
     private    char fld_1_5_70;
     private    char fld_2_5_70;
     private    byte fld_3_5_70;
                boolean fld_4_5_70;
     protected  float fld_5_5_70;
     protected  byte fld_6_5_70;
-    private    char[] fld_7_5_70 = new char [839];
+    private    char[] fld_7_5_70 = new char [53];
   }
 
   public static class Wild_5_71 extends Wild_4_24 {
@@ -6108,7 +6109,7 @@ public final class WildClasses {
 
   public static class Wild_5_73 extends Wild_4_27 {
     protected  byte fld_0_5_73;
-    protected  long[] fld_1_5_73 = new long [591];
+    protected  long[] fld_1_5_73 = new long [21];
                long fld_2_5_73;
     protected  Object fld_3_5_73;
                short fld_4_5_73;
@@ -6124,10 +6125,10 @@ public final class WildClasses {
 
   public static class Wild_5_74 extends Wild_4_57 {
     public     char fld_0_5_74;
-               float[] fld_1_5_74 = new float [178];
+               float[] fld_1_5_74 = new float [43];
     protected  char fld_2_5_74;
     private    short fld_3_5_74;
-    public     int[] fld_4_5_74 = new int [213];
+    public     int[] fld_4_5_74 = new int [55];
   }
 
   public static class Wild_5_75 extends Wild_4_45 {
@@ -6149,8 +6150,8 @@ public final class WildClasses {
 
   public static class Wild_5_77 extends Wild_4_78 {
     public     int fld_0_5_77;
-    protected  char[] fld_1_5_77 = new char [575];
-    protected  byte[] fld_2_5_77 = new byte [518];
+    protected  char[] fld_1_5_77 = new char [1];
+    protected  byte[] fld_2_5_77 = new byte [4];
     public     Object fld_3_5_77;
     protected  Object fld_4_5_77;
     private    Object fld_5_5_77;
@@ -6229,7 +6230,7 @@ public final class WildClasses {
     protected  boolean fld_0_5_84;
     protected  long fld_1_5_84;
     public     byte fld_2_5_84;
-    public     boolean[] fld_3_5_84 = new boolean [258];
+    public     boolean[] fld_3_5_84 = new boolean [12];
                char fld_4_5_84;
                char fld_5_5_84;
     private    float fld_6_5_84;
@@ -6246,7 +6247,7 @@ public final class WildClasses {
     protected  short fld_4_5_85;
     protected  short fld_5_5_85;
                short fld_6_5_85;
-    protected  char[] fld_7_5_85 = new char [298];
+    protected  char[] fld_7_5_85 = new char [29];
     public     Object fld_8_5_85;
     private    int fld_9_5_85;
                boolean fld_10_5_85;
@@ -6262,13 +6263,13 @@ public final class WildClasses {
   }
 
   public static class Wild_5_87 extends Wild_4_20 {
-    private    double[] fld_0_5_87 = new double [151];
+    private    double[] fld_0_5_87 = new double [29];
                long fld_1_5_87;
     private    Object fld_2_5_87;
   }
 
   public static class Wild_5_88 extends Wild_4_22 {
-    protected  long[] fld_0_5_88 = new long [68];
+    protected  long[] fld_0_5_88 = new long [20];
     public     short fld_1_5_88;
                float fld_2_5_88;
                byte fld_3_5_88;
@@ -6281,7 +6282,7 @@ public final class WildClasses {
                short fld_3_5_89;
     private    double fld_4_5_89;
     protected  char fld_5_5_89;
-    protected  int[] fld_6_5_89 = new int [727];
+    protected  int[] fld_6_5_89 = new int [45];
     protected  byte fld_7_5_89;
     protected  short fld_8_5_89;
     protected  char fld_9_5_89;
@@ -6290,17 +6291,17 @@ public final class WildClasses {
   }
 
   public static class Wild_5_90 extends Wild_4_60 {
-               char[] fld_0_5_90 = new char [200];
+               char[] fld_0_5_90 = new char [0];
     public     int fld_1_5_90;
-    public     double[] fld_2_5_90 = new double [365];
+    public     double[] fld_2_5_90 = new double [46];
     private    int fld_3_5_90;
-    public     int[] fld_4_5_90 = new int [748];
+    public     int[] fld_4_5_90 = new int [57];
     protected  short fld_5_5_90;
     private    float fld_6_5_90;
     public     double fld_7_5_90;
     private    float fld_8_5_90;
     protected  long fld_9_5_90;
-    private    int[] fld_10_5_90 = new int [175];
+    private    int[] fld_10_5_90 = new int [42];
     protected  long fld_11_5_90;
     protected  boolean fld_12_5_90;
     private    byte fld_13_5_90;
@@ -6311,13 +6312,13 @@ public final class WildClasses {
   public static class Wild_5_91 extends Wild_4_31 {
     public     byte fld_0_5_91;
     public     Object fld_1_5_91;
-    protected  Object[] fld_2_5_91 = new Object [639];
+    protected  Object[] fld_2_5_91 = new Object [27];
                int fld_3_5_91;
   }
 
   public static class Wild_5_92 extends Wild_4_80 {
     protected  char fld_0_5_92;
-    private    int[] fld_1_5_92 = new int [581];
+    private    int[] fld_1_5_92 = new int [37];
     private    float fld_2_5_92;
                char fld_3_5_92;
     private    Object fld_4_5_92;
@@ -6332,7 +6333,7 @@ public final class WildClasses {
   }
 
   public static class Wild_5_94 extends Wild_4_45 {
-               byte[] fld_0_5_94 = new byte [8];
+               byte[] fld_0_5_94 = new byte [47];
   }
 
   public static class Wild_5_95 extends Wild_4_50 {
@@ -6341,8 +6342,8 @@ public final class WildClasses {
     public     short fld_2_5_95;
     protected  byte fld_3_5_95;
     protected  long fld_4_5_95;
-    protected  int[] fld_5_5_95 = new int [156];
-               float[] fld_6_5_95 = new float [888];
+    protected  int[] fld_5_5_95 = new int [39];
+               float[] fld_6_5_95 = new float [32];
     public     byte fld_7_5_95;
     protected  Object fld_8_5_95;
   }
@@ -6350,7 +6351,7 @@ public final class WildClasses {
   public static class Wild_5_96 extends Wild_4_48 {
     private    float fld_0_5_96;
     protected  short fld_1_5_96;
-    private    int[] fld_2_5_96 = new int [860];
+    private    int[] fld_2_5_96 = new int [32];
     private    double fld_3_5_96;
     protected  Object fld_4_5_96;
     protected  int fld_5_5_96;
@@ -6365,7 +6366,7 @@ public final class WildClasses {
   public static class Wild_5_97 extends Wild_4_64 {
     public     Object fld_0_5_97;
     protected  int fld_1_5_97;
-    protected  long[] fld_2_5_97 = new long [115];
+    protected  long[] fld_2_5_97 = new long [16];
                char fld_3_5_97;
     protected  byte fld_4_5_97;
                long fld_5_5_97;
@@ -6397,7 +6398,7 @@ public final class WildClasses {
   }
 
   public static class Wild_6_0 extends Wild_5_63 {
-    protected  float[] fld_0_6_0 = new float [592];
+    protected  float[] fld_0_6_0 = new float [24];
     public     long fld_1_6_0;
     private    char fld_2_6_0;
     public     long fld_3_6_0;
@@ -6405,7 +6406,7 @@ public final class WildClasses {
 
   public static class Wild_6_1 extends Wild_5_34 {
     public     float fld_0_6_1;
-    private    byte[] fld_1_6_1 = new byte [378];
+    private    byte[] fld_1_6_1 = new byte [26];
   }
 
   public static class Wild_6_2 extends Wild_5_8 {
@@ -6439,26 +6440,26 @@ public final class WildClasses {
   }
 
   public static class Wild_6_5 extends Wild_5_22 {
-    private    byte[] fld_0_6_5 = new byte [254];
+    private    byte[] fld_0_6_5 = new byte [21];
     public     double fld_1_6_5;
-    private    int[] fld_2_6_5 = new int [965];
-    protected  long[] fld_3_6_5 = new long [66];
+    private    int[] fld_2_6_5 = new int [55];
+    protected  long[] fld_3_6_5 = new long [24];
     private    float fld_4_6_5;
-    private    Object[] fld_5_6_5 = new Object [72];
+    private    Object[] fld_5_6_5 = new Object [15];
   }
 
   public static class Wild_6_6 extends Wild_5_67 {
-    protected  double[] fld_0_6_6 = new double [976];
+    protected  double[] fld_0_6_6 = new double [42];
     private    short fld_1_6_6;
                float fld_2_6_6;
     protected  boolean fld_3_6_6;
-    public     Object[] fld_4_6_6 = new Object [631];
+    public     Object[] fld_4_6_6 = new Object [25];
     protected  float fld_5_6_6;
   }
 
   public static class Wild_6_7 extends Wild_5_79 {
     public     short fld_0_6_7;
-    public     long[] fld_1_6_7 = new long [975];
+    public     long[] fld_1_6_7 = new long [22];
                boolean fld_2_6_7;
                float fld_3_6_7;
                float fld_4_6_7;
@@ -6481,19 +6482,19 @@ public final class WildClasses {
                double fld_7_6_9;
     protected  boolean fld_8_6_9;
     private    int fld_9_6_9;
-               double[] fld_10_6_9 = new double [878];
+               double[] fld_10_6_9 = new double [34];
     private    int fld_11_6_9;
   }
 
   public static class Wild_6_10 extends Wild_5_96 {
                double fld_0_6_10;
-               float[] fld_1_6_10 = new float [831];
+               float[] fld_1_6_10 = new float [26];
                short fld_2_6_10;
     public     float fld_3_6_10;
     private    int fld_4_6_10;
     protected  long fld_5_6_10;
     protected  long fld_6_6_10;
-    private    Object[] fld_7_6_10 = new Object [905];
+    private    Object[] fld_7_6_10 = new Object [37];
     protected  short fld_8_6_10;
     public     int fld_9_6_10;
     protected  float fld_10_6_10;
@@ -6503,11 +6504,11 @@ public final class WildClasses {
   public static class Wild_6_11 extends Wild_5_92 {
     public     boolean fld_0_6_11;
     public     int fld_1_6_11;
-    protected  short[] fld_2_6_11 = new short [699];
+    protected  short[] fld_2_6_11 = new short [58];
     public     char fld_3_6_11;
                int fld_4_6_11;
     private    float fld_5_6_11;
-    private    Object[] fld_6_6_11 = new Object [512];
+    private    Object[] fld_6_6_11 = new Object [37];
     protected  boolean fld_7_6_11;
                float fld_8_6_11;
     public     byte fld_9_6_11;
@@ -6522,13 +6523,13 @@ public final class WildClasses {
   }
 
   public static class Wild_6_13 extends Wild_5_1 {
-    public     boolean[] fld_0_6_13 = new boolean [35];
+    public     boolean[] fld_0_6_13 = new boolean [58];
                char fld_1_6_13;
     private    char fld_2_6_13;
     public     int fld_3_6_13;
     protected  boolean fld_4_6_13;
     protected  Object fld_5_6_13;
-               int[] fld_6_6_13 = new int [648];
+               int[] fld_6_6_13 = new int [13];
     private    char fld_7_6_13;
     protected  byte fld_8_6_13;
                float fld_9_6_13;
@@ -6537,7 +6538,7 @@ public final class WildClasses {
   public static class Wild_6_14 extends Wild_5_90 {
                boolean fld_0_6_14;
     protected  long fld_1_6_14;
-    public     short[] fld_2_6_14 = new short [729];
+    public     short[] fld_2_6_14 = new short [19];
     public     boolean fld_3_6_14;
     private    int fld_4_6_14;
     public     float fld_5_6_14;
@@ -6553,7 +6554,7 @@ public final class WildClasses {
   public static class Wild_6_16 extends Wild_5_78 {
     public     float fld_0_6_16;
     private    long fld_1_6_16;
-    private    short[] fld_2_6_16 = new short [200];
+    private    short[] fld_2_6_16 = new short [44];
                char fld_3_6_16;
                Object fld_4_6_16;
                char fld_5_6_16;
@@ -6599,7 +6600,7 @@ public final class WildClasses {
   public static class Wild_6_20 extends Wild_5_1 {
     private    Object fld_0_6_20;
     public     Object fld_1_6_20;
-               Object[] fld_2_6_20 = new Object [798];
+               Object[] fld_2_6_20 = new Object [31];
     protected  long fld_3_6_20;
     protected  double fld_4_6_20;
   }
@@ -6613,7 +6614,7 @@ public final class WildClasses {
     protected  float fld_1_6_22;
     protected  long fld_2_6_22;
     public     Object fld_3_6_22;
-    public     long[] fld_4_6_22 = new long [648];
+    public     long[] fld_4_6_22 = new long [51];
   }
 
   public static class Wild_6_23 extends Wild_5_9 {
@@ -6622,7 +6623,7 @@ public final class WildClasses {
     private    boolean fld_2_6_23;
     private    float fld_3_6_23;
     public     float fld_4_6_23;
-               double[] fld_5_6_23 = new double [324];
+               double[] fld_5_6_23 = new double [25];
     public     byte fld_6_6_23;
     private    float fld_7_6_23;
                float fld_8_6_23;
@@ -6635,7 +6636,7 @@ public final class WildClasses {
     protected  int fld_3_6_24;
     protected  boolean fld_4_6_24;
     private    char fld_5_6_24;
-    protected  long[] fld_6_6_24 = new long [420];
+    protected  long[] fld_6_6_24 = new long [12];
     private    double fld_7_6_24;
     public     byte fld_8_6_24;
                Object fld_9_6_24;
@@ -6645,12 +6646,12 @@ public final class WildClasses {
   }
 
   public static class Wild_6_25 extends Wild_5_33 {
-    public     short[] fld_0_6_25 = new short [936];
+    public     short[] fld_0_6_25 = new short [39];
     private    Object fld_1_6_25;
                short fld_2_6_25;
-    private    char[] fld_3_6_25 = new char [881];
+    private    char[] fld_3_6_25 = new char [54];
     protected  short fld_4_6_25;
-               Object[] fld_5_6_25 = new Object [546];
+               Object[] fld_5_6_25 = new Object [43];
     protected  float fld_6_6_25;
                boolean fld_7_6_25;
                boolean fld_8_6_25;
@@ -6660,14 +6661,14 @@ public final class WildClasses {
                short fld_12_6_25;
     public     char fld_13_6_25;
     private    byte fld_14_6_25;
-    private    float[] fld_15_6_25 = new float [382];
+    private    float[] fld_15_6_25 = new float [39];
                boolean fld_16_6_25;
   }
 
   public static class Wild_6_26 extends Wild_5_23 {
     public     float fld_0_6_26;
     protected  boolean fld_1_6_26;
-    private    boolean[] fld_2_6_26 = new boolean [262];
+    private    boolean[] fld_2_6_26 = new boolean [31];
                char fld_3_6_26;
   }
 
@@ -6712,7 +6713,7 @@ public final class WildClasses {
   }
 
   public static class Wild_6_32 extends Wild_5_69 {
-    private    char[] fld_0_6_32 = new char [865];
+    private    char[] fld_0_6_32 = new char [27];
                double fld_1_6_32;
     protected  byte fld_2_6_32;
     private    int fld_3_6_32;
@@ -6722,14 +6723,14 @@ public final class WildClasses {
 
   public static class Wild_6_33 extends Wild_5_12 {
                char fld_0_6_33;
-               long[] fld_1_6_33 = new long [788];
+               long[] fld_1_6_33 = new long [42];
                byte fld_2_6_33;
     protected  Object fld_3_6_33;
                byte fld_4_6_33;
     private    int fld_5_6_33;
     private    long fld_6_6_33;
     public     short fld_7_6_33;
-    public     byte[] fld_8_6_33 = new byte [715];
+    public     byte[] fld_8_6_33 = new byte [41];
     private    char fld_9_6_33;
   }
 
@@ -6744,7 +6745,7 @@ public final class WildClasses {
 
   public static class Wild_6_35 extends Wild_5_21 {
     public     short fld_0_6_35;
-    private    short[] fld_1_6_35 = new short [261];
+    private    short[] fld_1_6_35 = new short [49];
                float fld_2_6_35;
                float fld_3_6_35;
                boolean fld_4_6_35;
@@ -6766,14 +6767,14 @@ public final class WildClasses {
     protected  long fld_2_6_37;
     public     int fld_3_6_37;
     private    byte fld_4_6_37;
-               boolean[] fld_5_6_37 = new boolean [170];
-    protected  Object[] fld_6_6_37 = new Object [279];
+               boolean[] fld_5_6_37 = new boolean [11];
+    protected  Object[] fld_6_6_37 = new Object [63];
     private    boolean fld_7_6_37;
     protected  long fld_8_6_37;
   }
 
   public static class Wild_6_38 extends Wild_5_43 {
-    public     byte[] fld_0_6_38 = new byte [722];
+    public     byte[] fld_0_6_38 = new byte [45];
     protected  char fld_1_6_38;
     private    int fld_2_6_38;
     public     long fld_3_6_38;
@@ -6802,12 +6803,12 @@ public final class WildClasses {
   }
 
   public static class Wild_6_40 extends Wild_5_12 {
-    public     long[] fld_0_6_40 = new long [61];
+    public     long[] fld_0_6_40 = new long [24];
                int fld_1_6_40;
     public     short fld_2_6_40;
                char fld_3_6_40;
                int fld_4_6_40;
-    protected  int[] fld_5_6_40 = new int [467];
+    protected  int[] fld_5_6_40 = new int [27];
                byte fld_6_6_40;
                byte fld_7_6_40;
     protected  char fld_8_6_40;
@@ -6837,12 +6838,12 @@ public final class WildClasses {
                short fld_0_6_43;
     private    char fld_1_6_43;
     protected  long fld_2_6_43;
-               short[] fld_3_6_43 = new short [229];
+               short[] fld_3_6_43 = new short [33];
     public     double fld_4_6_43;
     private    char fld_5_6_43;
     protected  Object fld_6_6_43;
-    protected  short[] fld_7_6_43 = new short [78];
-               char[] fld_8_6_43 = new char [517];
+    protected  short[] fld_7_6_43 = new short [38];
+               char[] fld_8_6_43 = new char [3];
     protected  boolean fld_9_6_43;
   }
 
@@ -6889,8 +6890,8 @@ public final class WildClasses {
     public     long fld_1_6_48;
     public     char fld_2_6_48;
                Object fld_3_6_48;
-    private    byte[] fld_4_6_48 = new byte [894];
-    public     byte[] fld_5_6_48 = new byte [746];
+    private    byte[] fld_4_6_48 = new byte [9];
+    public     byte[] fld_5_6_48 = new byte [23];
     private    long fld_6_6_48;
     protected  short fld_7_6_48;
     public     double fld_8_6_48;
@@ -6903,8 +6904,8 @@ public final class WildClasses {
     private    char fld_3_6_49;
     public     double fld_4_6_49;
                int fld_5_6_49;
-    public     char[] fld_6_6_49 = new char [119];
-    private    long[] fld_7_6_49 = new long [233];
+    public     char[] fld_6_6_49 = new char [53];
+    private    long[] fld_7_6_49 = new long [25];
                int fld_8_6_49;
                int fld_9_6_49;
   }
@@ -6955,7 +6956,7 @@ public final class WildClasses {
   public static class Wild_6_55 extends Wild_5_39 {
                short fld_0_6_55;
                short fld_1_6_55;
-    public     boolean[] fld_2_6_55 = new boolean [673];
+    public     boolean[] fld_2_6_55 = new boolean [19];
                boolean fld_3_6_55;
     private    double fld_4_6_55;
     public     Object fld_5_6_55;
@@ -6968,7 +6969,7 @@ public final class WildClasses {
     protected  char fld_2_6_56;
     public     Object fld_3_6_56;
                byte fld_4_6_56;
-    public     int[] fld_5_6_56 = new int [942];
+    public     int[] fld_5_6_56 = new int [12];
     protected  char fld_6_6_56;
     public     double fld_7_6_56;
     public     byte fld_8_6_56;
@@ -7008,7 +7009,7 @@ public final class WildClasses {
     protected  Object fld_1_6_60;
     protected  Object fld_2_6_60;
     protected  boolean fld_3_6_60;
-    protected  char[] fld_4_6_60 = new char [650];
+    protected  char[] fld_4_6_60 = new char [40];
                byte fld_5_6_60;
     public     long fld_6_6_60;
     private    int fld_7_6_60;
@@ -7024,14 +7025,14 @@ public final class WildClasses {
     private    float fld_17_6_60;
     private    short fld_18_6_60;
     private    Object fld_19_6_60;
-    private    short[] fld_20_6_60 = new short [435];
+    private    short[] fld_20_6_60 = new short [19];
   }
 
   public static class Wild_6_61 extends Wild_5_91 {
-    public     byte[] fld_0_6_61 = new byte [712];
-    public     double[] fld_1_6_61 = new double [195];
+    public     byte[] fld_0_6_61 = new byte [1];
+    public     double[] fld_1_6_61 = new double [52];
     public     Object fld_2_6_61;
-               short[] fld_3_6_61 = new short [182];
+               short[] fld_3_6_61 = new short [30];
   }
 
   public static class Wild_6_62 extends Wild_5_19 {
@@ -7040,7 +7041,7 @@ public final class WildClasses {
     private    char fld_2_6_62;
     public     short fld_3_6_62;
     public     boolean fld_4_6_62;
-    protected  byte[] fld_5_6_62 = new byte [141];
+    protected  byte[] fld_5_6_62 = new byte [10];
                boolean fld_6_6_62;
     public     char fld_7_6_62;
                int fld_8_6_62;
@@ -7049,7 +7050,7 @@ public final class WildClasses {
   }
 
   public static class Wild_6_63 extends Wild_5_16 {
-    private    int[] fld_0_6_63 = new int [506];
+    private    int[] fld_0_6_63 = new int [30];
                byte fld_1_6_63;
                short fld_2_6_63;
     protected  byte fld_3_6_63;
@@ -7088,14 +7089,14 @@ public final class WildClasses {
   }
 
   public static class Wild_6_66 extends Wild_5_42 {
-               Object[] fld_0_6_66 = new Object [954];
+               Object[] fld_0_6_66 = new Object [38];
     protected  Object fld_1_6_66;
     public     int fld_2_6_66;
                Object fld_3_6_66;
     private    byte fld_4_6_66;
     private    double fld_5_6_66;
     protected  short fld_6_6_66;
-               boolean[] fld_7_6_66 = new boolean [742];
+               boolean[] fld_7_6_66 = new boolean [51];
     public     int fld_8_6_66;
     protected  float fld_9_6_66;
                short fld_10_6_66;
@@ -7106,7 +7107,7 @@ public final class WildClasses {
     protected  boolean fld_1_6_67;
                byte fld_2_6_67;
     protected  float fld_3_6_67;
-    protected  byte[] fld_4_6_67 = new byte [815];
+    protected  byte[] fld_4_6_67 = new byte [48];
     public     double fld_5_6_67;
     public     int fld_6_6_67;
     private    byte fld_7_6_67;
@@ -7135,7 +7136,7 @@ public final class WildClasses {
 
   public static class Wild_6_71 extends Wild_5_42 {
     public     boolean fld_0_6_71;
-               Object[] fld_1_6_71 = new Object [382];
+               Object[] fld_1_6_71 = new Object [6];
     public     char fld_2_6_71;
     public     float fld_3_6_71;
     public     char fld_4_6_71;
@@ -7176,8 +7177,8 @@ public final class WildClasses {
   public static class Wild_6_76 extends Wild_5_50 {
     protected  float fld_0_6_76;
     protected  Object fld_1_6_76;
-    private    float[] fld_2_6_76 = new float [807];
-    protected  char[] fld_3_6_76 = new char [147];
+    private    float[] fld_2_6_76 = new float [9];
+    protected  char[] fld_3_6_76 = new char [8];
     protected  short fld_4_6_76;
     private    char fld_5_6_76;
     private    double fld_6_6_76;
@@ -7204,9 +7205,9 @@ public final class WildClasses {
     public     float fld_3_6_78;
                boolean fld_4_6_78;
                float fld_5_6_78;
-               float[] fld_6_6_78 = new float [10];
+               float[] fld_6_6_78 = new float [61];
     public     long fld_7_6_78;
-    protected  short[] fld_8_6_78 = new short [760];
+    protected  short[] fld_8_6_78 = new short [7];
     protected  Object fld_9_6_78;
     private    boolean fld_10_6_78;
     protected  long fld_11_6_78;
@@ -7220,13 +7221,13 @@ public final class WildClasses {
   }
 
   public static class Wild_6_80 extends Wild_5_20 {
-    protected  Object[] fld_0_6_80 = new Object [165];
+    protected  Object[] fld_0_6_80 = new Object [8];
     public     short fld_1_6_80;
     private    int fld_2_6_80;
                char fld_3_6_80;
                short fld_4_6_80;
                long fld_5_6_80;
-    private    char[] fld_6_6_80 = new char [761];
+    private    char[] fld_6_6_80 = new char [47];
   }
 
   public static class Wild_6_81 extends Wild_5_78 {
@@ -7239,7 +7240,7 @@ public final class WildClasses {
   }
 
   public static class Wild_6_82 extends Wild_5_93 {
-    private    long[] fld_0_6_82 = new long [461];
+    private    long[] fld_0_6_82 = new long [47];
     private    boolean fld_1_6_82;
     protected  double fld_2_6_82;
     private    long fld_3_6_82;
@@ -7260,7 +7261,7 @@ public final class WildClasses {
     private    byte fld_5_6_83;
     public     boolean fld_6_6_83;
     protected  Object fld_7_6_83;
-               float[] fld_8_6_83 = new float [48];
+               float[] fld_8_6_83 = new float [12];
                double fld_9_6_83;
                boolean fld_10_6_83;
     protected  int fld_11_6_83;
@@ -7278,10 +7279,10 @@ public final class WildClasses {
   }
 
   public static class Wild_6_85 extends Wild_5_88 {
-    private    long[] fld_0_6_85 = new long [273];
+    private    long[] fld_0_6_85 = new long [0];
     private    float fld_1_6_85;
                int fld_2_6_85;
-    protected  long[] fld_3_6_85 = new long [938];
+    protected  long[] fld_3_6_85 = new long [29];
     protected  Object fld_4_6_85;
     public     int fld_5_6_85;
                int fld_6_6_85;
@@ -7295,9 +7296,9 @@ public final class WildClasses {
 
   public static class Wild_6_87 extends Wild_5_24 {
     public     char fld_0_6_87;
-    public     int[] fld_1_6_87 = new int [300];
-    private    boolean[] fld_2_6_87 = new boolean [63];
-    protected  int[] fld_3_6_87 = new int [714];
+    public     int[] fld_1_6_87 = new int [9];
+    private    boolean[] fld_2_6_87 = new boolean [39];
+    protected  int[] fld_3_6_87 = new int [23];
     protected  boolean fld_4_6_87;
     public     long fld_5_6_87;
     protected  char fld_6_6_87;
@@ -7307,7 +7308,7 @@ public final class WildClasses {
   }
 
   public static class Wild_6_88 extends Wild_5_42 {
-    public     Object[] fld_0_6_88 = new Object [93];
+    public     Object[] fld_0_6_88 = new Object [10];
     private    boolean fld_1_6_88;
     protected  long fld_2_6_88;
                double fld_3_6_88;
@@ -7317,11 +7318,11 @@ public final class WildClasses {
   }
 
   public static class Wild_6_89 extends Wild_5_71 {
-               float[] fld_0_6_89 = new float [314];
+               float[] fld_0_6_89 = new float [56];
     protected  byte fld_1_6_89;
     public     Object fld_2_6_89;
     public     Object fld_3_6_89;
-    protected  char[] fld_4_6_89 = new char [159];
+    protected  char[] fld_4_6_89 = new char [10];
                short fld_5_6_89;
   }
 
@@ -7338,20 +7339,20 @@ public final class WildClasses {
   public static class Wild_6_92 extends Wild_5_88 {
     protected  float fld_0_6_92;
     protected  boolean fld_1_6_92;
-    protected  char[] fld_2_6_92 = new char [687];
+    protected  char[] fld_2_6_92 = new char [33];
     protected  char fld_3_6_92;
     protected  char fld_4_6_92;
     public     double fld_5_6_92;
     public     Object fld_6_6_92;
-    public     double[] fld_7_6_92 = new double [86];
+    public     double[] fld_7_6_92 = new double [20];
   }
 
   public static class Wild_6_93 extends Wild_5_20 {
-    protected  char[] fld_0_6_93 = new char [816];
+    protected  char[] fld_0_6_93 = new char [17];
                short fld_1_6_93;
     protected  double fld_2_6_93;
     protected  long fld_3_6_93;
-    private    int[] fld_4_6_93 = new int [908];
+    private    int[] fld_4_6_93 = new int [1];
     public     Object fld_5_6_93;
     public     Object fld_6_6_93;
     protected  int fld_7_6_93;
@@ -7375,7 +7376,7 @@ public final class WildClasses {
                char fld_1_6_95;
     protected  Object fld_2_6_95;
     private    double fld_3_6_95;
-               Object[] fld_4_6_95 = new Object [866];
+               Object[] fld_4_6_95 = new Object [33];
     public     boolean fld_5_6_95;
   }
 
@@ -7384,7 +7385,7 @@ public final class WildClasses {
                long fld_1_6_96;
     private    boolean fld_2_6_96;
                char fld_3_6_96;
-    protected  byte[] fld_4_6_96 = new byte [809];
+    protected  byte[] fld_4_6_96 = new byte [38];
     private    int fld_5_6_96;
                short fld_6_6_96;
     protected  byte fld_7_6_96;
@@ -7393,7 +7394,7 @@ public final class WildClasses {
     private    char fld_10_6_96;
     protected  int fld_11_6_96;
     protected  byte fld_12_6_96;
-    private    byte[] fld_13_6_96 = new byte [22];
+    private    byte[] fld_13_6_96 = new byte [14];
                Object fld_14_6_96;
   }
 
@@ -7409,7 +7410,7 @@ public final class WildClasses {
     public     int fld_8_6_97;
     private    double fld_9_6_97;
     private    double fld_10_6_97;
-    private    float[] fld_11_6_97 = new float [185];
+    private    float[] fld_11_6_97 = new float [20];
     private    short fld_12_6_97;
   }
 
@@ -7435,8 +7436,8 @@ public final class WildClasses {
 
   public static class Wild_7_0 extends Wild_6_33 {
     protected  int fld_0_7_0;
-    public     Object[] fld_1_7_0 = new Object [235];
-    protected  float[] fld_2_7_0 = new float [129];
+    public     Object[] fld_1_7_0 = new Object [23];
+    protected  float[] fld_2_7_0 = new float [20];
                char fld_3_7_0;
                double fld_4_7_0;
     private    double fld_5_7_0;
@@ -7446,7 +7447,7 @@ public final class WildClasses {
                boolean fld_9_7_0;
                long fld_10_7_0;
                Object fld_11_7_0;
-               long[] fld_12_7_0 = new long [471];
+               long[] fld_12_7_0 = new long [18];
                double fld_13_7_0;
                int fld_14_7_0;
   }
@@ -7468,10 +7469,10 @@ public final class WildClasses {
   }
 
   public static class Wild_7_3 extends Wild_6_10 {
-    private    int[] fld_0_7_3 = new int [450];
+    private    int[] fld_0_7_3 = new int [7];
     private    char fld_1_7_3;
                double fld_2_7_3;
-    protected  Object[] fld_3_7_3 = new Object [99];
+    protected  Object[] fld_3_7_3 = new Object [1];
     private    short fld_4_7_3;
     public     char fld_5_7_3;
     private    Object fld_6_7_3;
@@ -7488,9 +7489,9 @@ public final class WildClasses {
     public     byte fld_0_7_4;
     public     long fld_1_7_4;
     protected  double fld_2_7_4;
-    public     byte[] fld_3_7_4 = new byte [148];
-               boolean[] fld_4_7_4 = new boolean [276];
-    protected  long[] fld_5_7_4 = new long [119];
+    public     byte[] fld_3_7_4 = new byte [63];
+               boolean[] fld_4_7_4 = new boolean [54];
+    protected  long[] fld_5_7_4 = new long [61];
                Object fld_6_7_4;
     protected  byte fld_7_7_4;
     protected  int fld_8_7_4;
@@ -7527,7 +7528,7 @@ public final class WildClasses {
     private    Object fld_7_7_8;
     protected  boolean fld_8_7_8;
     protected  long fld_9_7_8;
-    protected  float[] fld_10_7_8 = new float [471];
+    protected  float[] fld_10_7_8 = new float [34];
   }
 
   public static class Wild_7_9 extends Wild_6_16 {
@@ -7538,18 +7539,18 @@ public final class WildClasses {
     public     double fld_4_7_9;
     private    byte fld_5_7_9;
                Object fld_6_7_9;
-    protected  short[] fld_7_7_9 = new short [947];
+    protected  short[] fld_7_7_9 = new short [53];
                float fld_8_7_9;
   }
 
   public static class Wild_7_10 extends Wild_6_52 {
     public     float fld_0_7_10;
     protected  boolean fld_1_7_10;
-               byte[] fld_2_7_10 = new byte [508];
+               byte[] fld_2_7_10 = new byte [44];
                short fld_3_7_10;
     public     double fld_4_7_10;
     private    int fld_5_7_10;
-    private    byte[] fld_6_7_10 = new byte [148];
+    private    byte[] fld_6_7_10 = new byte [53];
                char fld_7_7_10;
   }
 
@@ -7560,11 +7561,11 @@ public final class WildClasses {
   }
 
   public static class Wild_7_12 extends Wild_6_88 {
-    private    short[] fld_0_7_12 = new short [480];
+    private    short[] fld_0_7_12 = new short [61];
     private    short fld_1_7_12;
     private    double fld_2_7_12;
     public     boolean fld_3_7_12;
-    private    long[] fld_4_7_12 = new long [672];
+    private    long[] fld_4_7_12 = new long [51];
     public     char fld_5_7_12;
   }
 
@@ -7581,7 +7582,7 @@ public final class WildClasses {
   public static class Wild_7_14 extends Wild_6_33 {
     private    float fld_0_7_14;
                long fld_1_7_14;
-    public     long[] fld_2_7_14 = new long [679];
+    public     long[] fld_2_7_14 = new long [55];
     protected  short fld_3_7_14;
                boolean fld_4_7_14;
     private    short fld_5_7_14;
@@ -7591,7 +7592,7 @@ public final class WildClasses {
     private    boolean fld_0_7_15;
                Object fld_1_7_15;
                double fld_2_7_15;
-    protected  int[] fld_3_7_15 = new int [174];
+    protected  int[] fld_3_7_15 = new int [13];
   }
 
   public static class Wild_7_16 extends Wild_6_93 {
@@ -7600,24 +7601,24 @@ public final class WildClasses {
     protected  byte fld_2_7_16;
     public     long fld_3_7_16;
     private    double fld_4_7_16;
-               long[] fld_5_7_16 = new long [116];
+               long[] fld_5_7_16 = new long [52];
   }
 
   public static class Wild_7_17 extends Wild_6_43 {
                char fld_0_7_17;
     protected  short fld_1_7_17;
     protected  byte fld_2_7_17;
-    protected  double[] fld_3_7_17 = new double [575];
+    protected  double[] fld_3_7_17 = new double [27];
     public     boolean fld_4_7_17;
-               int[] fld_5_7_17 = new int [392];
+               int[] fld_5_7_17 = new int [41];
     private    int fld_6_7_17;
     private    int fld_7_7_17;
   }
 
   public static class Wild_7_18 extends Wild_6_3 {
-    protected  byte[] fld_0_7_18 = new byte [492];
+    protected  byte[] fld_0_7_18 = new byte [1];
                char fld_1_7_18;
-    public     double[] fld_2_7_18 = new double [121];
+    public     double[] fld_2_7_18 = new double [40];
                short fld_3_7_18;
     private    double fld_4_7_18;
     private    long fld_5_7_18;
@@ -7630,7 +7631,7 @@ public final class WildClasses {
     protected  long fld_2_7_19;
                long fld_3_7_19;
     private    boolean fld_4_7_19;
-    protected  int[] fld_5_7_19 = new int [175];
+    protected  int[] fld_5_7_19 = new int [17];
                Object fld_6_7_19;
     public     short fld_7_7_19;
   }
@@ -7638,8 +7639,8 @@ public final class WildClasses {
   public static class Wild_7_20 extends Wild_6_49 {
                boolean fld_0_7_20;
     private    double fld_1_7_20;
-    private    float[] fld_2_7_20 = new float [781];
-    private    long[] fld_3_7_20 = new long [856];
+    private    float[] fld_2_7_20 = new float [63];
+    private    long[] fld_3_7_20 = new long [20];
     protected  int fld_4_7_20;
   }
 
@@ -7651,7 +7652,7 @@ public final class WildClasses {
     public     char fld_4_7_21;
                boolean fld_5_7_21;
     public     double fld_6_7_21;
-    public     short[] fld_7_7_21 = new short [906];
+    public     short[] fld_7_7_21 = new short [32];
     public     long fld_8_7_21;
     private    short fld_9_7_21;
     private    char fld_10_7_21;
@@ -7663,7 +7664,7 @@ public final class WildClasses {
     public     short fld_2_7_22;
     public     byte fld_3_7_22;
                int fld_4_7_22;
-    public     short[] fld_5_7_22 = new short [149];
+    public     short[] fld_5_7_22 = new short [19];
                double fld_6_7_22;
     protected  byte fld_7_7_22;
     private    char fld_8_7_22;
@@ -7676,7 +7677,7 @@ public final class WildClasses {
     private    float fld_1_7_23;
     private    Object fld_2_7_23;
                short fld_3_7_23;
-    protected  int[] fld_4_7_23 = new int [842];
+    protected  int[] fld_4_7_23 = new int [9];
                float fld_5_7_23;
     protected  byte fld_6_7_23;
   }
@@ -7704,7 +7705,7 @@ public final class WildClasses {
   public static class Wild_7_26 extends Wild_6_80 {
     protected  Object fld_0_7_26;
     private    int fld_1_7_26;
-               boolean[] fld_2_7_26 = new boolean [319];
+               boolean[] fld_2_7_26 = new boolean [28];
     private    long fld_3_7_26;
     private    Object fld_4_7_26;
     protected  byte fld_5_7_26;
@@ -7724,10 +7725,10 @@ public final class WildClasses {
                short fld_7_7_27;
     public     float fld_8_7_27;
                Object fld_9_7_27;
-               Object[] fld_10_7_27 = new Object [687];
+               Object[] fld_10_7_27 = new Object [63];
     public     Object fld_11_7_27;
     private    float fld_12_7_27;
-    public     byte[] fld_13_7_27 = new byte [791];
+    public     byte[] fld_13_7_27 = new byte [63];
     private    Object fld_14_7_27;
   }
 
@@ -7743,9 +7744,9 @@ public final class WildClasses {
     private    char fld_8_7_28;
     private    byte fld_9_7_28;
     protected  Object fld_10_7_28;
-               double[] fld_11_7_28 = new double [394];
+               double[] fld_11_7_28 = new double [25];
     public     float fld_12_7_28;
-               boolean[] fld_13_7_28 = new boolean [674];
+               boolean[] fld_13_7_28 = new boolean [23];
   }
 
   public static class Wild_7_29 extends Wild_6_78 {
@@ -7755,7 +7756,7 @@ public final class WildClasses {
     protected  long fld_0_7_30;
     private    short fld_1_7_30;
     public     char fld_2_7_30;
-    public     int[] fld_3_7_30 = new int [870];
+    public     int[] fld_3_7_30 = new int [50];
   }
 
   public static class Wild_7_31 extends Wild_6_15 {
@@ -7772,7 +7773,7 @@ public final class WildClasses {
   }
 
   public static class Wild_7_32 extends Wild_6_59 {
-               int[] fld_0_7_32 = new int [286];
+               int[] fld_0_7_32 = new int [15];
     private    long fld_1_7_32;
     protected  float fld_2_7_32;
                float fld_3_7_32;
@@ -7802,7 +7803,7 @@ public final class WildClasses {
   }
 
   public static class Wild_7_36 extends Wild_6_68 {
-    private    float[] fld_0_7_36 = new float [521];
+    private    float[] fld_0_7_36 = new float [45];
                Object fld_1_7_36;
   }
 
@@ -7823,8 +7824,8 @@ public final class WildClasses {
     public     float fld_4_7_38;
     private    long fld_5_7_38;
     protected  int fld_6_7_38;
-    public     float[] fld_7_7_38 = new float [494];
-    protected  boolean[] fld_8_7_38 = new boolean [652];
+    public     float[] fld_7_7_38 = new float [31];
+    protected  boolean[] fld_8_7_38 = new boolean [27];
     protected  char fld_9_7_38;
                boolean fld_10_7_38;
   }
@@ -7833,10 +7834,10 @@ public final class WildClasses {
     public     Object fld_0_7_39;
     public     short fld_1_7_39;
     public     int fld_2_7_39;
-    public     char[] fld_3_7_39 = new char [21];
+    public     char[] fld_3_7_39 = new char [20];
     public     int fld_4_7_39;
                long fld_5_7_39;
-    private    double[] fld_6_7_39 = new double [699];
+    private    double[] fld_6_7_39 = new double [39];
                double fld_7_7_39;
     private    double fld_8_7_39;
   }
@@ -7874,7 +7875,7 @@ public final class WildClasses {
     private    double fld_1_7_44;
     protected  Object fld_2_7_44;
     private    byte fld_3_7_44;
-    private    double[] fld_4_7_44 = new double [810];
+    private    double[] fld_4_7_44 = new double [59];
     private    byte fld_5_7_44;
     public     float fld_6_7_44;
   }
@@ -7882,7 +7883,7 @@ public final class WildClasses {
   public static class Wild_7_45 extends Wild_6_93 {
                long fld_0_7_45;
     private    int fld_1_7_45;
-               Object[] fld_2_7_45 = new Object [893];
+               Object[] fld_2_7_45 = new Object [17];
     protected  float fld_3_7_45;
     private    char fld_4_7_45;
                long fld_5_7_45;
@@ -7890,7 +7891,7 @@ public final class WildClasses {
     protected  float fld_7_7_45;
     public     byte fld_8_7_45;
     private    boolean fld_9_7_45;
-               Object[] fld_10_7_45 = new Object [300];
+               Object[] fld_10_7_45 = new Object [5];
                char fld_11_7_45;
   }
 
@@ -7906,10 +7907,10 @@ public final class WildClasses {
 
   public static class Wild_7_47 extends Wild_6_42 {
     private    int fld_0_7_47;
-    protected  boolean[] fld_1_7_47 = new boolean [874];
+    protected  boolean[] fld_1_7_47 = new boolean [5];
     protected  float fld_2_7_47;
     public     long fld_3_7_47;
-    public     Object[] fld_4_7_47 = new Object [862];
+    public     Object[] fld_4_7_47 = new Object [16];
     public     short fld_5_7_47;
     protected  byte fld_6_7_47;
     public     int fld_7_7_47;
@@ -7936,7 +7937,7 @@ public final class WildClasses {
 
   public static class Wild_7_50 extends Wild_6_0 {
     protected  short fld_0_7_50;
-    public     Object[] fld_1_7_50 = new Object [334];
+    public     Object[] fld_1_7_50 = new Object [34];
     protected  long fld_2_7_50;
   }
 
@@ -7953,7 +7954,7 @@ public final class WildClasses {
                int fld_1_7_52;
     public     int fld_2_7_52;
     protected  long fld_3_7_52;
-    protected  Object[] fld_4_7_52 = new Object [896];
+    protected  Object[] fld_4_7_52 = new Object [48];
     public     double fld_5_7_52;
                int fld_6_7_52;
     public     Object fld_7_7_52;
@@ -7978,9 +7979,9 @@ public final class WildClasses {
     protected  boolean fld_8_7_54;
     protected  float fld_9_7_54;
                boolean fld_10_7_54;
-    protected  int[] fld_11_7_54 = new int [856];
+    protected  int[] fld_11_7_54 = new int [7];
                Object fld_12_7_54;
-               byte[] fld_13_7_54 = new byte [378];
+               byte[] fld_13_7_54 = new byte [60];
   }
 
   public static class Wild_7_55 extends Wild_6_72 {
@@ -8001,7 +8002,7 @@ public final class WildClasses {
     protected  int fld_3_7_56;
     protected  boolean fld_4_7_56;
     protected  long fld_5_7_56;
-               Object[] fld_6_7_56 = new Object [370];
+               Object[] fld_6_7_56 = new Object [27];
   }
 
   public static class Wild_7_57 extends Wild_6_79 {
@@ -8009,24 +8010,24 @@ public final class WildClasses {
                short fld_1_7_57;
     private    char fld_2_7_57;
     private    byte fld_3_7_57;
-    private    float[] fld_4_7_57 = new float [114];
+    private    float[] fld_4_7_57 = new float [49];
                char fld_5_7_57;
                long fld_6_7_57;
                double fld_7_7_57;
                int fld_8_7_57;
     protected  short fld_9_7_57;
-    public     int[] fld_10_7_57 = new int [212];
+    public     int[] fld_10_7_57 = new int [12];
     public     Object fld_11_7_57;
-    private    long[] fld_12_7_57 = new long [270];
-    public     int[] fld_13_7_57 = new int [547];
+    private    long[] fld_12_7_57 = new long [31];
+    public     int[] fld_13_7_57 = new int [22];
                long fld_14_7_57;
     public     short fld_15_7_57;
-    protected  long[] fld_16_7_57 = new long [580];
+    protected  long[] fld_16_7_57 = new long [58];
     public     float fld_17_7_57;
     protected  Object fld_18_7_57;
     private    char fld_19_7_57;
     public     Object fld_20_7_57;
-    public     char[] fld_21_7_57 = new char [320];
+    public     char[] fld_21_7_57 = new char [3];
     protected  long fld_22_7_57;
   }
 
@@ -8035,7 +8036,7 @@ public final class WildClasses {
                int fld_1_7_58;
                short fld_2_7_58;
     public     int fld_3_7_58;
-               long[] fld_4_7_58 = new long [964];
+               long[] fld_4_7_58 = new long [27];
   }
 
   public static class Wild_7_59 extends Wild_6_68 {
@@ -8044,7 +8045,7 @@ public final class WildClasses {
                Object fld_2_7_59;
     public     short fld_3_7_59;
     private    Object fld_4_7_59;
-    protected  byte[] fld_5_7_59 = new byte [808];
+    protected  byte[] fld_5_7_59 = new byte [52];
     public     byte fld_6_7_59;
     protected  float fld_7_7_59;
                Object fld_8_7_59;
@@ -8066,18 +8067,18 @@ public final class WildClasses {
     public     float fld_3_7_61;
                Object fld_4_7_61;
                Object fld_5_7_61;
-               byte[] fld_6_7_61 = new byte [638];
+               byte[] fld_6_7_61 = new byte [60];
     public     boolean fld_7_7_61;
     protected  long fld_8_7_61;
-               double[] fld_9_7_61 = new double [911];
+               double[] fld_9_7_61 = new double [34];
   }
 
   public static class Wild_7_62 extends Wild_6_44 {
     public     short fld_0_7_62;
     private    double fld_1_7_62;
-    public     double[] fld_2_7_62 = new double [360];
+    public     double[] fld_2_7_62 = new double [36];
     public     double fld_3_7_62;
-    private    boolean[] fld_4_7_62 = new boolean [71];
+    private    boolean[] fld_4_7_62 = new boolean [55];
     protected  float fld_5_7_62;
   }
 
@@ -8093,7 +8094,7 @@ public final class WildClasses {
   public static class Wild_7_64 extends Wild_6_89 {
                int fld_0_7_64;
     protected  boolean fld_1_7_64;
-    protected  boolean[] fld_2_7_64 = new boolean [677];
+    protected  boolean[] fld_2_7_64 = new boolean [26];
   }
 
   public static class Wild_7_65 extends Wild_6_18 {
@@ -8101,7 +8102,7 @@ public final class WildClasses {
   }
 
   public static class Wild_7_66 extends Wild_6_25 {
-    private    char[] fld_0_7_66 = new char [924];
+    private    char[] fld_0_7_66 = new char [25];
     public     long fld_1_7_66;
     protected  double fld_2_7_66;
     public     short fld_3_7_66;
@@ -8113,7 +8114,7 @@ public final class WildClasses {
                boolean fld_1_7_67;
     public     int fld_2_7_67;
     public     Object fld_3_7_67;
-               byte[] fld_4_7_67 = new byte [612];
+               byte[] fld_4_7_67 = new byte [41];
     protected  int fld_5_7_67;
   }
 
@@ -8126,7 +8127,7 @@ public final class WildClasses {
     public     int fld_5_7_68;
     public     char fld_6_7_68;
                Object fld_7_7_68;
-    public     double[] fld_8_7_68 = new double [240];
+    public     double[] fld_8_7_68 = new double [40];
   }
 
   public static class Wild_7_69 extends Wild_6_68 {
@@ -8147,7 +8148,7 @@ public final class WildClasses {
   public static class Wild_7_70 extends Wild_6_10 {
     public     long fld_0_7_70;
     public     long fld_1_7_70;
-               double[] fld_2_7_70 = new double [300];
+               double[] fld_2_7_70 = new double [7];
     private    char fld_3_7_70;
     protected  byte fld_4_7_70;
                double fld_5_7_70;
@@ -8167,12 +8168,12 @@ public final class WildClasses {
     protected  byte fld_7_7_71;
                char fld_8_7_71;
                int fld_9_7_71;
-               Object[] fld_10_7_71 = new Object [327];
+               Object[] fld_10_7_71 = new Object [41];
   }
 
   public static class Wild_7_72 extends Wild_6_86 {
     protected  long fld_0_7_72;
-    private    char[] fld_1_7_72 = new char [960];
+    private    char[] fld_1_7_72 = new char [52];
                boolean fld_2_7_72;
                int fld_3_7_72;
     public     long fld_4_7_72;
@@ -8212,17 +8213,17 @@ public final class WildClasses {
   }
 
   public static class Wild_7_76 extends Wild_6_21 {
-               long[] fld_0_7_76 = new long [895];
+               long[] fld_0_7_76 = new long [58];
     public     double fld_1_7_76;
     protected  Object fld_2_7_76;
                byte fld_3_7_76;
-               long[] fld_4_7_76 = new long [428];
+               long[] fld_4_7_76 = new long [62];
     protected  float fld_5_7_76;
   }
 
   public static class Wild_7_77 extends Wild_6_19 {
     private    int fld_0_7_77;
-    public     double[] fld_1_7_77 = new double [226];
+    public     double[] fld_1_7_77 = new double [21];
     private    short fld_2_7_77;
     private    Object fld_3_7_77;
     private    boolean fld_4_7_77;
@@ -8231,7 +8232,7 @@ public final class WildClasses {
   }
 
   public static class Wild_7_78 extends Wild_6_93 {
-    private    byte[] fld_0_7_78 = new byte [765];
+    private    byte[] fld_0_7_78 = new byte [23];
     public     Object fld_1_7_78;
     public     int fld_2_7_78;
     private    short fld_3_7_78;
@@ -8249,7 +8250,7 @@ public final class WildClasses {
 
   public static class Wild_7_80 extends Wild_6_72 {
     public     double fld_0_7_80;
-    protected  char[] fld_1_7_80 = new char [104];
+    protected  char[] fld_1_7_80 = new char [30];
     protected  double fld_2_7_80;
                float fld_3_7_80;
     protected  short fld_4_7_80;
@@ -8273,7 +8274,7 @@ public final class WildClasses {
     public     boolean fld_3_7_82;
     private    Object fld_4_7_82;
     protected  int fld_5_7_82;
-    public     boolean[] fld_6_7_82 = new boolean [484];
+    public     boolean[] fld_6_7_82 = new boolean [13];
                char fld_7_7_82;
     public     short fld_8_7_82;
     public     long fld_9_7_82;
@@ -8297,9 +8298,9 @@ public final class WildClasses {
                char fld_8_7_84;
     protected  byte fld_9_7_84;
     private    char fld_10_7_84;
-    protected  double[] fld_11_7_84 = new double [165];
+    protected  double[] fld_11_7_84 = new double [39];
     public     long fld_12_7_84;
-    public     float[] fld_13_7_84 = new float [27];
+    public     float[] fld_13_7_84 = new float [19];
   }
 
   public static class Wild_7_85 extends Wild_6_60 {
@@ -8311,7 +8312,7 @@ public final class WildClasses {
     protected  short fld_5_7_85;
     public     long fld_6_7_85;
                short fld_7_7_85;
-    protected  short[] fld_8_7_85 = new short [504];
+    protected  short[] fld_8_7_85 = new short [12];
     private    Object fld_9_7_85;
   }
 
@@ -8323,7 +8324,7 @@ public final class WildClasses {
     public     byte fld_4_7_86;
                short fld_5_7_86;
     private    boolean fld_6_7_86;
-    public     int[] fld_7_7_86 = new int [472];
+    public     int[] fld_7_7_86 = new int [4];
     protected  int fld_8_7_86;
                byte fld_9_7_86;
     public     double fld_10_7_86;
@@ -8343,7 +8344,7 @@ public final class WildClasses {
   }
 
   public static class Wild_7_88 extends Wild_6_70 {
-    public     char[] fld_0_7_88 = new char [685];
+    public     char[] fld_0_7_88 = new char [12];
     protected  short fld_1_7_88;
     public     byte fld_2_7_88;
                Object fld_3_7_88;
@@ -8384,7 +8385,7 @@ public final class WildClasses {
   }
 
   public static class Wild_7_93 extends Wild_6_38 {
-    public     byte[] fld_0_7_93 = new byte [614];
+    public     byte[] fld_0_7_93 = new byte [11];
     public     Object fld_1_7_93;
   }
 
@@ -8392,7 +8393,7 @@ public final class WildClasses {
                short fld_0_7_94;
     private    float fld_1_7_94;
     private    short fld_2_7_94;
-    private    boolean[] fld_3_7_94 = new boolean [808];
+    private    boolean[] fld_3_7_94 = new boolean [63];
     protected  int fld_4_7_94;
     private    char fld_5_7_94;
                Object fld_6_7_94;
@@ -8408,12 +8409,12 @@ public final class WildClasses {
     private    boolean fld_6_7_95;
                short fld_7_7_95;
     protected  boolean fld_8_7_95;
-    public     byte[] fld_9_7_95 = new byte [997];
+    public     byte[] fld_9_7_95 = new byte [53];
     private    int fld_10_7_95;
     public     short fld_11_7_95;
     public     float fld_12_7_95;
     public     double fld_13_7_95;
-    public     double[] fld_14_7_95 = new double [246];
+    public     double[] fld_14_7_95 = new double [4];
   }
 
   public static class Wild_7_96 extends Wild_6_57 {
@@ -8431,7 +8432,7 @@ public final class WildClasses {
     public     float fld_11_7_96;
     private    Object fld_12_7_96;
     public     double fld_13_7_96;
-    public     long[] fld_14_7_96 = new long [324];
+    public     long[] fld_14_7_96 = new long [63];
   }
 
   public static class Wild_7_97 extends Wild_6_48 {

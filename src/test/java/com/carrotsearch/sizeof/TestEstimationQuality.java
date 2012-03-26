@@ -2,15 +2,9 @@ package com.carrotsearch.sizeof;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.MemoryUsage;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Locale;
-import java.util.Random;
+import java.util.*;
 
-import org.junit.Assume;
-import org.junit.Before;
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.*;
 import org.junit.runner.JUnitCore;
 
 import com.carrotsearch.sizeof.experiments.WildClasses;
@@ -73,13 +67,18 @@ public class TestEstimationQuality {
   @Test
   public void testWildClasses() {
     estimate(new Allocator() {
+      List<Class<?>> classes = new ArrayList<Class<?>>();
       HashMap<Class<?>,Long> sizes = new HashMap<Class<?>,Long>();
       Random random = new Random();
 
       {
         for (Class<?> c : WildClasses.ALL) {
           try {
-            sizes.put(c, RamUsageEstimator.sizeOf(c.newInstance()));
+            long size = RamUsageEstimator.sizeOf(c.newInstance());
+            // Uncomment to measure small objects only.
+            // if (size > 80) { continue; }
+            classes.add(c);
+            sizes.put(c, size);
           } catch (Exception e) {
             throw new RuntimeException(e);
           }
@@ -88,7 +87,50 @@ public class TestEstimationQuality {
 
       @Override
       public long newObject(Object[] vault, int i) {
-        Class<?> c = WildClasses.ALL[random.nextInt(WildClasses.ALL.length)];
+        Class<?> c = classes.get(random.nextInt(classes.size()));
+        try {
+          vault[i] = c.newInstance();
+        } catch (Exception e) {
+          throw new RuntimeException(e);
+        }
+        if (!sizes.containsKey(c)) {
+          throw new RuntimeException();
+        }
+        return sizes.get(c);
+      }
+    });
+  }
+
+  /**
+   * Wild class instances (and arrays, etc.).
+   */
+  @Test @Ignore
+  public void testWildClassesOldLuceneEstimator() {
+    estimate(new Allocator() {
+      List<Class<?>> classes = new ArrayList<Class<?>>();
+      HashMap<Class<?>,Long> sizes = new HashMap<Class<?>,Long>();
+      Random random = new Random();
+
+      {
+        final org.apache.lucene.util.RamUsageEstimator rue = 
+            new org.apache.lucene.util.RamUsageEstimator(false);
+        for (Class<?> c : WildClasses.ALL) {
+          try {
+            long estimateRamUsage = rue.estimateRamUsage(c.newInstance());
+            if (estimateRamUsage > 80) {
+              continue;
+            }
+            classes.add(c);
+            sizes.put(c, estimateRamUsage);
+          } catch (Exception e) {
+            throw new RuntimeException(e);
+          }
+        }
+      }
+
+      @Override
+      public long newObject(Object[] vault, int i) {
+        Class<?> c = classes.get(random.nextInt(classes.size()));
         try {
           vault[i] = c.newInstance();
         } catch (Exception e) {
