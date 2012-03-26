@@ -12,7 +12,7 @@
   <!-- Project info. -->
   <groupId>com.carrotsearch</groupId>
   <artifactId>java-sizeof</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <packaging>jar</packaging>
 
   <name>java-sizeof</name>
@@ -53,13 +53,6 @@
       <groupId>com.carrotsearch</groupId>
       <artifactId>junit-benchmarks</artifactId>
       <version>0.3.0</version>
-      <scope>test</scope>
-    </dependency>
-    
-    <dependency>
-      <groupId>org.apache.lucene</groupId>
-      <artifactId>lucene-core</artifactId>
-      <version>3.5.0</version>
       <scope>test</scope>
     </dependency>
   </dependencies>

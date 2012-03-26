@@ -102,49 +102,6 @@ public class TestEstimationQuality {
   }
 
   /**
-   * Wild class instances (and arrays, etc.).
-   */
-  @Test @Ignore
-  public void testWildClassesOldLuceneEstimator() {
-    estimate(new Allocator() {
-      List<Class<?>> classes = new ArrayList<Class<?>>();
-      HashMap<Class<?>,Long> sizes = new HashMap<Class<?>,Long>();
-      Random random = new Random();
-
-      {
-        final org.apache.lucene.util.RamUsageEstimator rue = 
-            new org.apache.lucene.util.RamUsageEstimator(false);
-        for (Class<?> c : WildClasses.ALL) {
-          try {
-            long estimateRamUsage = rue.estimateRamUsage(c.newInstance());
-            if (estimateRamUsage > 80) {
-              continue;
-            }
-            classes.add(c);
-            sizes.put(c, estimateRamUsage);
-          } catch (Exception e) {
-            throw new RuntimeException(e);
-          }
-        }
-      }
-
-      @Override
-      public long newObject(Object[] vault, int i) {
-        Class<?> c = classes.get(random.nextInt(classes.size()));
-        try {
-          vault[i] = c.newInstance();
-        } catch (Exception e) {
-          throw new RuntimeException(e);
-        }
-        if (!sizes.containsKey(c)) {
-          throw new RuntimeException();
-        }
-        return sizes.get(c);
-      }
-    });
-  }
-
-  /**
    * Estimate estimation quality of {@link Allocator}'s objects. 
    */
   public void estimate(Allocator allocator) {
@@ -173,7 +130,7 @@ public class TestEstimationQuality {
 
     Arrays.fill(vault, null);
 
-    long expectedFree = free - RamUsageEstimator.sizeOf(vault, allocator);
+    long expectedFree = free - RamUsageEstimator.sizeOfAll(vault, allocator);
     double difference = 100.0d * (expectedAllocated - expectedFree) / (double) expectedFree;
     System.out.println(String.format(Locale.ENGLISH, 
         "Expected free: %s, Allocated estimation: %s, Difference: %.2f%% (%s)",

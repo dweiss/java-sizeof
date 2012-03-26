@@ -290,18 +290,36 @@ public final class RamUsageEstimator {
    * should be GCed.</p>
    */
   public static long sizeOf(Object obj) {
-    return measureObjectSize(obj);
+    ArrayList<Object> stack = new ArrayList<Object>();
+    stack.add(obj);
+    return measureSizeOf(stack);
   }
 
   /**
-   * Same as {@link #sizeOf(Object)} but sums up all the arguments.
+   * Same as {@link #sizeOf(Object)} but sums up all the arguments. Not an
+   * overload to prevent accidental parameter conflicts with {@link #sizeOf(Object)}.
    */
-  public static long sizeOf(Object... obj) {
-    long sum = 0;
-    for (Object o : obj) {
-      sum += measureObjectSize(o);
+  public static long sizeOfAll(Object... objects) {
+    return sizeOfAll(Arrays.asList(objects));
+  }
+
+  /**
+   * Same as {@link #sizeOf(Object)} but sums up all the arguments. Not an
+   * overload to prevent accidental parameter conflicts with {@link #sizeOf(Object)}.
+   */
+  public static long sizeOfAll(Iterable<Object> objects) {
+    final ArrayList<Object> stack;
+    if (objects instanceof Collection<?>) {
+      stack = new ArrayList<Object>(((Collection<?>) objects).size());
+    } else {
+      stack = new ArrayList<Object>();
     }
-    return sum;
+
+    for (Object o : objects) {
+      stack.add(o);
+    }
+
+    return measureSizeOf(stack);
   }
 
   /** 
@@ -319,6 +337,28 @@ public final class RamUsageEstimator {
     } else {
       return shallowSizeOfInstance(clz);
     }
+  }
+
+  /**
+   * Same as {@link #shallowSizeOf(Object)} but sums up all the arguments. Not an
+   * overload to prevent accidental parameter conflicts with {@link #shallowSizeOf(Object)}.
+   */
+  public static long shallowSizeOfAll(Object... objects) {
+    return shallowSizeOfAll(Arrays.asList(objects));
+  }
+
+  /**
+   * Same as {@link #shallowSizeOf(Object)} but sums up all the arguments. Duplicate
+   * objects are not resolved and will be counted twice. 
+   * Not an overload to prevent accidental parameter conflicts with 
+   * {@link #shallowSizeOf(Object)}.
+   */
+  public static long shallowSizeOfAll(Iterable<Object> objects) {
+    long sum = 0;
+    for (Object o : objects) {
+      sum += shallowSizeOf(o);
+    }
+    return sum;
   }
 
   /**
@@ -378,18 +418,17 @@ public final class RamUsageEstimator {
     return alignObjectSize(size);
   }
 
-  /*
+  /**
    * Non-recursive version of object descend. This consumes more memory than recursive in-depth 
    * traversal but prevents stack overflows on long chains of objects
    * or complex graphs (a max. recursion depth on my machine was ~5000 objects linked in a chain
-   * so not too much).  
+   * so not too much).
+   * 
+   * @param stack Root objects.
    */
-  private static long measureObjectSize(Object root) {
+  private static long measureSizeOf(ArrayList<Object> stack) {
     final IdentityHashSet<Object> seen = new IdentityHashSet<Object>();
     final IdentityHashMap<Class<?>, ClassCache> classCache = new IdentityHashMap<Class<?>, ClassCache>();
-    final ArrayList<Object> stack = new ArrayList<Object>();
-
-    stack.add(root);
 
     long totalSize = 0;
     while (!stack.isEmpty()) {
