@@ -12,7 +12,7 @@
   <!-- Project info. -->
   <groupId>com.carrotsearch</groupId>
   <artifactId>java-sizeof</artifactId>
-  <version>0.0.4-SNAPSHOT</version>
+  <version>0.0.4</version>
   <packaging>jar</packaging>
 
   <name>java-sizeof</name>
