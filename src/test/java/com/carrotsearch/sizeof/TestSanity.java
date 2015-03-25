@@ -102,6 +102,16 @@ public class TestSanity {
   }
   
   @Test
+  public void testClassField() {
+    RamUsageEstimator.sizeOf(new WithClassField());
+  }
+  
+  @SuppressWarnings("unused")
+  private static class WithClassField {
+    Class foo = Class.class;
+  }
+
+  @Test
   public void testReferenceSize() {
     if (!isSupportedJVM()) {
       System.err.println("WARN: Your JVM does not support certain Oracle/Sun extensions.");
