@@ -1,3 +1,3 @@
-Self-contained RamUsageEstimator from Apache Solr/Lucene.
+self-contained RamUsageEstimator from Apache Solr/Lucene.
 
-RamUsageEstimator.sizeOf(new Object()) == ?
+Removed due to incompatibility with Java 9+. Archival versions on branches.
